@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8053) - http://www.bohemiancoding.com/sketch -->
+    <title>Expand 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="DesktopSubmitted" sketch:type="MSArtboardGroup" transform="translate(-1292.000000, -1625.000000)" fill="#D8D8D8">
+            <g id="Expand-2" sketch:type="MSLayerGroup" transform="translate(1292.000000, 1625.000000)">
+                <path d="M20,30 L5.00003191,30 C2.24553095,30 0,27.7614237 0,25 C0,22.2441952 2.23859054,20 5.00003191,20 L20,20 L20,5.00003191 C20,2.24553095 22.2385763,0 25,0 C27.7558048,0 30,2.23859054 30,5.00003191 L30,20 L44.9999681,20 C47.754469,20 50,22.2385763 50,25 C50,27.7558048 47.7614095,30 44.9999681,30 L30,30 L30,44.9999681 C30,47.754469 27.7614237,50 25,50 C22.2441952,50 20,47.7614095 20,44.9999681 L20,30 Z" id="Rectangle-112" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
