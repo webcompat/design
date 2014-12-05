@@ -11,9 +11,9 @@ file, You can obtain one at http://mozilla.org/MPL/2.0/.
 ### Product and Design Contributions
 
 You can contribute to the product direction and user interface in a few ways
-* 1) Comment on an [existing issue in the backlog](https://github.com/webcompat/webcompat.com/issues?q=is%3Aopen+is%3Aissue). Add your thoughts, add an alternate idea or add a relevant reference elsewhere on the web.
-* 2) Tackle one of the issues labeled ["Needs definition"](https://github.com/webcompat/webcompat.com/labels/needs%20definition) or ["Design"](https://github.com/webcompat/webcompat.com/labels/design).  Needs defintion means it needs more detail and direction.  Needs design means it needs an interface layout or interaction. Any fidelty of design is fine from a hand-drawn sketch to a wireframe or a mockup.
-* 3) Write a feature request in the webcompat.com repo. [Read how](https://github.com/webcompat/webcompat.com/blob/master/CONTRIBUTING.md#feature-requests).
+  1) Comment on an [existing issue in the backlog](https://github.com/webcompat/webcompat.com/issues?q=is%3Aopen+is%3Aissue). Add your thoughts, add an alternate idea or add a relevant reference elsewhere on the web.
+  2) Tackle one of the issues labeled ["Needs definition"](https://github.com/webcompat/webcompat.com/labels/needs%20definition) or ["Design"](https://github.com/webcompat/webcompat.com/labels/design).  Needs defintion means it needs more detail and direction.  Needs design means it needs an interface layout or interaction. Any fidelty of design is fine from a hand-drawn sketch to a wireframe or a mockup.
+  3) Write a feature request in the webcompat.com repo. [Read how](https://github.com/webcompat/webcompat.com/blob/master/CONTRIBUTING.md#feature-requests).
 
 ### Design mockups
 
