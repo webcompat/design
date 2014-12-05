@@ -35,4 +35,4 @@ Discussion about designs happens in the [Webcompat.com repository](https://githu
 
 Feel free to jump in with some thoughts or an alternate design idea.   
 
-If you have questions about contributing to the product, ping @miketaylr, @magsout or @calexity
+If you have questions about contributing to the product, ping [@miketaylr](https://twitter.com/magsout), [@magsout](https://twitter.com/magsout) or [@calexity](http://twitter.com/calexity)
