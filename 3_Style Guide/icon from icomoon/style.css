@@ -1,15 +1,15 @@
 @font-face {
 	font-family: 'webcompat';
-	src:url('fonts/webcompat.eot?rxoio5');
-	src:url('fonts/webcompat.eot?#iefixrxoio5') format('embedded-opentype'),
-		url('fonts/webcompat.woff?rxoio5') format('woff'),
-		url('fonts/webcompat.ttf?rxoio5') format('truetype'),
-		url('fonts/webcompat.svg?rxoio5#webcompat') format('svg');
+	src:url('fonts/webcompat.eot?-ki3mur');
+	src:url('fonts/webcompat.eot?#iefix-ki3mur') format('embedded-opentype'),
+		url('fonts/webcompat.ttf?-ki3mur') format('truetype'),
+		url('fonts/webcompat.woff?-ki3mur') format('woff'),
+		url('fonts/webcompat.svg?-ki3mur#webcompat') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-.wc-Icon {
+[class^="wc-icon-"], [class*=" wc-icon-"] {
 	font-family: 'webcompat';
 	speak: none;
 	font-style: normal;
@@ -23,39 +23,45 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.wc-Icon--times:before {
+.wc-icon-arrow-circle-right:before {
+	content: "\f0a9";
+}
+.wc-icon-bug:before {
+	content: "\f188";
+}
+.wc-icon-times:before {
 	content: "\f00d";
 }
-.wc-Icon--gear:before {
+.wc-icon-gear:before {
 	content: "\f013";
 }
-.wc-Icon--plus:before {
+.wc-icon-plus:before {
 	content: "\f067";
 }
-.wc-Icon--minus:before {
+.wc-icon-minus:before {
 	content: "\f068";
 }
-.wc-Icon--chevron-up:before {
+.wc-icon-chevron-up:before {
 	content: "\f077";
 }
-.wc-Icon--chevron-down:before {
+.wc-icon-chevron-down:before {
 	content: "\f078";
 }
-.wc-Icon--search:before {
+.wc-icon-search:before {
 	content: "\f002";
 }
-.wc-Icon--home:before {
+.wc-icon-home:before {
 	content: "\f015";
 }
-.wc-Icon--list:before {
+.wc-icon-list:before {
 	content: "\f03a";
 }
-.wc-Icon--arrow-right:before {
+.wc-icon-arrow-right:before {
 	content: "\e601";
 }
-.wc-Icon--arrow-down:before {
+.wc-icon-arrow-down:before {
 	content: "\e602";
 }
-.wc-Icon--arrow-left:before {
+.wc-icon-arrow-left:before {
 	content: "\e603";
 }
