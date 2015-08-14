@@ -1,15 +1,15 @@
 @font-face {
 	font-family: 'webcompat';
-	src:url('fonts/webcompat.eot?-ki3mur');
-	src:url('fonts/webcompat.eot?#iefix-ki3mur') format('embedded-opentype'),
-		url('fonts/webcompat.ttf?-ki3mur') format('truetype'),
-		url('fonts/webcompat.woff?-ki3mur') format('woff'),
-		url('fonts/webcompat.svg?-ki3mur#webcompat') format('svg');
+	src:url('fonts/webcompat.eot?-nwunke');
+	src:url('fonts/webcompat.eot?#iefix-nwunke') format('embedded-opentype'),
+		url('fonts/webcompat.ttf?-nwunke') format('truetype'),
+		url('fonts/webcompat.woff?-nwunke') format('woff'),
+		url('fonts/webcompat.svg?-nwunke#webcompat') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-[class^="wc-icon-"], [class*=" wc-icon-"] {
+[class^="wc-Icon--"], [class*=" wc-Icon--"] {
 	font-family: 'webcompat';
 	speak: none;
 	font-style: normal;
@@ -23,45 +23,51 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.wc-icon-arrow-circle-right:before {
-	content: "\f0a9";
-}
-.wc-icon-bug:before {
-	content: "\f188";
-}
-.wc-icon-times:before {
-	content: "\f00d";
-}
-.wc-icon-gear:before {
-	content: "\f013";
-}
-.wc-icon-plus:before {
-	content: "\f067";
-}
-.wc-icon-minus:before {
-	content: "\f068";
-}
-.wc-icon-chevron-up:before {
-	content: "\f077";
-}
-.wc-icon-chevron-down:before {
-	content: "\f078";
-}
-.wc-icon-search:before {
-	content: "\f002";
-}
-.wc-icon-home:before {
-	content: "\f015";
-}
-.wc-icon-list:before {
-	content: "\f03a";
-}
-.wc-icon-arrow-right:before {
+.wc-Icon--arrow-right:before {
 	content: "\e601";
 }
-.wc-icon-arrow-down:before {
+.wc-Icon--arrow-down:before {
 	content: "\e602";
 }
-.wc-icon-arrow-left:before {
+.wc-Icon--arrow-left:before {
 	content: "\e603";
+}
+.wc-Icon--arrow-circle-right:before {
+	content: "\f0a9";
+}
+.wc-Icon--bug:before {
+	content: "\f188";
+}
+.wc-Icon--times:before {
+	content: "\f00d";
+}
+.wc-Icon--gear:before {
+	content: "\f013";
+}
+.wc-Icon--plus:before {
+	content: "\f067";
+}
+.wc-Icon--minus:before {
+	content: "\f068";
+}
+.wc-Icon--chevron-up:before {
+	content: "\f077";
+}
+.wc-Icon--chevron-down:before {
+	content: "\f078";
+}
+.wc-Icon--search:before {
+	content: "\f002";
+}
+.wc-Icon--home:before {
+	content: "\f015";
+}
+.wc-Icon--list:before {
+	content: "\f03a";
+}
+.wc-Icon--qrcode:before {
+	content: "\f029";
+}
+.wc-Icon--cloud-upload:before {
+	content: "\f0ee";
 }
