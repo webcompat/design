@@ -29,4 +29,4 @@ Right now we have a big refactor in front of us and will move to a living style 
 
 ### Design Review
 
-If you have questions about contributing to the product, ping [@zoepage](https://twitter.com/zoepage) or [@magsout](https://twitter.com/magsout)
+If you have questions about contributing to the product, ping [github@zoepage](https://github.com/zoepage) / [twitter@zoepage](https://twitter.com/misprintedtype) or find us on IRC irc://irc.mozilla.org/webcompat.
