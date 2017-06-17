@@ -1,0 +1,22 @@
+body {
+	background-color: #fafafa;
+	padding: 30px 19px 50px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.8em;	
+	box-sizing: border-box;
+}
+
+
+/* helper - delete after refactor POC */
+
+.img {
+	background-color: #C0FFEE;
+	width: 144px;
+	height: 144px;
+}
+
+.img2 {
+	background-color: rgb(255, 200, 0);
+	width: 144px;
+	height: 144px;
+}
