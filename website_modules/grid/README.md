@@ -15,6 +15,8 @@ All containers are responsive.
 
 All modules for the living style guide as well as webcompat.com will be build upon that Grid System.
 
+The Living Style Guide (LSG) can be found in the [docs/](https://github.com/webcompat/design/tree/master/docs) folder of this repository and is published as [gh-pages](http://webcompat.github.io/design/ ). 
+
 
 ## Technology
 
