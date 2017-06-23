@@ -1,7 +1,7 @@
 :root {
 	--unit-modul-s: 270px;
 	--unit-modul-m: 585px;
-	--unit-modul-l: 900px;
+	--unit-modul-l: 960px;
 
 	--unit-gap: 45px;
 	--unit-space: 10px;
@@ -17,19 +17,12 @@
 		margin: 30px auto;
 		background-color: #fff;
 		padding: 25px 30px 30px;
+		display: flex;
+		flex-flow: row wrap;
+
 }
 
-@supports (display: grid) {
-
-.grid {
-	display: grid;
-	grid-auto-flow: column;
-	grid-template-columns: repeat(auto-fit, minmax(1fr, 900px));
-	grid-column-gap: 45px;
-}
-
-.grid-100 	{ grid-column-end: span 3; }
-.grid-66 	{ grid-column-end: span 2; grid-row-end: span 2; }
-.grid-33 	{ grid-column-end: span 1; }
-
+.grid div {
+	min-width: var(--page-size-s);
+	max-width: max-width: var(--page-size-l) - var(--unit-gap);
 }

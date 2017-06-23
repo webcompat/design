@@ -9,14 +9,15 @@ body {
 
 /* helper - delete after refactor POC */
 
-.img {
-	background-color: #C0FFEE;
-	width: 144px;
+.bio-img {
+	min-width: 144px;
 	height: 144px;
 }
 
-.img2 {
+.bg-color-1 {
+	background-color: #C0FFEE;
+}
+
+.bg-color-2 {
 	background-color: rgb(255, 200, 0);
-	width: 144px;
-	height: 144px;
 }
