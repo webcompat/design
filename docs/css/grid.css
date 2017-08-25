@@ -1,5 +1,5 @@
 :root {
-	--unit-modul-s: 270px;
+	--unit-modul-s: 275px;
 	--unit-modul-m: 585px;
 	--unit-modul-l: 960px;
 
@@ -18,11 +18,53 @@
 		background-color: #fff;
 		padding: 25px 30px 30px;
 		display: flex;
-		flex-flow: row wrap;
-
+		justify-content: flex-start;
+    	flex-flow: row wrap;
 }
 
-.grid div {
-	min-width: var(--page-size-s);
-	max-width: max-width: var(--page-size-l) - var(--unit-gap);
+	.grid .element {
+		min-width: var(--unit-modul-s);
+		max-width: var(--unit-modul-l);
+		margin-right: 45px;
+	}
+
+		.grid .element:last-child {
+			margin-right: 0;
+		}
+
+		.element.x1 {
+			width: var(--unit-modul-s);
+		}
+
+		.element.x2 {
+			max-width: var(--unit-modul-m);
+		}
+
+		.element.x3 {
+			max-width: var(--unit-modul-l);
+		}
+
+@media (max-width: 1000px) {
+	.element.x1x2 {
+			max-width: var(--unit-modul-l);
+			min-width: var(--unit-modul-m);
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+	}
+
+	.x1x2 .x1 {
+		width: var(--unit-modul-s);
+	}
+}
+
+@media (max-width: 700px) {
+	.element.x1x2 {
+			max-width: var(--unit-modul-m);
+			min-width: var(--unit-modul-s);
+	}
+
+	.x1x2 .x1 {
+		width: var(--unit-modul-s);
+	}
 }
