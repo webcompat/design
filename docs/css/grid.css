@@ -1,70 +1,77 @@
 :root {
-	--unit-modul-s: 275px;
+	--unit-modul-s: 270px;
 	--unit-modul-m: 585px;
 	--unit-modul-l: 960px;
 
 	--unit-gap: 45px;
 	--unit-space: 10px;
 
-	--page-size-l: var(--unit-modul-l);
+	--page-size-l: 1000px;
 	--page-size-m: 600px;
 	--page-size-s: 320px;
 }
 
+body {
+	padding: 21px 0 41px 0;
+}
+
+.grid-wrapper {
+	max-width: var(--page-size-l);
+
+	box-sizing: border-box;
+	padding: 15px;
+	margin: 9px;
+
+	background-color: #fff;
+
+	overflow: hidden;
+}
+
+
 .grid {
-		min-width: var(--page-size-s);
-		max-width: var(--page-size-l);
+	margin: 0 -45px 0 0;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.element-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.element {
+	flex: 1 1 270px;
+	min-width: var(--unit-modul-s);
+	max-width: var(--unit-modul-l);
+	margin-right: 45px;
+}
+
+.element.x1-fix {
+	max-width: 270px;
+}
+.element.x2 {
+	flex-basis: var(--unit-modul-m);
+}
+
+.element.x3 {
+	flex-basis: var(--unit-modul-l);
+}
+
+
+@media (min-width: 665px) {
+	.grid-wrapper {
+		padding: 25px;
+		margin: 15px;
+	}
+}
+
+@media (min-width: 998px) {
+
+	.grid-wrapper {
+		padding: 19px;
 		margin: 30px auto;
-		background-color: #fff;
-		padding: 25px 30px 30px;
-		display: flex;
-		justify-content: flex-start;
-    	flex-flow: row wrap;
-}
-
-	.grid .element {
-		min-width: var(--unit-modul-s);
-		max-width: var(--unit-modul-l);
-		margin-right: 45px;
-	}
-
-		.grid .element:last-child {
-			margin-right: 0;
-		}
-
-		.element.x1 {
-			width: var(--unit-modul-s);
-		}
-
-		.element.x2 {
-			max-width: var(--unit-modul-m);
-		}
-
-		.element.x3 {
-			max-width: var(--unit-modul-l);
-		}
-
-@media (max-width: 1000px) {
-	.element.x1x2 {
-			max-width: var(--unit-modul-l);
-			min-width: var(--unit-modul-m);
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: space-between;
-	}
-
-	.x1x2 .x1 {
-		width: var(--unit-modul-s);
-	}
-}
-
-@media (max-width: 700px) {
-	.element.x1x2 {
-			max-width: var(--unit-modul-m);
-			min-width: var(--unit-modul-s);
-	}
-
-	.x1x2 .x1 {
-		width: var(--unit-modul-s);
 	}
 }
