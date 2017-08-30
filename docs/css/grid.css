@@ -49,8 +49,7 @@ body {
 	margin-right: 45px;
 }
 
-.element.x1-fix,
-.element.x1x2 {
+.element.x1-fix {
 	max-width: var(--unit-modul-s);
 }
 
@@ -75,8 +74,4 @@ body {
 		padding: 19px;
 		margin: 30px auto;
 	}
-
-		.element.x1x2 {
-			flex-basis: var(--unit-modul-m);
-		}
 }
