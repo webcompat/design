@@ -43,15 +43,17 @@ body {
 }
 
 .element {
-	flex: 1 1 270px;
+	flex: 1 1 var(--unit-modul-s);
 	min-width: var(--unit-modul-s);
 	max-width: var(--unit-modul-l);
 	margin-right: 45px;
 }
 
-.element.x1-fix {
-	max-width: 270px;
+.element.x1-fix,
+.element.x1x2 {
+	max-width: var(--unit-modul-s);
 }
+
 .element.x2 {
 	flex-basis: var(--unit-modul-m);
 }
@@ -69,9 +71,12 @@ body {
 }
 
 @media (min-width: 998px) {
-
 	.grid-wrapper {
 		padding: 19px;
 		margin: 30px auto;
 	}
+
+		.element.x1x2 {
+			flex-basis: var(--unit-modul-m);
+		}
 }
