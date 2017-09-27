@@ -24,14 +24,14 @@ body {
 }
 
 .hint-text {
-	color: #999;
+	color: #888;
 	font-style: italic;
-	font-family: Palatino, Garamond, serif;
+	font-family: Palatino, Garamond, serif;	
 }
 
 .note {
 	font-size: 1em;
-	line-height: 1em;
+	line-height: 1.6em;
 }
 
 .code-text {
@@ -43,5 +43,4 @@ body {
 
 a {
 	color: var(--color-second);
-	text-decoration: none;
 }

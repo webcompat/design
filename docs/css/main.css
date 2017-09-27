@@ -4,6 +4,7 @@
 @import 'typo.css';
 @import 'grid.css';
 @import 'nav.css';
+@import 'bio.css';
 
 body {
 	background-color: var(--color-bg-page);
