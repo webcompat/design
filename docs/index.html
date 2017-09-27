@@ -41,9 +41,24 @@
 
 		<section class="grid-wrapper">
 				<div class="element x3 hint-text">
-					<h4 class="headline-3">Module description</h4>
+					<h4 class="headline-3">Module: Grid - full width</h4>
 					<p class="note">
-						Module is for xyz and you can use it with different grids. It's so much fun! Copy and paste the code below. 
+						The grid is the basic module to provide boxes for all of your modules. It is a global module, which means it is not scoped and can (also should) be used everywhere on the site.
+					</p>
+					<p>
+						The <code>grid-wrapper</code> class provides the white box to hold the module as well as the padding and margin.
+					</p>
+
+					<p>
+						The <code>grid</code> class actually holdes the module and provides a flexbox-box as well as a grid-system for the modules.
+					</p>
+
+					<p>
+						The <code>element</code> class indicates an element within the grid-box. The grid-system can be divided in 3 elements (width of one element = x) that can also be combined.
+					</p>
+
+					<p>
+						The <code>x3</code> class indicates an element, which combines the with of all 3 elements (width of one element = x). The <code>x3</code> is the short form of <code>x*3</code>.
 					</p>
 				</div>
 
@@ -51,7 +66,14 @@
 					<hr class="separator" />
 					<pre>
 						<code class="code-text">
-/* &lt;div&gt; */	
+&lt;section class="grid-wrapper"&gt;
+	&lt;article class="grid"&gt;
+		&lt;div class="element x3"&gt;
+			&lt;h2&gt;Title&lt;/h2&gt;
+			&lt;p&gt;Text&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/article&gt;
+&lt;/section&gt;
 						</code>
 					</pre>
 				</div>
@@ -87,7 +109,7 @@
 
 		<section class="grid-wrapper">
 				<div class="element x3 hint-text">
-					<h4 class="headline-3">Module: tiles</h4>
+					<h4 class="headline-3">Module: Tiles</h4>
 					<p class="note">
 						Row of 3 tiles. Creates a "call-to-action" stopper for the main page.
 					</p>
