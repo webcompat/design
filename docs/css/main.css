@@ -1,23 +1,12 @@
+@import 'reset.css';
+@import 'a11y-en.css';
+@import 'variables.css';
+@import 'typo.css';
+@import 'grid.css';
+@import 'nav.css';
+
 body {
-	background-color: #fafafa;
+	background-color: var(--color-bg-page);
 	padding: 30px 19px 50px;
-	font-family: 'Open Sans', sans-serif;
-	line-height: 1.8em;	
 	box-sizing: border-box;
-}
-
-
-/* helper - delete after refactor POC */
-
-.bio-img {
-	min-width: 144px;
-	height: 144px;
-}
-
-.bg-color-1 {
-	background-color: #C0FFEE;
-}
-
-.bg-color-2 {
-	background-color: rgb(255, 200, 0);
 }

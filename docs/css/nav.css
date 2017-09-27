@@ -1,0 +1,19 @@
+#Nav {
+	background-color: var(--color-first);
+	color: var(--color-second);
+	box-sizing: border-box;
+	max-width: var(--page-size-l);
+	margin: -30px auto 0;
+}
+
+.nav-item {
+	text-decoration: none;
+	list-style: none;
+	display: inline;
+	margin: 0 4px;	
+}
+
+.text-right .nav-item:last-child {
+	margin-right: var(--unit-gap);
+}
+/* add icons to nav, right + left with x1-fix : x2, pseudo-links, sticky nav */
