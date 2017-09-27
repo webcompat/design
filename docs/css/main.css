@@ -3,6 +3,7 @@
 @import 'variables.css';
 @import 'typo.css';
 @import 'grid.css';
+@import 'button.css';
 @import 'nav.css';
 
 body {
