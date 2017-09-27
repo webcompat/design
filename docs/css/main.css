@@ -6,6 +6,7 @@
 @import 'colors.css';
 @import 'nav.css';
 @import 'hero.css';
+@import 'tiles.css';
 
 body {
 	background-color: var(--color-bg-page);
@@ -16,4 +17,6 @@ body {
 ul, li {
 	text-decoration: none;
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
