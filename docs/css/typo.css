@@ -1,26 +1,40 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	line-height: 1.8em;	
+	line-height: 1.8em;
+	color: var(--color-second);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+}
+
+.highlight {
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.italic {
+	font-style: italic;
 }
 
 .headline-1 {
 	font-size: 2em;
 	line-height: 1.4em;	
-	font-weight: 700;
 }
 
 .headline-2 {
 	font-size: 1.5em;
 	line-height: 1.3em;	
-	font-weight: 500;
 }
 
 .headline-3 {
 	font-size: 1.2em;
 	line-height: 0.8em;	
-	font-weight: 700;
-	font-style: italic;
 }
 
 .hint-text {

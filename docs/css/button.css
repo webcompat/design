@@ -1,0 +1,49 @@
+/*
+* Buttons
+*
+-----------------------
+* DEPENDENCIES:
+-----------------------
+* variables.css
+*/
+
+.button {
+    display: inline-block;
+    padding: 12px 23px;
+    color: inherit;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover,
+.button-primary:hover,
+.button-secondary:hover {
+    opacity: 0.85;
+}
+
+.button-primary {
+    background-color: var(--color-first);
+}
+
+.button-secondary {
+    background-color: var(--color-second);
+    color: var(--color-bg-page);
+}
+
+.button-icon {
+
+}
+
+.button-hero {
+    border-radius: 10px;
+    padding: 12px 60px 10px 23px;
+    font-size: 2em;
+    background-color: var(--color-second);
+    color: var(--color-first);
+    font-weight: 200;
+}
+
+.button-hero:hover {
+    opacity: 1;
+}
