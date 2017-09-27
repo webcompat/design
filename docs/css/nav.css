@@ -11,6 +11,11 @@
 	list-style: none;
 	display: inline;
 	margin: 0 4px;	
+	text-decoration: none;
+}
+
+.nav-item-link {
+	text-decoration: none;
 }
 
 .text-right .nav-item:last-child {

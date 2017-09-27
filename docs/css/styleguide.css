@@ -1,9 +1,4 @@
 /* Small helpers to visualize living style guide and have nothing to do with actual FW */
-.bio-img {
-	min-width: 144px;
-	height: 144px;
-}
-
 .bg-color-1 {
 	background-color: #C0FFEE;
 }

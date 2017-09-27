@@ -12,12 +12,12 @@
 		<section id ="Nav">
 			<nav class="grid element-wrapper">
 				<ul class="element x1">
-					<li class="nav-item"><a href="index.html" title="dance!">Download our Firefox Add-on</a></li>
+					<li class="nav-item"><a href="index.html" title="dance!" class="nav-item-link">Download our Firefox Add-on</a></li>
 				</ul>
 				<ul class="element x2 text-right">
-					<li class="nav-item"><a href="index.html" title="dance!">Contribute</a></li>
-					<li class="nav-item"><a href="index.html" title="dance!">All issues</a></li>
-					<li class="nav-item"><a href="index.html" title="dance!">Log in</a></li>
+					<li class="nav-item"><a href="index.html" title="dance!" class="nav-item-link">Contribute</a></li>
+					<li class="nav-item"><a href="index.html" title="dance!" class="nav-item-link">All issues</a></li>
+					<li class="nav-item"><a href="index.html" title="dance!" class="nav-item-link">Log in</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -197,8 +197,8 @@
 		</section>
 
 		<section class="grid-wrapper">
-			<article class="grid">
-				<p class="bio-img bg-color-1 element x1-fix"> &nbsp; </p>
+			<article class="grid bio">
+				<img src="https://avatars0.githubusercontent.com/u/6587558" alt="Adam Stevenson" class="bio-img bg-color-1 element x1-fix" />
 				<div class="element-wrapper element">
 					<div class="element x1"> 
 						<h2 class="headline-2">Adam Stevenson </h2>
@@ -209,31 +209,45 @@
 						</p>
 					</div>
 					<p class="element x1"> 
-						@adamopenweb <br/>
-						@adamopenweb
+						<a href="http://twitter.com/adamopenweb" title="adamopenweb on twitter">@adamopenweb </a> <br />
+						<a href="http://github.com/adamopenweb" title="adamopenweb on github">@adamopenweb </a>
 					</p>
 				</div>
 			</article>
 		</section>
 
 		<section class="grid-wrapper">
-			<article class="grid">
-				<p class="bio-img bg-color-2 element x1-fix"> &nbsp; </p>
-				<div class="element-wrapper element">
-					<div class="element x1"> 
-						<h2 class="headline-2">Adam Stevenson </h2>
-						<h3 class="headline-3">Canada</h3>
-						<p>
-							Works on webcompat bugs and does outreach to sites / developers. Enjoys music, biking,
-							travel and sometimes photos.
-						</p>
-					</div>
-					<p class="element x1"> 
-						@adamopenweb <br/>
-						@adamopenweb
+			<aside>
+				<div class="element x3 hint-text">
+					<h4 class="headline-3">Module: Bio</h4>
+					<p class="note">
+						This module is a 1:1:1 module, with a fixed first element to display a picture. The second element is for description or bio of a person, including name, where this person is from etc. The last of the elements is for contact information. 
 					</p>
 				</div>
-			</article>
+
+				<div class="element x3">
+					<h4 class="headline-3 hint-text">Code: Bio</h4>
+					<pre>
+					<code class="code-text">
+&lt;article class="grid bio"&gt;
+	&lt;img src="" alt="" class="bio-img bg-color-1 element x1-fix" /&gt;
+	&lt;div class="element-wrapper element"&gt;
+		&lt;div class="element x1"&gt; 
+			&lt;h2 class="headline-2"&gt;Name&lt;/h2&gt;
+			&lt;h3 class="headline-3"&gt;Country&lt;/h3&gt;
+			&lt;p&gt;
+				Bio / description
+			&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;p class="element x1"&gt; 
+			&lt;a href="" title=""&gt;@handlename &lt;/a&gt; 
+		&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+					</code>
+				</pre>
+				</div>
+			</aside>
 		</section>
 	</body>
 </html>
