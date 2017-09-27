@@ -1,7 +1,8 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	line-height: 1.8em;	
+	line-height: 1.8em;
+	color: var(--color-second);
 }
 
 .headline-1 {
