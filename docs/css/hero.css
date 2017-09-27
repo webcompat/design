@@ -1,0 +1,11 @@
+#hero-section {
+
+}
+
+#hero-grid .x1-fix {
+	text-align: center;
+	min-height: 5em;
+	justify-content: center;
+	flex-direction: column;
+
+}

@@ -3,10 +3,17 @@
 @import 'variables.css';
 @import 'typo.css';
 @import 'grid.css';
+@import 'colors.css';
 @import 'nav.css';
+@import 'hero.css';
 
 body {
 	background-color: var(--color-bg-page);
 	padding: 30px 19px 50px;
 	box-sizing: border-box;
+}
+
+ul, li {
+	text-decoration: none;
+	list-style: none;
 }
