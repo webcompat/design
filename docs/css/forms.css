@@ -1,11 +1,9 @@
 .form-element {
     position: relative;
     box-sizing: border-box;
-    width: 300px;
     max-width: 100%;
     margin: 0;
     padding: 20px 0;
-    font-size: 16px;
 }
 
 .input {
@@ -13,7 +11,6 @@
     font-size: 16px;
     font-family: "Helvetica","Arial",sans-serif;
     background: none;
-    text-align: left;
     color: inherit;
 }
 
@@ -26,12 +23,11 @@
 }
 
 .input-text {
+    display: block;
+    width: 100%;
+    padding: 4px 0;
     border: none;
     border-bottom: 1px solid rgba(0,0,0,.12);
-    display: block;
-
-    padding: 4px 0;
-    width: 100%;
 }
 
 .input-text:focus {
@@ -42,8 +38,7 @@
 
 
 .label {
-    display: inline-block;
-    font-size: 16px;
+    display: block;
     white-space: nowrap;
     text-align: left;
     cursor: pointer;
@@ -89,3 +84,30 @@
     background: transparent;
 }
 
+
+.input-upload {
+    position: absolute;
+    opacity: 0;
+}
+
+.upload {
+    border: 1px dotted var(--color-default);
+}
+
+.label-upload {
+    text-align: center;
+    color: var(--color-second);
+}
+
+.upload .label-icon {
+    display: block;
+    width: 60%;
+    margin: 0 auto 15px auto;
+
+    fill: var(--color-default);
+    transition: fill .25s ease-in;
+}
+
+.label-upload:hover .label-icon {
+    fill: var(--color-first);
+}
