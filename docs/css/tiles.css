@@ -20,6 +20,7 @@
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 5px;
 }
 
 /* checkerboard pattern */

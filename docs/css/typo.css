@@ -24,12 +24,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .headline-1 {
 	font-size: 2em;
-	line-height: 1.4em;	
+	line-height: 1.4em;
+	margin-top: 0.3em;
 }
 
 .headline-2 {
 	font-size: 1.5em;
 	line-height: 1.3em;	
+	margin-bottom: 1.25em;
 }
 
 .headline-3 {
@@ -40,12 +42,8 @@ h1, h2, h3, h4, h5, h6 {
 .hint-text {
 	color: #888;
 	font-style: italic;
-	font-family: Palatino, Garamond, serif;	
-}
-
-.note {
-	font-size: 1em;
-	line-height: 1.6em;
+	font-family: Palatino, Garamond, serif;
+	font-size: 1.025em;	
 }
 
 .code-text {
