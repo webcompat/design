@@ -13,6 +13,7 @@
 body {
 	background-color: var(--color-bg-page);
 	box-sizing: border-box;
+	padding-top: var(--navi-height);
 }
 
 /* reset lists */
@@ -25,6 +26,6 @@ ul, li {
 
 @media screen and (min-width: 665px){
 	body {
-		padding: 30px 19px 50px;
+		padding: var(--navi-height) 19px 50px;
 	}
 }

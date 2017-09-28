@@ -1,7 +1,8 @@
 #Nav {
-	position: fixed; /* fallback */
-	position: sticky;
+	position: fixed;
 	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -9,9 +10,6 @@
 	box-sizing: border-box;
 	max-width: var(--page-size-l);
 	padding: calc(var(--unit-gutter)/2) var(--unit-gutter);
-	/* position center */
-	margin-left: 50%;
-	transform: translateX(-50%);
 
 	background-color: var(--color-first);
 	color: var(--color-second);
