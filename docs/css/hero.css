@@ -1,3 +1,9 @@
 #hero-section {
+	padding: 6em var(--unit-gap) 7.25em;
+}
 
+.hero-claim {
+	font-size: 3.4em;
+	line-height: 1.2em;
+	text-transform: uppercase;
 }
