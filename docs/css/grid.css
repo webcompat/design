@@ -1,7 +1,7 @@
 .grid-wrapper {
 	max-width: var(--page-size-l);
 	box-sizing: border-box;
-	padding: 15px;
+	padding: var(--unit-gutter);
 	margin: 9px;
 	background-color: var(--color-bg-box);
 	overflow: hidden;
@@ -44,7 +44,7 @@
 /* var(--page-size-m) = 665px - vars not usable in queries */
 @media (min-width: 665px) {
 	.grid-wrapper {
-		padding: 25px;
+		padding: var(--unit-gutter-m);
 		margin: 15px;
 	}
 }
@@ -52,7 +52,7 @@
 /* var(--page-size-l) = 998px - vars not usable in queries */
 @media (min-width: 998px) {
 	.grid-wrapper {
-		padding: 19px;
+		padding: var(--unit-gutter-l);
 		margin: 30px auto;
 	}
 }

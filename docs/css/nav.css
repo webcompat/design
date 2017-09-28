@@ -1,9 +1,24 @@
 #Nav {
-	background-color: var(--color-first);
-	color: var(--color-second);
+	position: fixed; /* fallback */
+	position: sticky;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100vw;
 	box-sizing: border-box;
 	max-width: var(--page-size-l);
-	margin: -30px auto 0;
+	padding: calc(var(--unit-gutter)/2) var(--unit-gutter);
+	/* position center */
+	margin-left: 50%;
+	transform: translateX(-50%);
+
+	background-color: var(--color-first);
+	color: var(--color-second);
+}
+
+.nav .grid {
+	max-width: 100%;
 }
 
 .nav-item {
@@ -11,14 +26,55 @@
 	list-style: none;
 	display: inline;
 	margin: 0 4px;	
+}
+
+.nav-item:first-child {
+	margin: 0;
+}
+.nav-item:last-child {
+	margin: 0;
+}
+
+.nav-item a {
+	display: inline-block;
+	padding: 5px;
 	text-decoration: none;
 }
 
-.nav-item-link {
-	text-decoration: none;
+
+.nav-item a:hover .link-text {
+	text-decoration: underline;
 }
 
-.text-right .nav-item:last-child {
-	margin-right: var(--unit-gap);
+.nav-item .nav-icon {
+	width: 30px;
 }
+
+.nav-item .link-text {
+	display: inline-block;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+
+@media screen and (min-width: 665px){
+	.nav-item .link-text {
+		visibility: visible;
+		width: auto;
+		height: auto;
+	}
+
+	.nav-icon {
+		width: 15px;
+	}
+}
+
+@media screen and (min-width: 998px){
+	#Nav {
+		width: 100%;
+	}
+}
+
 /* add icons to nav, right + left with x1-fix : x2, pseudo-links, sticky nav */

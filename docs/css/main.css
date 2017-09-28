@@ -12,13 +12,19 @@
 
 body {
 	background-color: var(--color-bg-page);
-	padding: 30px 19px 50px;
 	box-sizing: border-box;
 }
 
+/* reset lists */
 ul, li {
 	text-decoration: none;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+@media screen and (min-width: 665px){
+	body {
+		padding: 30px 19px 50px;
+	}
 }
