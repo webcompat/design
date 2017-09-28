@@ -25,6 +25,29 @@
 		</section>
 
 		<section class="grid-wrapper">
+			<div class="element x3 hint-text">
+				<h4 class="headline-3">Module: Grid - full width</h4>
+				<p class="note">
+					The grid is the basic module to provide boxes for all of your modules. It is a global module, which means it is not scoped and can (also should) be used everywhere on the site.
+				</p>
+				<p>
+					The <code>grid-wrapper</code> class provides the white box to hold the module as well as the padding and margin.
+				</p>
+
+				<p>
+					The <code>grid</code> class actually holdes the module and provides a flexbox-box as well as a grid-system for the modules.
+				</p>
+
+				<p>
+					The <code>element</code> class indicates an element within the grid-box. The grid-system can be divided in 3 elements (width of one element = x) that can also be combined.
+				</p>
+
+				<p>
+					The <code>x3</code> class indicates an element, which combines the with of all 3 elements (width of one element = x). The <code>x3</code> is the short form of <code>x*3</code>.
+				</p>
+			</div>
+		</section>
+		<section class="grid-wrapper">
 			<article class="grid">
 				<div class="element x3">
 					<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
@@ -34,34 +57,11 @@
 				</div>
 			</article>
 		</section>
-
 		<section class="grid-wrapper">
-				<div class="element x3 hint-text">
-					<h4 class="headline-3">Module: Grid - full width</h4>
-					<p class="note">
-						The grid is the basic module to provide boxes for all of your modules. It is a global module, which means it is not scoped and can (also should) be used everywhere on the site.
-					</p>
-					<p>
-						The <code>grid-wrapper</code> class provides the white box to hold the module as well as the padding and margin.
-					</p>
-
-					<p>
-						The <code>grid</code> class actually holdes the module and provides a flexbox-box as well as a grid-system for the modules.
-					</p>
-
-					<p>
-						The <code>element</code> class indicates an element within the grid-box. The grid-system can be divided in 3 elements (width of one element = x) that can also be combined.
-					</p>
-
-					<p>
-						The <code>x3</code> class indicates an element, which combines the with of all 3 elements (width of one element = x). The <code>x3</code> is the short form of <code>x*3</code>.
-					</p>
-				</div>
-
 				<div class="element x3">
-					<hr class="separator" />
 					<pre>
 						<code class="code-text">
+/* [3] */
 &lt;section class="grid-wrapper"&gt;
 	&lt;article class="grid"&gt;
 		&lt;div class="element x3"&gt;
@@ -76,6 +76,29 @@
 			</div>
 		</section>
 
+		<section class="grid-wrapper">
+			<div class="element x3 hint-text">
+				<h4 class="headline-3">Module: Grid - full width</h4>
+				<p class="note">
+					The grid is the basic module to provide boxes for all of your modules. It is a global module, which means it is not scoped and can (also should) be used everywhere on the site.
+				</p>
+				<p>
+					The <code>grid-wrapper</code> class provides the white box to hold the module as well as the padding and margin.
+				</p>
+
+				<p>
+					The <code>grid</code> class actually holdes the module and provides a flexbox-box as well as a grid-system for the modules.
+				</p>
+
+				<p>
+					The <code>element</code> class indicates an element within the grid-box. The grid-system can be divided in 3 elements (width of one element = x) that can also be combined.
+				</p>
+
+				<p>
+					The <code>x3</code> class indicates an element, which combines the with of all 3 elements (width of one element = x). The <code>x3</code> is the short form of <code>x*3</code>.
+				</p>
+			</div>
+		</section>
 		<section class="grid-wrapper">
 			<div class="grid">
 				<article class="element x2">
@@ -93,7 +116,6 @@
 				</aside>
 			</div>
 		</section>
-
 		<section class="grid-wrapper">
 			<div class="grid">
 				<article class="element x1">
@@ -110,41 +132,37 @@
 				</aside>
 			</div>
 		</section>
-
 		<section class="grid-wrapper">
-				<div class="element x3 hint-text">
-					<h4 class="headline-3">Module: Grid - full width</h4>
-					<p class="note">
-						The grid is the basic module to provide boxes for all of your modules. It is a global module, which means it is not scoped and can (also should) be used everywhere on the site.
-					</p>
-					<p>
-						The <code>grid-wrapper</code> class provides the white box to hold the module as well as the padding and margin.
-					</p>
-
-					<p>
-						The <code>grid</code> class actually holdes the module and provides a flexbox-box as well as a grid-system for the modules.
-					</p>
-
-					<p>
-						The <code>element</code> class indicates an element within the grid-box. The grid-system can be divided in 3 elements (width of one element = x) that can also be combined.
-					</p>
-
-					<p>
-						The <code>x3</code> class indicates an element, which combines the with of all 3 elements (width of one element = x). The <code>x3</code> is the short form of <code>x*3</code>.
-					</p>
-				</div>
-
-				<div class="element x3">
-					<hr class="separator" />
-					<pre>
-						<code class="code-text">
+			<div class="element x3">
+				<pre>
+					<code class="code-text">
+/* [2:1] */
 &lt;section class="grid-wrapper"&gt;
-	&lt;article class="grid"&gt;
-		&lt;div class="element x3"&gt;
-			&lt;h2&gt;Title&lt;/h2&gt;
+	&lt;div class="grid"&gt;
+		&lt;article class="element x2"&gt;
+			&lt;h2&gt;Main part&lt;/h2&gt;
 			&lt;p&gt;Text&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/article&gt;
+		&lt;/article&gt;
+		&lt;aside class="element x1"&gt;
+			&lt;h2&gt;Aside&lt;/h2&gt;
+			&lt;p&gt;Text&lt;/p&gt;
+		&lt;/aside&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+						<hr class="separator" />
+
+/* [1:2] */
+&lt;section class="grid-wrapper"&gt;
+	&lt;div class="grid"&gt;
+		&lt;aside class="element x1"&gt;
+			&lt;h2 class="headline-2"&gt;Aside&lt;/h2&gt;
+			&lt;p&gt;Text&lt;/p&gt;
+		&lt;/aside&gt;
+		&lt;article class="element x2"&gt;
+			&lt;h2 class="headline-1"&gt;Main part&lt;/h2&gt;
+			&lt;p&gt;Text&lt;/p&gt;
+		&lt;/article&gt;
+	&lt;/div&gt;
 &lt;/section&gt;
 						</code>
 					</pre>
