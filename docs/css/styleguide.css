@@ -23,3 +23,7 @@
 .text-left {
 	text-align: left;
 }
+
+pre {
+	overflow-y: scroll;
+}
