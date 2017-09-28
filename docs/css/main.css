@@ -9,6 +9,7 @@
 @import 'bio.css';
 @import 'hero.css';
 @import 'tiles.css';
+@import 'form.css';
 
 body {
 	background-color: var(--color-bg-page);
