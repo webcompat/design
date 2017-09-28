@@ -6,6 +6,12 @@
 	--unit-gap: 		45px;
 	--unit-space: 		10px;
 
+	--unit-gutter:		15px;
+	--unit-gutter-m:	25px;
+	--unit-gutter-l:	19px;
+
+	--navi-height: 		63px;
+
 	--page-size-l: 		998px;
 	--page-size-m: 		665px;
 	--page-size-s: 		320px;
