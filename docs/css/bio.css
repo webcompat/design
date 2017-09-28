@@ -2,4 +2,5 @@
 	min-width: 144px;
 	min-height: 144px;
 	border-radius: 5px;
+	max-height: var(--unit-modul-s);
 }
