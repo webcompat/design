@@ -1,3 +1,12 @@
+/*
+* form
+*
+----------------
+* DEPENDENCIES:
+----------------
+* colors.css
+*/
+
 .form-element {
     position: relative;
     box-sizing: border-box;
@@ -6,7 +15,7 @@
     padding: 20px 0;
 }
 
-.input {
+.form-input {
     margin: 0;
     font-size: 16px;
     font-family: "Helvetica","Arial",sans-serif;
@@ -14,14 +23,25 @@
     color: inherit;
 }
 
-.input::-webkit-input-placeholder,
-.input:-ms-input-placeholder,
-.input::-ms-input-placeholder,
-.input::placeholder {
+.form-input::-webkit-input-placeholder,
+.form-input:-ms-input-placeholder,
+.form-input::-ms-input-placeholder,
+.form-input::placeholder {
     color: #888;
     opacity: 1;
 }
 
+.form-label {
+    display: block;
+    white-space: nowrap;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+/* -----------------------------------------
+ * Form input text
+-------------------------------------------*/
 .input-text {
     display: block;
     width: 100%;
@@ -33,24 +53,19 @@
 .input-text:focus {
     outline: 1px solid transparent;
     transition: border-bottom 1s linear;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid var(--color-first);
 }
 
 
-.label {
-    display: block;
-    white-space: nowrap;
-    text-align: left;
-    cursor: pointer;
-}
-
+/* -----------------------------------------
+ * Form radio
+-------------------------------------------*/
 .input-radio {
     position: absolute;
     opacity: 0;
 }
 
-
-.input-radio + .label:before {
+.input-radio + .label-radio:before {
     content: '';
     display: inline-block;
     position: relative;
@@ -66,32 +81,35 @@
     transition: all 250ms ease;
 }
 
-.input-radio:checked + .label:before {
+.input-radio:checked + .label-radio:before {
     background-color: var(--color-first);
     border-color: var(--color-first);
 
     box-shadow: inset 0 0 0 4px white;
 }
 
-.input-radio:focus + .label:before {
+.input-radio:focus + .label-radio:before {
     outline: none;
     border-color: transparent;
 }
 
-.input-radio:disabled + .label:before {
+.input-radio:disabled + .label-radio:before {
     box-shadow: inset 0 0 0 4px var(--color-first);
     border-color: var(--color-first);
     background: transparent;
 }
 
 
+/* -----------------------------------------
+ * Form upload
+-------------------------------------------*/
+.form-upload {
+    border: 1px dotted var(--color-default);
+}
+
 .input-upload {
     position: absolute;
     opacity: 0;
-}
-
-.upload {
-    border: 1px dotted var(--color-default);
 }
 
 .label-upload {
@@ -99,15 +117,15 @@
     color: var(--color-second);
 }
 
-.upload .label-icon {
+.label-upload:hover .icon {
+    fill: var(--color-first);
+}
+
+.form-upload .icon {
     display: block;
     width: 60%;
     margin: 0 auto 15px auto;
 
     fill: var(--color-default);
     transition: fill .25s ease-in;
-}
-
-.label-upload:hover .label-icon {
-    fill: var(--color-first);
 }
