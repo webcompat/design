@@ -7,9 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "build:clean-svg": "svgo -f docs/svg/icons -o docs/svg/tmp",
-    "build:svg-sprite": "svg-sprite-generate -d docs/svg/tmp -o docs/svg/sprite.svg",
-    "build:svg": "npm run build:clean-svg && npm run build:svg-sprite && rm -rf docs/svg/tmp"
+    "build:clean-svg": "svgo -f svg/icons -o svg/tmp",
+    "build:svg-sprite": "svg-sprite-generate -d svg/tmp -o svg/sprite.svg",
+    "build:svg": "npm run build:clean-svg && npm run build:svg-sprite && rm -rf svg/tmp"
   },
   "repository": {
     "type": "git",
