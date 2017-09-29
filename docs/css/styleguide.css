@@ -24,6 +24,10 @@
 	text-align: left;
 }
 
+.hide {
+	display: none;
+}
+
 pre {
 	overflow-y: scroll;
 }
