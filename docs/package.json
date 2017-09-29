@@ -1,8 +1,8 @@
 {
-  "name": "webcompat",
+  "name": "webcompat-LSG",
   "version": "1.0.0",
-  "description": "Design assets used on webcompat.com.",
-  "main": "index.js",
+  "description": "Style guide for webcompat.com.",
+  "main": "index.html",
   "directories": {
     "doc": "docs"
   },
@@ -16,7 +16,7 @@
     "url": "git+https://github.com/kotzendekrabbe/design.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kotzendekrabbe/design/issues"
   },
