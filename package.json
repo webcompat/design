@@ -1,0 +1,28 @@
+{
+  "name": "webcompat",
+  "version": "1.0.0",
+  "description": "Design assets used on webcompat.com.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build:clean-svg": "svgo -f docs/svg/icons -o docs/svg/tmp",
+    "build:svg-sprite": "svg-sprite-generate -d docs/svg/tmp -o docs/svg/sprite.svg",
+    "build:svg": "npm run build:clean-svg && npm run build:svg-sprite && rm -rf docs/svg/tmp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kotzendekrabbe/design.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kotzendekrabbe/design/issues"
+  },
+  "homepage": "https://github.com/kotzendekrabbe/design#readme",
+  "devDependencies": {
+    "svg-sprite-generator": "0.0.7",
+    "svgo": "^0.7.2"
+  }
+}
