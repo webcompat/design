@@ -1,5 +1,5 @@
 #hero-section {
-	padding: 6em var(--unit-gap) 7.25em;
+	padding: 6em var(--unit-gap) 5.25em;
 	margin-top: -30px;
 }
 
@@ -7,5 +7,30 @@
 	font-size: 3.4em;
 	line-height: 1.4em;
 	text-transform: uppercase;
-	margin-bottom: 2.6em;
+	margin-bottom: 2em;
+}
+
+#hero-text {
+	display: inline-block;
+	width: 50%;
+}
+
+#hero-illustration {
+	position: absolute;
+	display: inline-block;
+	width: 40%;
+}
+
+#hero-illustration-bulb {
+	position: relative;
+	height: 19em;
+	top: -95px;
+	right: -150px;
+}
+
+#hero-illustration-bug {
+	position: relative;
+	height: 4em;
+	top: -120px;
+	right: 0;
 }
