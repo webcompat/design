@@ -11,12 +11,16 @@
 	font-size: 3.4em;
 	line-height: 1.4em;
 	text-transform: uppercase;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 
 #hero-text {
 	display: inline-block;
 	width: 50%;
+}
+
+#hero-text .button-hero {
+	margin-bottom: 1em;
 }
 
 #hero-illustration {
@@ -25,10 +29,18 @@
 
 @media screen and (min-width: 998px) {
 
+	.hero-claim {
+		margin-bottom: 2em;
+	}
+
+
+	#hero-text .button-hero {
+		margin-bottom: 0;
+	}
+
 	#hero-section {
 		padding: 6em var(--unit-gap) 5.25em;
 		width: 100%;
-		max-width: var(--unit-modul-l);
 		position: unset;
 		margin: 0 auto;
 	}
