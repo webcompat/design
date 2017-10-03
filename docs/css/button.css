@@ -31,8 +31,8 @@
     color: var(--color-bg-page);
 }
 
-.button-icon {
-
+.button-icon-hero {
+    fill: var(--color-first);
 }
 
 .button-hero {

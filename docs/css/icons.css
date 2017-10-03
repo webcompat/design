@@ -3,6 +3,10 @@ svg {
 	top: -1000px;
 }
 
+svg, use {
+	fill: var(--color-second);
+}
+
 .icon {
 	width: 	16px;
 	height: 16px;
@@ -22,3 +26,6 @@ svg {
 	min-width: 6em;
 	min-height: 6em;
 }
+
+/* icons */
+

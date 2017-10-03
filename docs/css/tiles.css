@@ -25,7 +25,7 @@
 
 /* checkerboard pattern */
 .tile-item:nth-child(odd){
-    background-color: var(--color-fourth);
+    background-color: var(--color-fourth-light);
 }
 
 @media screen and (min-width: 665px) {
@@ -45,7 +45,7 @@
      to have a checkerboard pattern for 50% tile-item
      */
     .tile-item:nth-child(4n+1), .tile-item:nth-child(4n+4){
-        background-color: var(--color-fourth);
+        background-color: var(--color-fourth-light);
     }
 }
 
@@ -60,7 +60,7 @@
 
     /* checkerboard pattern */
     .tile-item:nth-child(odd){
-        background-color: var(--color-fourth);
+        background-color: var(--color-fourth-light);
     }
 
     /* checkerboard pattern */
