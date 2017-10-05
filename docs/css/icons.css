@@ -3,16 +3,29 @@ svg {
 	top: -1000px;
 }
 
+svg, use {
+	fill: var(--color-second);
+}
+
 .icon {
-	width: 	18px;
-	height: 30px;
-	display: inline-block;
-	color: white;
-	border-color: red;
-	opacity: 0.65;
-
+	width: 	16px;
+	height: 16px;
 }
 
-.icon:hover {
-	color: var(--color-second);
+.icon-middle {
+	width: 	32px;
+	height: 32px;
 }
+
+.icon-big {
+	width: 	48px;
+	height: 48px;
+}
+
+.illustration {
+	min-width: 6em;
+	min-height: 6em;
+}
+
+/* icons */
+

@@ -1,37 +1,39 @@
 :root {
-	--unit-modul-s: 	270px;
-	--unit-modul-m: 	585px;
-	--unit-modul-l: 	960px;
+	--unit-modul-s: 		270px;
+	--unit-modul-m: 		585px;
+	--unit-modul-l: 		960px;
 
-	--unit-gap: 		45px;
-	--unit-space: 		10px;
+	--unit-gap: 			45px;
+	--unit-space: 			10px;
 
-	--unit-gutter:		15px;
-	--unit-gutter-m:	25px;
-	--unit-gutter-l:	19px;
+	--unit-gutter:			15px;
+	--unit-gutter-m:		25px;
+	--unit-gutter-l:		19px;
 
-	--navi-height: 		63px;
-	--input-size: 		20px;
+	--navi-height: 			63px;
+	--input-size: 			20px;
 
-	--page-size-l: 		998px;
-	--page-size-m: 		665px;
-	--page-size-s: 		320px;
+	--page-size-l: 			998px;
+	--page-size-m: 			665px;
+	--page-size-s: 			320px;
 
-	--color-bg-page: 	#FAFAFA;
-	--color-bg-box: 	#fff;
-	--color-first: 		#ffc900;
-	--color-second:		#404040;
-	--color-third:		#F0F0F0;
-	--color-fourth:		#C0FFEE;
-	--color-default: 	#C4C4C4;
+	--color-bg-page: 		#FAFAFA;
+	--color-bg-box: 		#FFF;
+	--color-first: 			#ffc900;
+	--color-second:			#404040;
+	--color-third:			#F0F0F0;
+	--color-fourth:			#C0FFEE;
+	--color-fourth-light: 	#E5FEF6;
+	--color-form:			rgba(0,0,0,.12);
+	--color-default: 		#C4C4C4;
 
-	--label-color-1:	#001;
-	--label-color-2:	#002;
-	--label-color-3:	#003;
-	--label-color-4:	#004;
-	--label-color-5:	#005;
-	--label-color-6:	#006;
-	--label-color-7:	#007;
-	--label-color-8:	#008;
-	--label-color-9:	#009;
+	--label-color-1:		#001;
+	--label-color-2:		#002;
+	--label-color-3:		#003;
+	--label-color-4:		#004;
+	--label-color-5:		#005;
+	--label-color-6:		#006;
+	--label-color-7:		#007;
+	--label-color-8:		#008;
+	--label-color-9:		#009;
 }

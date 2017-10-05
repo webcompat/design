@@ -31,13 +31,13 @@
     color: var(--color-bg-page);
 }
 
-.button-icon {
-
+.button-icon-hero {
+    fill: var(--color-first);
 }
 
 .button-hero {
     border-radius: 10px;
-    padding: 12px 60px 10px 23px;
+    padding: 12px 20px 10px 23px;
     font-size: 2em;
     background-color: var(--color-second);
     color: var(--color-first);

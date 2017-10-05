@@ -28,6 +28,19 @@
 	display: none;
 }
 
+.icon-description { 
+	padding: 10px 20px;
+	display:  inline-block;
+	min-width: 12em;
+	text-align: center;
+	border: 1px solid #eee;
+
+}
+
+.icon-description-item { 
+	display:  inline-block;
+}
+
 pre {
 	overflow-y: scroll;
 }
