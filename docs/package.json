@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kotzendekrabbe/design.git"
+    "url": "git+https://github.com/webcompat/design.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kotzendekrabbe/design/issues"
+    "url": "https://github.com/webcompat/design/issues"
   },
-  "homepage": "https://github.com/kotzendekrabbe/design#readme",
+  "homepage": "https://github.com/webcompat/design#readme",
   "devDependencies": {
     "svg-sprite-generator": "0.0.7",
     "svgo": "^0.7.2"
