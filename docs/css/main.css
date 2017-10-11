@@ -10,6 +10,7 @@
 @import 'hero.css';
 @import 'tiles.css';
 @import 'form.css';
+@import 'footer.css';
 
 body {
 	background-color: var(--color-bg-page);
