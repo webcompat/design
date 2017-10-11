@@ -37,6 +37,25 @@
 	margin-top: var(--unit-gap);
 }
 
+.footer-sub-icons {
+	text-align: right;
+	margin-top: auto;
+}
+
+.footer-icon  {
+	display: inline-block;
+	padding: 5px 20px;
+}
+
+.icon-twitter .icon {
+	width: 24px;
+	height: 24px;
+}
+
+.icon-github .icon {
+	width: 24px;
+	height: 24px;
+}
 @media screen and (min-width: 998px) {
 	.footer-sub-list {
 		margin-top: 0;
