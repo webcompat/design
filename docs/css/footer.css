@@ -1,7 +1,3 @@
-#footer {
-
-}
-
 .footer-item {
 	border-bottom: 1px solid var(--color-form);
 	padding: var(--unit-space) var(--unit-gap);
@@ -21,7 +17,7 @@
 	text-decoration: underline;
 }
 
-#footer .active .footer-item-link {
+.active .footer-item-link {
 	border-bottom-color: var(--color-first);
 	color: var(--color-first);
 	font-weight: 700;
