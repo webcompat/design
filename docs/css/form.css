@@ -154,7 +154,7 @@
 
 .label-upload {
     text-align: center;
-    color: var(--color-form);
+    color: var(--color-second);
 }
 
 .form-upload:hover .label-upload {
