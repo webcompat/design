@@ -1114,6 +1114,7 @@
 				<div class="element">
 					<div class="form-text form-element">
 						<label class="form-label" for="browser">Is this information correct?</label>
+
 						<input class="form-field text-field form-validation" value="Firefox 1.3.4" title="browser information" type="text" id="browser"><span class="form-input-validation check"></span>
 						<input class="form-field text-field" value="OS X 10.12.6" title="operating system information" type="text"><span class="form-input-validation error"></span>
 					</div>
@@ -1254,6 +1255,114 @@
 		&lt;/p&gt;
 	&lt;/div&gt;
 &lt;/article&gt;
+					</code>
+				</pre>
+			</div>
+		</section>
+
+		<section class="grid-wrapper">
+			<div class="element x3 hint-text">
+				<h4 class="headline-3">Module: Footer</h4>
+				<p>
+					 This module is the footer navigation. It comes with a sub navigation, if necessary. 
+				</p>
+				<p>
+					The main footer navigation is initiated with the <code>footer-list</code> class. Every item is a <code>footer-item</code> and their link as <code>footer-item-link</code>.
+				</p>
+				<p>
+					The sub footer navigation is initiated with the <code>footer-sub-list</code> class. Every item is a <code>footer-sub-item</code> and their link as <code>footer-item-link</code>.
+				</p>
+				<p>
+					All active links are indicated with the class <code>active</code>.
+				</p>
+				<p>
+					The icon footer navigation is a special navigation to our external sites like Twitter as well as GitHub and initiated with the <code>footer-sub-icons</code> class. Every item is a <code>footer-icon
+					</code> and the needed icon class like e.g. <code>icon-twitter</code>, which indicates the box size of the icon. The icon is included per SVG for accessibility reasons. Their link is indicated as <code>footer-item-link</code>.
+				</p>
+			</div>
+		</section>
+		<footer id="footer" class="grid-wrapper">
+			<section class="grid">
+				<ul class="element x2 footer-list">
+					<li class="footer-item"><a class="footer-item-link" href="#" title="">Home</a></li>
+					<li class="footer-item"><a class="footer-item-link" href="#" title="">About</a></li>
+					<li class="footer-item"><a class="footer-item-link" href="#" title="">Report a bug</a></li>
+					<li class="footer-item active"><a class="footer-item-link" href="#" title="">Contribute</a></li>
+					<li class="footer-item"><a class="footer-item-link" href="#" title="">All issues</a></li>
+					<li class="footer-item"><a class="footer-item-link" href="#" title="">Code of Conduct</a></li>
+					<li class="footer-item"><a class="footer-item-link" href="#" title="">Contact</a></li>
+				</ul>
+				<div class="element-wrapper element x1">
+					<ul class="element x1 footer-sub-list">
+						<li class="footer-sub-item active"><a class="footer-item-link" href="#" title="">The Community</a></li>
+						<li class="footer-sub-item"><a class="footer-item-link" href="#" title="">The Team</a></li>
+						<li class="footer-sub-item"><a class="footer-item-link" href="#" title="">The Work</a></li>
+					</ul>
+
+					<ul class="element x1 footer-sub-icons">
+						<li class="footer-icon icon-twitter">
+							<a class="footer-item-link" href="#" title="">
+								<svg class="icon" role="presentation" aria-role="hide">
+								<title>Twitter</title>
+								  <use href="#twitter-2">Twitter</use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer-icon icon-github">
+							<a class="footer-item-link" href="#" title="">
+								<svg class="icon" role="presentation" aria-role="hide">
+								<title>github</title>
+								  <use href="#github">Github</use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</footer>
+		<section class="grid-wrapper">
+			<div class="element x3">
+				<pre>
+					<code class="code-text">
+/* MAIN NAVIGATION */
+&lt;ul class="element x2 footer-list"&gt;
+	&lt;li class="footer-item"&gt;
+		&lt;a class="footer-item-link" href="" title=""&gt;Link&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="footer-item active"&gt;
+		&lt;a class="footer-item-link active" href="" title=""&gt;Active Link&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+/* SUB NAVIGATION */
+&lt;ul class="element x1 footer-sub-list"&gt;
+	&lt;li class="footer-sub-item"&gt;
+		&lt;a class="footer-item-link" href="" title=""&gt;Link&lt;/a&gt;
+	&lt;/li&gt;	
+	&lt;li class="footer-sub-item active"&gt;
+		&lt;a class="footer-item-link" href="" title=""&gt;Active link&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+/* ICON NAVIGATION */
+&lt;ul class="element x1 footer-sub-icons"&gt;
+	&lt;li class="footer-icon icon-twitter"&gt;
+		&lt;a class="footer-item-link" href="" title=""&gt;
+			&lt;svg class="icon" role="presentation" aria-role="hide"&gt;
+			&lt;title&gt;Twitter&lt;/title&gt;
+			  &lt;use href="#twitter-2"&gt;Twitter&lt;/use&gt;
+			&lt;/svg&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="footer-icon icon-github"&gt;
+		&lt;a class="footer-item-link" href="#" title=""&gt;
+			&lt;svg class="icon" role="presentation" aria-role="hide"&gt;
+			&lt;title&gt;github&lt;/title&gt;
+			  &lt;use href="#github"&gt;Github&lt;/use&gt;
+			&lt;/svg&gt;
+		&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
 					</code>
 				</pre>
 			</div>
