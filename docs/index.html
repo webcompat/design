@@ -1090,12 +1090,20 @@
 		</section>
 
 		<section class="grid-wrapper">
-			<h4 class="headline-3">Module: Forms</h4>
+			<div class="element x3 hint-text">
+				<h4 class="headline-3">Module: Forms</h4>
+				<p>
+					This is our bug report form. The elements can be reused in a different context. Just the search input will be a special case and shown as a separate module.
+				</p>
+			</div>
+		</section>
+
+		<section class="grid-wrapper">
 			<form action="#" class="form grid">
 				<div class="element">
 					<div class="form-text form-element">
-						<label class="form-label" for="url">
-							Site URL<span class="form-required">*</span>
+						<label class="form-label form-required" for="url">
+							Site URL
 						</label>
 						<input class="form-field text-field" placeholder="e.g. https:example.com" title="Site URL" type="text" id="url">
 					</div>
@@ -1104,7 +1112,7 @@
 						<textarea class="form-field text-field" placeholder="e.g. The video should have started after 3 sec." title="Describe" id="describe"></textarea>
 					</div>
 					<div class="form-radio form-element">
-						<h3>Type of the issue</h3>
+						<h4 class="headline-3">Type of the issue</h4>
 						<input class="input-radio" type="radio" name="issueType" id="issue1" value="Desktop site instead of mobile site">
 						<label class="form-label label-radio" for="issue1">Desktop site instead of mobile site</label>
 						<input class="input-radio" type="radio" name="issueType" id="issue2" value="Site is not usable">
@@ -1129,6 +1137,84 @@
 					</div>
 				</div>
 			</form>
+		</section>
+
+		<section class="grid-wrapper">
+			<div class="element x3">
+				<pre>
+					<code class="code-text">
+/* GROUP ITEMS // layout wise, NOT semantically */
+&lt;div class="form-text form-element"&gt;&lt;/div&gt;
+						<hr class="separator" />
+
+/* LABEL */
+&lt;label class="form-label" for="InputId"&gt; Label Name &lt;/label&gt;
+
+/* LABEL - required // will get a red star next to the label name */
+&lt;label class="form-label form-required" for="url"&gt; Label Name &lt;/label&gt;
+						<hr class="separator" />
+
+/* INPUT */
+&lt;input 
+	type="text"  
+	class="form-field text-field" 
+	placeholder="placeholder text" 
+	title="description" 
+	id="id" 
+/&gt;
+
+/* INPUT with validation - success */
+&lt;input type="text" ... /&gt;&lt;span class="form-input-validation check"&gt;&lt;/span&gt;
+
+/* INPUT with validation - error */
+&lt;input type="text" ... /&gt;&lt;span class="form-input-validation error"&gt;&lt;/span&gt;						
+						<hr class="separator" />
+
+/* TEXTAREA */
+&lt;textarea 
+	type="text"  
+	class="form-field text-field" 
+	placeholder="placeholder text" 
+	title="description" 
+	id="id" 
+/&gt;
+
+						<hr class="separator" />
+/* RADIO INPUT ELEMENT */
+&lt;div class="form-radio form-element"&gt;
+	&lt;h4 class="headline-3"&gt;Headline&lt;/h4&gt;
+	&lt;input 
+		type="radio" 
+		class="input-radio" 
+		name="issueType" 
+		id="id" 
+		value="" 
+	/&gt;
+
+	&lt;label class="form-label label-radio" for="id"&gt;Label Name&lt;/label&gt;
+&lt;/div&gt;
+						<hr class="separator" />	
+
+/* UPLOAD */
+&lt;div class="form-upload form-element"&gt;
+	&lt;input 
+		type="file" 
+		accept=".jpe,.jpg,.jpeg,.gif,.png,.bmp" 
+		class="form-input input-upload" 
+		id="id" 
+	/&gt;
+	
+	&lt;label class="form-label label-upload" for="idOfInput"&gt;
+		&lt;svg class="icon icon-big" role="presentation"&gt;
+		  	&lt;use class="icon-upload" href="#upload-2"&gt;Upload&lt;/use&gt;
+		&lt;/svg&gt;
+		Screenshot label name
+	&lt;/label&gt;
+&lt;/div&gt;
+
+					</code>
+				</pre>
+			</div>
 		</section>
 
 		<section class="grid-wrapper">
