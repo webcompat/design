@@ -31,7 +31,6 @@
 
 .form-label {
     display: block;
-    white-space: nowrap;
     text-align: left;
     cursor: pointer;
 }
