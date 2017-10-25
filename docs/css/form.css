@@ -50,6 +50,8 @@
     padding: 4px 0;
     border: none;
     border-bottom: 1px solid var(--color-form);
+    position: relative;
+    z-index: 2;
 }
 
 .text-field:focus {
@@ -62,30 +64,40 @@
 /* -----------------------------------------
  * Form input[type="text"] validation
 -------------------------------------------*/
-.form-validation{
+
+.form-input-validation {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    top: -2em;
+    text-align:right;
+    z-index: 0;
 }
 
-.form-text #browser {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('../svg/sprite.svg');
-}
-
-.form-validation::after {
-    border:1px solid #f0f;
-    width: 160px;
-    height: 160px;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
+.check::after {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
     content: "";
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('../svg/sprite.svg#arrow');
+    background-image: url('../svg/icons/checkmark.svg');
+    fill: green;
+    border-color: red;
+    color:;
 }
 
 
+.error::after {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../svg/icons/cross2.svg');
+}
+/*form-input-validation check error*/
 /* -----------------------------------------
  * Form radio
 -------------------------------------------*/
