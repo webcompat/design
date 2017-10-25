@@ -29,7 +29,8 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	background-image: url(../svg/icons/leaf_left.svg), url(../svg/icons/leaf_right.svg);
 	background-repeat: no-repeat;
-	background-position: left, right;
+	background-position: center left, center right;
+	padding: 0 40px;
 }
 
 .headline-2 {
