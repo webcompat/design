@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 2em;
 	line-height: 1.4em;
 	margin-top: 0.3em;
+	text-align: center;
+	background-image: url(../svg/icons/leaf_left.svg), url(../svg/icons/leaf_right.svg);
+	background-repeat: no-repeat;
+	background-position: left, right;
 }
 
 .headline-2 {
