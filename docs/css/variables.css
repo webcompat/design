@@ -19,13 +19,17 @@
 
 	--color-bg-page: 		#FAFAFA;
 	--color-bg-box: 		#FFF;
-	--color-first: 			#ffc900;
+	--color-first: 			#FFC900;
 	--color-second:			#404040;
 	--color-third:			#F0F0F0;
 	--color-fourth:			#C0FFEE;
 	--color-fourth-light: 	#E5FEF6;
 	--color-form:			rgba(0,0,0,.12);
 	--color-default: 		#C4C4C4;
+
+	--color-error:			#BF0101;
+	--color-warning:		#FF9000;
+	--color-success:		#2F9900;
 
 	--label-color-1:		#001;
 	--label-color-2:		#002;
