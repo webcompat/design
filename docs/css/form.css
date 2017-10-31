@@ -64,7 +64,6 @@
 /* -----------------------------------------
  * Form input[type="text"] validation
 -------------------------------------------*/
-
 .form-input-validation {
     width: 100%;
     display: inline-block;
@@ -84,7 +83,6 @@
     background-image: url('../svg/icons/checkmark.svg');
     fill: green;
     border-color: red;
-    color:;
 }
 
 
@@ -97,6 +95,8 @@
     background-size: contain;
     background-image: url('../svg/icons/cross2.svg');
 }
+
+
 /*form-input-validation check error*/
 /* -----------------------------------------
  * Form radio
@@ -173,7 +173,6 @@
     color: var(--color-first);
     transition: all 350ms ease;
 }
-
 
 .form-upload .icon {
     display: block;
