@@ -135,8 +135,7 @@
 }
 
 .input-radio:focus + .label-radio:before {
-    outline: none;
-    border-color: transparent;
+    border-color: var(--color-first);
 }
 
 .input-radio:disabled + .label-radio:before {
