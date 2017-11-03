@@ -20,10 +20,10 @@
 	--color-bg-page: 		#FAFAFA;
 	--color-bg-box: 		#FFF;
 	--color-first: 			#FFC900;
+	--color-first-light:		rgba(255, 200, 3, .55);
 	--color-second:			#404040;
 	--color-third:			#F0F0F0;
 	--color-fourth:			#C0FFEE;
-	--color-fourth-light: 	#E5FEF6;
 	--color-form:			rgba(0,0,0,.12);
 	--color-default: 		#C4C4C4;
 
