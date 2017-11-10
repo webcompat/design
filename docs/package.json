@@ -9,7 +9,12 @@
   "scripts": {
     "build:clean-svg": "svgo -f svg/icons -o svg/tmp",
     "build:svg-sprite": "svg-sprite-generate -d svg/tmp -o svg/sprite.svg",
-    "build:svg": "npm run build:clean-svg && npm run build:svg-sprite && rm -rf svg/tmp"
+    "build:svg": "npm run build:clean-svg && npm run build:svg-sprite && rm -rf svg/tmp",
+    "lint": "npm run lint:CSS",
+    "lint:CSS": "stylelint './css/**/*.css'"
+  },
+  "lint-staged": {
+    "*.css": "lint:CSS"
   },
   "repository": {
     "type": "git",
@@ -22,6 +27,10 @@
   },
   "homepage": "https://github.com/webcompat/design#readme",
   "devDependencies": {
+    "husky": "^0.13.4",
+    "lint-staged": "^3.6.1",
+    "stylelint": "^7.13.0",
+    "stylelint-config-standard": "^16.0.0",
     "svg-sprite-generator": "0.0.7",
     "svgo": "^0.7.2"
   }
