@@ -38,6 +38,11 @@
 	--label-site-contacted:		#BBDDEE;
 	--label-closed:				#DDDDDD;
 
-	--label-color-1:			#001;
-	
+	--label-color-type:			#99DDDD;
+	--label-color-browser:		#0088FF;
+	--label-color-status:		#FFCC00;
+	--label-color-priority:		#11AA99;
+	--label-color-nsfw:			#DD0000;
+	--label-color-device:		chocolate;
+	--label-color-os:			rebeccapurple;
 }

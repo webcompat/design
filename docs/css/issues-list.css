@@ -66,6 +66,13 @@
 		font-size: 0.9em;
 	}
 
+		.issue-labels .label {
+			border-left: 5px solid;
+			padding-left: 5px;
+			padding-right: 10px;
+			margin-bottom: 2px;
+		}
+
 @media screen and (min-width: 998px) {
 		.issue-labels .label {
 			display: block;
