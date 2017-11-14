@@ -39,10 +39,10 @@
 	--label-closed:				#DDDDDD;
 
 	--label-color-type:			#99DDDD;
-	--label-color-browser:		#0088FF;
-	--label-color-status:		#FFCC00;
+	--label-color-browser:		#FFCC00;
+	--label-color-status:		#0088FF;
 	--label-color-priority:		#11AA99;
 	--label-color-nsfw:			#DD0000;
-	--label-color-device:		chocolate;
+	--label-color-device:		rosybrown;
 	--label-color-os:			rebeccapurple;
 }
