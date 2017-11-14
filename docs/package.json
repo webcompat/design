@@ -12,7 +12,8 @@
     "build:svg": "npm run build:clean-svg && npm run build:svg-sprite && rm -rf svg/tmp",
     "lint": "npm run lint:CSS",
     "precommit": "lint-staged",
-    "lint:CSS": "stylelint './css/**/*.css'"
+    "lint:CSS": "stylelint './css/**/*.css'",
+    "lint:fix": "stylelint './css/**/*.css' --fix"
   },
   "lint-staged": {
     "*.css": "lint"
