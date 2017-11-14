@@ -22,6 +22,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: italic;
 }
 
+.underline {
+	text-decoration: underline;
+}
+
 .headline-1 {
 	font-size: 2em;
 	line-height: 1.4em;
