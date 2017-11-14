@@ -74,7 +74,15 @@
 		}
 
 @media screen and (min-width: 998px) {
-		.issue-labels .label {
-			display: block;
-		}
+	.issue-labels .label {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 999px) {
+	.issue .issue-labels {
+		font-size: 0.9em;
+		padding: 0 calc(var(--unit-gap) * 1.2);
+	}
+}
 }
