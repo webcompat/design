@@ -1,77 +1,77 @@
 #hero-section {
-	margin-top: -30px;
-	width: 100vw;
-	position: absolute;
-	left: 50%;
-	margin-left: -50%;
-	padding: calc(var(--unit-gutter)/2) var(--unit-gutter);
+  margin-top: -30px;
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  margin-left: -50%;
+  padding: calc(var(--unit-gutter)/2) var(--unit-gutter);
 }
 
 .hero-claim {
-	font-size: 3.4em;
-	line-height: 1.4em;
-	text-transform: uppercase;
-	margin-bottom: 1em;
+  font-size: 3.4em;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
 }
 
 #hero-text {
-	display: inline-block;
-	width: 50%;
+  display: inline-block;
+  width: 50%;
 }
 
 #hero-text .button-hero {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 #hero-illustration {
-	display: none;
+  display: none;
 }
 
 @media screen and (min-width: 998px) {
 
-	.hero-claim {
-		margin-bottom: 2em;
-	}
+  .hero-claim {
+    margin-bottom: 2em;
+  }
 
 
-	#hero-text .button-hero {
-		margin-bottom: 0;
-	}
+  #hero-text .button-hero {
+    margin-bottom: 0;
+  }
 
-	#hero-section {
-		padding: 6em var(--unit-gap) 5.25em;
-		width: 100%;
-		position: unset;
-		margin: 0 auto;
-	}
+  #hero-section {
+    padding: 6em var(--unit-gap) 5.25em;
+    width: 100%;
+    position: unset;
+    margin: 0 auto;
+  }
 
-	#hero-illustration {
-		position: absolute;
-		display: inline-block;
-		width: 40%;
-	}
+  #hero-illustration {
+    position: absolute;
+    display: inline-block;
+    width: 40%;
+  }
 
-	#hero-illustration-bulb {
-		position: relative;
-		height: 19em;
-		top: -95px;
-		right: -150px;
-	}
+  #hero-illustration-bulb {
+    position: relative;
+    height: 19em;
+    top: -95px;
+    right: -150px;
+  }
 
-	#hero-illustration-bug {
-		position: relative;
-		height: 4em;
-		top: -120px;
-		right: 0;
-	}
+  #hero-illustration-bug {
+    position: relative;
+    height: 4em;
+    top: -120px;
+    right: 0;
+  }
 
 }
 
 .button-icon-hero {
-    fill: var(--color-first);
-    border:1px solid #f0f;
+  fill: var(--color-first);
+  border:1px solid #f0f;
 }
 
 .button-icon-hero:hover {
-    fill: var(--color-first);
+  fill: var(--color-first);
 }

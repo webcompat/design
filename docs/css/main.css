@@ -1,4 +1,5 @@
 @import 'reset.css';
+@import 'a11y-en.css';
 @import 'variables.css';
 @import 'typo.css';
 @import 'grid.css';
@@ -16,21 +17,21 @@
 @import 'footer.css';
 
 body {
-	background-color: var(--color-bg-page);
-	box-sizing: border-box;
-	padding-top: var(--navi-height);
+  background-color: var(--color-bg-page);
+  box-sizing: border-box;
+  padding-top: var(--navi-height);
 }
 
 /* reset lists */
 ul, li {
-	text-decoration: none;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 665px){
-	body {
-		padding: var(--navi-height) 19px 50px;
-	}
+  body {
+    padding: var(--navi-height) 19px 50px;
+  }
 }
