@@ -1,25 +1,25 @@
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	line-height: 1.8em;
-	color: var(--color-second);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.8em;
+  color: var(--color-second);
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
 }
 
 .highlight {
-	text-transform: uppercase;
-	font-weight: 300;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .bold {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 .italic {
-	font-style: italic;
+  font-style: italic;
 }
 
 .underline {
@@ -27,41 +27,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .headline-1 {
-	font-size: 2em;
-	line-height: 1.4em;
-	margin-top: 0.3em;
-	text-align: center;
-	background-image: url(../svg/icons/leaf_left.svg), url(../svg/icons/leaf_right.svg);
-	background-repeat: no-repeat;
-	background-position: center left, center right;
-	padding: 0 40px;
+  font-size: 2em;
+  line-height: 1.4em;
+  margin-top: 0.3em;
+  text-align: center;
+  background-image: url(../svg/icons/leaf_left.svg), url(../svg/icons/leaf_right.svg);
+  background-repeat: no-repeat;
+  background-position: center left, center right;
+  padding: 0 40px;
 }
 
 .headline-2 {
-	font-size: 1.5em;
-	line-height: 1.3em;	
-	margin-bottom: 1.25em;
+  font-size: 1.5em;
+  line-height: 1.3em;	
+  margin-bottom: 1.25em;
 }
 
 .headline-3 {
-	font-size: 1.2em;
-	line-height: 0.8em;	
+  font-size: 1.2em;
+  line-height: 0.8em;	
 }
 
 .hint-text {
-	color: #888;
-	font-style: italic;
-	font-family: Palatino, Garamond, serif;
-	font-size: 1.025em;	
+  color: #888;
+  font-style: italic;
+  font-family: Palatino, Garamond, serif;
+  font-size: 1.025em;	
 }
 
 .code-text {
-	color: #666;
-	font-size: 0.9em;
-	line-height: 1.8em;
-	font-family: monospace;
+  color: #666;
+  font-size: 0.9em;
+  line-height: 1.8em;
+  font-family: monospace;
 }
 
 a {
-	color: var(--color-second);
+  color: var(--color-second);
 }
