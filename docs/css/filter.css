@@ -75,5 +75,6 @@
 		border-top: 5px solid;
 		border-left: 0 none;
 		transition: all ease 0.8s;
+		line-height: 2.2em;
 	}
 }
