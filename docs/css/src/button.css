@@ -42,6 +42,7 @@
   background-color: var(--color-second);
   color: var(--color-first);
   font-weight: 200;
+  width: 250px;
 }
 
 .button-hero:hover {
