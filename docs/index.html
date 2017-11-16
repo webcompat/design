@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>webcompat - Living Style Guide</title>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Source+Sans+Pro:300,400|PT+Mono" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Source+Sans+Pro:300,400" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/styleguide.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta keywords="web compatibility, webcompat, mozilla, firefox, open source">
 		<meta description="Living style guide for webcompat.com, an open source project that takes care of web compatibility.">
@@ -187,7 +188,7 @@
 			<symbol id="windows8" viewBox="0 0 16 16"><title>windows8</title><path d="M.005 8L0 3.124l6-.815V8zM7 2.164L14.998 1v7H7zM15 9l-.002 7L7 14.875V9zm-9 5.747l-5.995-.822V8.999H6z"/>
 			</symbol></svg>
 		</defs>
-	</svg>
+	</svg>		
 	<nav id="Nav" class="nav">
 		<ul class="nav-left x1">
 			<li class="nav-item">
@@ -499,6 +500,8 @@
 			</p>
 		</div>
 
+
+
 		<h3 class="headline-3">icon-big (48x48px)</h3>
 		<div class="icon-description">
 			<p class="icon-description-item">
@@ -540,12 +543,24 @@
 			</p>
 		</div>
 	</section>
+	<section class="grid-wrapper">
+		<div class="element x3">
+			<pre>
+				<code class="code-text">
+&lt;section class="grid-wrapper"&gt;
+	&lt;article class="grid"&gt;
+	&lt;/article&gt;
+&lt;/section&gt;
+				</code>
+			</pre>
+		</div>
+	</section>
 
 	<section class="grid-wrapper">
 		<div class="element x3 hint-text">
 			<h4 class="headline-3">Module: Typographie</h4>
 			<p>
-				The default font is Open Sans, its fallback is sans serif. For headlines we use Source Sans Pro. Code uses monospace.
+				The default font is Open Sans, its fallback is sans serif. For headlines we use Source Sans Pro. Code uses monospace. 
 			</p>
 			<p>
 				The base font-size is 16px. All following font-sizes use em.
@@ -595,7 +610,7 @@
 			</pre>
 		</div>
 	</section>
-
+  
 	<section class="grid-wrapper">
 		<div class="element x3 hint-text">
 			<h4 class="headline-3">Module: Grid - Introduction</h4>
@@ -615,12 +630,12 @@
 		<article id="hero-text">
 			<h1 class="hero-claim highlight">Bug reporting <br /> for the web.</h1>
 			<button type="button" class="button button-hero">
-				Report bug
+				Report bug 
 			<svg class="icon-middle" role="presentation" aria-role="hide">
 				<title>circle-right</title>
 			  	<use class="button-icon-hero" href="#arrow">Report bug</use>
 			</svg>
-			</button>
+			</button> 
 		</article>
 		<aside id="hero-illustration">
 			<svg id="hero-illustration-bulb" role="presentation" aria-role="hide">
@@ -681,10 +696,10 @@
 
 			<div class="element x1-fix" style="background-color: #C0FFEE">&nbsp;</div>
 			<div class="element x2"><code>--color-fourth</code> - Fourth highlight color</div>
-
+			
 			<div class="element x1-fix" style="background-color: #E5FEF6">&nbsp;</div>
 			<div class="element x2"><code>--color-fourth-light</code> - Light version of fourth highlight color</div>
-
+			
 			<div class="element x1-fix" style="background-color: rgba(0,0,0,.12)">&nbsp;</div>
 			<div class="element x2"><code>--color-form</code></div>
 
@@ -714,7 +729,7 @@
 	</section>
 	<section class="grid-wrapper">
 		<article class="grid">
-			👈 This is the box to rule all modules. 👇
+			👈 This is the box to rule all modules. 👇 
 		</article>
 	</section>
 	<section class="grid-wrapper">
@@ -789,14 +804,14 @@
 				<article class="element x2">
 					<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
 					<p>
-						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw.
+						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw. 
 					</p>
 				</article>
 
 				<aside class="element x1">
 					<h2 class="headline-2">Cookies</h2>
 					<p>
-						Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o.
+						Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o. 
 					</p>
 				</aside>
 			</div>
@@ -806,13 +821,13 @@
 				<article class="element x1">
 					<h2 class="headline-2">Cookies</h2>
 					<p>
-						Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o.
+						Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o. 
 					</p>
 				</article>
 				<aside class="element x2">
 					<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
 					<p>
-						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw.
+						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw. 
 					</p>
 				</aside>
 			</div>
@@ -893,7 +908,7 @@
 				<h4 class="headline-3">Module: Grid - [2 : [1,1]] / [[1,1] : 2]</h4>
 				<p>
 					We can also wrap elements together, so they will flow with the col, but not with the row what their usual behaviour is. <br />
-					The <code>element-wrapper</code> class can help us here.
+					The <code>element-wrapper</code> class can help us here. 
 				</p>
 			</div>
 		</section>
@@ -902,7 +917,7 @@
 				<article class="element x2">
 					<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
 					<p>
-						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw.
+						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw. 
 					</p>
 					<p>
 						Pastry bear claw sugar plum toffee caramels cheesecake candy fruitcake. Cheesecake bear claw oat cake. Pastry jujubes marshmallow. Cake tart halvah jelly beans. Chocolate oat cake jelly-o biscuit liquorice biscuit cookie topping. Sweet roll caramels jelly-o caramels muffin.
@@ -913,7 +928,7 @@
 					<div class="element x1">
 						<h2 class="headline-2">Cookies</h2>
 						<p>
-							Carrot cake fruitcake soufflé jelly beans jelly beans powder.
+							Carrot cake fruitcake soufflé jelly beans jelly beans powder. 
 						</p>
 					</div>
 
@@ -934,7 +949,7 @@
 					<div class="element x1">
 						<h2 class="headline-2">Cookies</h2>
 						<p>
-							Carrot cake fruitcake soufflé jelly beans jelly beans powder.
+							Carrot cake fruitcake soufflé jelly beans jelly beans powder. 
 						</p>
 					</div>
 
@@ -950,7 +965,7 @@
 				<article class="element x2">
 					<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
 					<p>
-						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw.
+						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw. 
 					</p>
 					<p>
 						Pastry bear claw sugar plum toffee caramels cheesecake candy fruitcake. Cheesecake bear claw oat cake. Pastry jujubes marshmallow. Cake tart halvah jelly beans. Chocolate oat cake jelly-o biscuit liquorice biscuit cookie topping. Sweet roll caramels jelly-o caramels muffin.
@@ -1004,7 +1019,7 @@
 				</pre>
 			</div>
 		</section>
-
+		
 		<section class="grid-wrapper">
 				<div class="element x3 hint-text">
 					<h4 class="headline-3">Module: Hero Tiles</h4>
@@ -1015,7 +1030,7 @@
 						The <code>hero-tile</code> id indicated the hero tile module.
 					</p>
 					<p>
-						After that we need to add the <code>tiles</code> class which gives us a grid-system for full-width elements. <code>tiles-x3</code> continues the width pattern as see in our global grid system, but as a special use case as it does not provide any paddings / margins.
+						After that we need to add the <code>tiles</code> class which gives us a grid-system for full-width elements. <code>tiles-x3</code> continues the width pattern as see in our global grid system, but as a special use case as it does not provide any paddings / margins. 
 					</p>
 					<p>
 						A <code>tile-item</code> class indicates a tile item. The colors are alternating. Also in responsive mode. The items have a min-width, but will expand the height of the row in relation to the content.
@@ -1042,7 +1057,7 @@
 				</li>
 				<li class="tile-item">
 					<p>
-						There are so many  <br /> other ways to contribute. <br />
+						There are so many  <br /> other ways to contribute. <br /> 
 						Please <a href="index.html" title="Let us know about your idea.">let us know</a>,  <br /> if you have ideas!
 					</p>
 				</li>
@@ -1140,55 +1155,55 @@
 						<hr class="separator" />
 
 /* INPUT */
-&lt;input
-	type="text"
-	class="form-field text-field"
-	placeholder="placeholder text"
-	title="description"
-	id="id"
+&lt;input 
+	type="text"  
+	class="form-field text-field" 
+	placeholder="placeholder text" 
+	title="description" 
+	id="id" 
 /&gt;
 
 /* INPUT with validation - success */
 &lt;input type="text" ... /&gt;&lt;span class="form-input-validation check"&gt;&lt;/span&gt;
 
 /* INPUT with validation - error */
-&lt;input type="text" ... /&gt;&lt;span class="form-input-validation error"&gt;&lt;/span&gt;
+&lt;input type="text" ... /&gt;&lt;span class="form-input-validation error"&gt;&lt;/span&gt;						
 						<hr class="separator" />
 
 /* TEXTAREA */
-&lt;textarea
-	type="text"
-	class="form-field text-field"
-	placeholder="placeholder text"
-	title="description"
-	id="id"
+&lt;textarea 
+	type="text"  
+	class="form-field text-field" 
+	placeholder="placeholder text" 
+	title="description" 
+	id="id" 
 /&gt;
 
 						<hr class="separator" />
 /* RADIO INPUT ELEMENT */
 &lt;div class="form-radio form-element"&gt;
 	&lt;h4 class="headline-3"&gt;Headline&lt;/h4&gt;
-	&lt;input
-		type="radio"
-		class="input-radio"
-		name="issueType"
-		id="id"
-		value=""
+	&lt;input 
+		type="radio" 
+		class="input-radio" 
+		name="issueType" 
+		id="id" 
+		value="" 
 	/&gt;
 
 	&lt;label class="form-label label-radio" for="id"&gt;Label Name&lt;/label&gt;
 &lt;/div&gt;
-						<hr class="separator" />
+						<hr class="separator" />	
 
 /* UPLOAD */
 &lt;div class="form-upload form-element"&gt;
-	&lt;input
-		type="file"
-		accept=".jpe,.jpg,.jpeg,.gif,.png,.bmp"
-		class="form-input input-upload"
-		id="id"
+	&lt;input 
+		type="file" 
+		accept=".jpe,.jpg,.jpeg,.gif,.png,.bmp" 
+		class="form-input input-upload" 
+		id="id" 
 	/&gt;
-
+	
 	&lt;label class="form-label label-upload" for="idOfInput"&gt;
 		&lt;svg class="icon icon-big" role="presentation"&gt;
 		  	&lt;use class="icon-upload" href="#upload-2"&gt;Upload&lt;/use&gt;
@@ -1286,7 +1301,7 @@
 			<div class="element x3 hint-text">
 				<h4 class="headline-3">Module: Bio</h4>
 				<p>
-					This module is a 1:1:1 module, with a fixed first element to display a picture. The second element is for description or bio of a person, including name, where this person is from etc. The last of the elements is for contact information.
+					This module is a 1:1:1 module, with a fixed first element to display a picture. The second element is for description or bio of a person, including name, where this person is from etc. The last of the elements is for contact information. 
 				</p>
 			</div>
 		</section>
@@ -1294,7 +1309,7 @@
 			<article class="grid bio">
 				<img src="https://avatars0.githubusercontent.com/u/6587558" alt="Adam Stevenson" class="bio-img bg-color-1 element x1-fix" />
 				<div class="element-wrapper element">
-					<div class="element x1">
+					<div class="element x1"> 
 						<h2 class="headline-2">Adam Stevenson </h2>
 						<h3 class="headline-3">Canada</h3>
 						<p>
@@ -1302,7 +1317,7 @@
 							travel and sometimes photos.
 						</p>
 					</div>
-					<p class="element x1">
+					<p class="element x1"> 
 						<a href="http://twitter.com/adamopenweb" title="adamopenweb on twitter">@adamopenweb </a> <br />
 						<a href="http://github.com/adamopenweb" title="adamopenweb on github">@adamopenweb </a>
 					</p>
@@ -1316,13 +1331,13 @@
 &lt;article class="grid bio"&gt;
 	&lt;img src="" alt="" class="bio-img element x1-fix" /&gt;
 	&lt;div class="element-wrapper element"&gt;
-		&lt;div class="element x1"&gt;
+		&lt;div class="element x1"&gt; 
 			&lt;h2 class="headline-2"&gt;Name&lt;/h2&gt;
 			&lt;h3 class="headline-3"&gt;Country&lt;/h3&gt;
 			&lt;p&gt;Bio / description&lt;/p&gt;
 		&lt;/div&gt;
-		&lt;p class="element x1"&gt;
-			&lt;a href="" title=""&gt;@handlename &lt;/a&gt;
+		&lt;p class="element x1"&gt; 
+			&lt;a href="" title=""&gt;@handlename &lt;/a&gt; 
 		&lt;/p&gt;
 	&lt;/div&gt;
 &lt;/article&gt;
@@ -1335,7 +1350,7 @@
 			<div class="element x3 hint-text">
 				<h4 class="headline-3">Module: Footer</h4>
 				<p>
-					 This module is the footer navigation. It comes with a sub navigation, if necessary.
+					 This module is the footer navigation. It comes with a sub navigation, if necessary. 
 				</p>
 				<p>
 					The main footer navigation is initiated with the <code>footer-list</code> class. Every item is a <code>footer-item</code> and their link as <code>footer-item-link</code>.
@@ -1409,7 +1424,7 @@
 &lt;ul class="element x1 footer-sub-list"&gt;
 	&lt;li class="footer-sub-item"&gt;
 		&lt;a class="footer-item-link" href="" title=""&gt;Link&lt;/a&gt;
-	&lt;/li&gt;
+	&lt;/li&gt;	
 	&lt;li class="footer-sub-item active"&gt;
 		&lt;a class="footer-item-link" href="" title=""&gt;Active link&lt;/a&gt;
 	&lt;/li&gt;
