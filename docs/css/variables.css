@@ -1,36 +1,47 @@
-:root {
-  --unit-modul-s: 		270px;
-  --unit-modul-m: 		585px;
-  --unit-modul-l: 		960px;
-  --unit-gap: 			45px;
-  --unit-space: 			10px;
-  --unit-gutter:			15px;
-  --unit-gutter-m:		25px;
-  --unit-gutter-l:		19px;
-  --navi-height: 			63px;
-  --input-size: 			20px;
-  --page-size-l: 			998px;
-  --page-size-m: 			665px;
-  --page-size-s: 			320px;
-  --color-bg-page: 		#fafafa;
-  --color-bg-box: 		#fff;
-  --color-first: 			#ffc900;
-  --color-first-light:		rgba(255, 200, 3, .55);
-  --color-second:			#404040;
-  --color-third:			#f0f0f0;
-  --color-fourth:			#c0ffee;
-  --color-form:			rgba(0,0,0,.12);
-  --color-default: 		#c4c4c4;
-  --color-error:			#bf0101;
-  --color-warning:		#ff9000;
-  --color-success:		#2f9900;
-  --label-color-1:		#001;
-  --label-color-2:		#002;
-  --label-color-3:		#003;
-  --label-color-4:		#004;
-  --label-color-5:		#005;
-  --label-color-6:		#006;
-  --label-color-7:		#007;
-  --label-color-8:		#008;
-  --label-color-9:		#009;
+	--unit-modul-s: 			270px;
+	--unit-modul-m: 			585px;
+	--unit-modul-l: 			960px;
+
+	--unit-gap: 				45px;
+	--unit-space: 				10px;
+
+	--unit-gutter:				15px;
+	--unit-gutter-m:			25px;
+	--unit-gutter-l:			19px;
+
+	--navi-height: 				63px;
+	--input-size: 				20px;
+
+	--page-size-l: 				998px;
+	--page-size-m: 				665px;
+	--page-size-s: 				320px;
+
+	--color-bg-page: 			#FAFAFA;
+	--color-bg-box: 			#FFF;
+	--color-first: 				#FFC900;
+	--color-first-light:		rgba(255, 200, 3, .55);
+	--color-second:				#404040;
+	--color-third:				#F0F0F0;
+	--color-fourth:				#C0FFEE;
+	--color-form:				rgba(0,0,0,.12);
+	--color-default: 			#C4C4C4;
+
+	--color-error:				#BF0101;
+	--color-warning:			#FF9000;
+	--color-success:			#2F9900;
+
+	--label-needs-triage:		#FF9900;
+	--label-needs-diagnosis:	#EECC77;
+	--label-needs-contact:		#BBEECC;
+	--label-outreach:			#77BBEE;
+	--label-site-contacted:		#BBDDEE;
+	--label-closed:				var(--color-default);
+
+	--label-color-type:			#99DDDD;
+	--label-color-browser:		#FFCC00;
+	--label-color-status:		#0088FF;
+	--label-color-priority:		#11AA99;
+	--label-color-nsfw:			#DD0000;
+	--label-color-device:		rosybrown;
+	--label-color-os:			rebeccapurple;
 }
