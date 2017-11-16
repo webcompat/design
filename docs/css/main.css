@@ -12,6 +12,7 @@
 @import 'tiles.css';
 @import 'form.css';
 @import 'footer.css';
+@import 'notification-bar.css';
 
 body {
   background-color: var(--color-bg-page);

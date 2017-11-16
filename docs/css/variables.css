@@ -15,6 +15,7 @@
   --color-bg-page: 		#fafafa;
   --color-bg-box: 		#fff;
   --color-first: 			#ffc900;
+  --color-first-transparent: rgba(255,201,1,0.8);
   --color-first-light:		rgba(255, 200, 3, .55);
   --color-second:			#404040;
   --color-third:			#f0f0f0;
@@ -22,6 +23,7 @@
   --color-form:			rgba(0,0,0,.12);
   --color-default: 		#c4c4c4;
   --color-error:			#bf0101;
+  --color-error-transparent: rgba(191,1,1,0.8);
   --color-warning:		#ff9000;
   --color-success:		#2f9900;
   --label-color-1:		#001;
