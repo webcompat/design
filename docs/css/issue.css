@@ -6,6 +6,7 @@
 
 	.issue-comment {
 		padding-top: var(--unit-space);
+		margin-top: var(--unit-gutter-l);
 	}
 
 		.issue-comment .comment-header {

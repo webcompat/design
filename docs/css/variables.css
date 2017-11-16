@@ -1,12 +1,12 @@
 :root {
   --unit-modul-s: 		270px;
   --unit-modul-m: 		585px;
-  --unit-modul-l: 		960px;
+  --unit-modul-l: 		900px;
   --unit-gap: 			45px;
   --unit-space: 			10px;
   --unit-gutter:			15px;
   --unit-gutter-m:		25px;
-  --unit-gutter-l:		25px;
+  --unit-gutter-l:		45px;
   --navi-height: 			63px;
   --input-size: 			20px;
   --page-size-l: 			998px;
