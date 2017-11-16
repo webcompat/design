@@ -13,6 +13,9 @@
 @import 'form.css';
 @import 'footer.css';
 
+/* imports for vendor files */
+@import 'lib/prism-gh-theme.css'
+
 body {
   background-color: var(--color-bg-page);
   box-sizing: border-box;
