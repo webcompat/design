@@ -5,7 +5,12 @@
   font-size: .875em;
 }
 
-#sub-nav #nested-sub-nav {
+.sub-nav-header {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nested-sub-nav {
   padding-left: calc(var(--unit-space) * 2);
 }
 
@@ -17,10 +22,10 @@
   color: var(--color-second);
 }
 
-#sub-nav .sub-nav-active {
+.sub-nav-active {
   border-image-outset: 4;
 }
 
-#nested-sub-nav .sub-nav-active {
+.nested-sub-nav .sub-nav-active {
   border-image-outset: 8;
 }
