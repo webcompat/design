@@ -5,7 +5,7 @@
 		<title>webcompat - Living Style Guide</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Source+Sans+Pro:300,400|PT+Mono" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css" />
-		<link rel="stylesheet" href="css/styleguide.css" />
+		<link rel="stylesheet" href="css/src/styleguide.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta keywords="web compatibility, webcompat, mozilla, firefox, open source">
 		<meta description="Living style guide for webcompat.com, an open source project that takes care of web compatibility.">
@@ -655,7 +655,7 @@
 				Report bug 
 			<svg class="icon-middle" role="presentation" aria-role="hide">
 				<title>circle-right</title>
-			  	<use class="button-icon-hero" href="#arrow">Report bug</use>
+			  	<use class="button-icon-hero" href="#circle-right">Report bug</use>
 			</svg>
 			</button> 
 		</article>
@@ -1375,12 +1375,24 @@
 			<div class="grid-cell x3 hint-text">
 				<h4 class="headline-3">Module: Issues List</h4>
 				<p>
-					This module is a 2:1 module, with a border to display the status of the issue. The second grid-cell contains the labels to categorise the issue.
+					This module is a 2:1 module, with a border to display the status of the issue. The second grid-cell contains the labels.
+				</p>
+				<p>
+					The labels have different classes (also colors) to categorise the different issues: 
+					<ul>
+							<li>label-type </li>
+							<li>label-browser </li>
+							<li>label-nsfw</li>
+							<li>label-status</li>
+							<li>label-priority</li>
+							<li>label-device</li>
+							<li>label-os</li>
+					</ul>
 				</p>
 			</div>
 		</div>
 	</section>
-
+	
 	<section id="issues-list" class="grid">
 		<div class="grid-row issue label-needs-triage">
 			<article class="grid-cell x2 issue-description">
@@ -1493,6 +1505,35 @@
 					<span class="label label-os">os-android </span>
 				</p>
 			</aside>
+		</div>
+	</section>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
+				<pre>
+					<code>
+&lt;section id="issues-list" class="grid"&gt;
+	&lt;div class="grid-row issue label-closed"&gt;
+		&lt;article class="grid-cell x2 issue-description"&gt;
+			&lt;p class="issue-number"&gt; Issue 71234: &lt;/p&gt;
+			&lt;p class="issue-url"&gt; https://unicornjs.com &lt;/p&gt;
+			&lt;p class="issue-type"&gt; Audio / media does not play &lt;/p&gt;
+			&lt;p class="issue-date-open"&gt; Opened: 2017-11-12 &lt;/p&gt;
+			&lt;p class="issue-date-closed"&gt; Closed: 2017-11-14 &lt;/p&gt;
+			&lt;p class="issue-date-comments"&gt; Comments: 12 &lt;/p&gt;
+		&lt;/article&gt;
+		&lt;aside class="grid-cell x1 issue-labels" &gt;
+			&lt;p&gt;
+				&lt;span class="label label-browser"&gt; browser-firefox &lt;/span&gt;
+				&lt;span class="label label-device"&gt; device-mobile &lt;/span&gt;
+				&lt;span class="label label-os"&gt; od-android &lt;/span&gt;
+			&lt;/p&gt;
+		&lt;/aside&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+						</code>
+				</pre>
+			</div>
 		</div>
 	</section>
 
