@@ -242,6 +242,344 @@
 		</div>
 	</nav>
 
+	<!-- Grid Explanations -->
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
+				<h4 class="headline-3">Module: Grid - Introduction</h4>
+				<p>
+					The grid is the basic module to provide boxes for all of your modules. It is a global module, which means it is not scoped and can (also should) be used everywhere on the site.
+				</p>
+				<p>
+					The <code>grid</code> class provides a margin around the box and a hidden overflow.
+				</p>
+
+				<p>
+					The <code>grid-row</code> class actually holdes the module and provides a flexbox-box as well as a grid-system for the modules. It also provides the white box and justifies the content with a space between.
+				</p>
+				<p>
+					The <code>grid</code> class can be used without the code <code>grid-row</code>, but you can't use the <code>grid-row</code> without the <code>grid</code> wrapper.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
+				<pre><code>
+&lt;section class="grid"&gt;
+	"grid" will work without "grid-row"
+&lt;/section&gt;
+				</code>
+				</pre>
+			</div>
+		</div>
+	</section>
+	<section class="grid">
+			<div class="grid-row">
+				<div class="grid-cell x3">
+					<pre><code>
+&lt;section class="grid"&gt;
+	&lt;div class="grid-row"&gt;
+		But the grid-row won't work without "grid"
+	&lt;/p&gt;
+&lt;/section&gt;
+					</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+	<section class="grid">
+		<article class="grid-row">
+			<div class="grid-cell x3">
+				👈 This is the box to rule all modules. 👇
+			</div>
+		</article>
+	</section>
+	<section class="grid">
+			<div class="grid-row">
+				<div class="grid-cell x3 hint-text">
+					<h4 class="headline-3">Module: Grid - full width</h4>
+					<p>
+						The <code>grid-cell</code> class indicates a box within the grid. The grid-system can be divided in 3 grid-cells (width of one grid-cell = x) that can also be combined.
+					</p>
+					<p>A <code>grid-cell</code> can't be used without the <code>grid-row</code> element. All <code>grid-cell</code> elements must be wrapped with the <code>grid-row</code> element
+					</p>
+					<p>
+						The <code>x3</code> class indicates an grid-cell, which combines the width of all 3 grid-cells (width of one grid-cell = x). The <code>x3</code> is the short form of <code>x*3</code>.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="grid">
+			<article class="grid-row">
+				<div class="grid-cell x3">
+					<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
+					<p>
+						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw. Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o. Cheesecake cake chocolate chocolate gummi bears lemon drops.
+					</p>
+				</div>
+			</article>
+		</section>
+		<section class="grid">
+			<div class="grid-row">
+				<div class="grid-cell x3">
+					<pre>
+						<code class="code-text">
+	&lt;article class="grid-row"&gt;
+		&lt;div class="grid-cell x3"&gt;
+			&lt;h2&gt;Title&lt;/h2&gt;
+			&lt;p&gt;Text&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/article&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+	
+		<section class="grid">
+			<div class="grid-row">
+				<div class="grid-cell x3 hint-text">
+					<h4 class="headline-3">Module: Grid - 2:1 / 1:2</h4>
+					<p>
+						The <code>x2</code> class indicates an grid-cell, which combines the width of 2 grid-cells (width of one grid-cell = x). The <code>x2</code> is the short form of <code>x*2</code>. <br />
+	
+						The <code>x1</code> class indicates an grid-cell, with the width of 1 grid-cell.
+					</p>
+					<p>
+						Both grid-cells can be placed in their natural order and will take their given space.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="grid">
+			<div class="grid-row">
+				<article class="grid-cell x2">
+					<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
+					<p>
+						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw.
+					</p>
+				</article>
+	
+				<aside class="grid-cell x1">
+					<h2 class="headline-2">Cookies</h2>
+					<p>
+						Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o.
+					</p>
+				</aside>
+			</div>
+		</section>
+		<section class="grid">
+			<div class="grid-row">
+				<article class="grid-cell x1">
+					<h2 class="headline-2">Cookies</h2>
+					<p>
+						Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o.
+					</p>
+				</article>
+				<aside class="grid-cell x2">
+					<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
+					<p>
+						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw.
+					</p>
+				</aside>
+			</div>
+		</section>
+		<section class="grid">
+			<div class="grid-row">
+				<div class="grid-cell x3">
+					<pre>
+						<code class="code-text">
+	/* [2:1] */
+	&lt;div class="grid-row"&gt;
+		&lt;article class="grid-cell x2"&gt;
+			&lt;h2&gt;Main part&lt;/h2&gt;
+			&lt;p&gt;Text&lt;/p&gt;
+		&lt;/article&gt;
+		&lt;aside class="grid-cell x1"&gt;
+			&lt;h2&gt;Aside&lt;/h2&gt;
+			&lt;p&gt;Text&lt;/p&gt;
+		&lt;/aside&gt;
+	&lt;/div&gt;
+							<hr class="separator" />
+	
+	/* [1:2] */
+	&lt;div class="grid-row"&gt;
+		&lt;aside class="grid-cell x1"&gt;
+			&lt;h2 class="headline-2"&gt;Aside&lt;/h2&gt;
+			&lt;p&gt;Text&lt;/p&gt;
+		&lt;/aside&gt;
+		&lt;article class="grid-cell x2"&gt;
+			&lt;h2 class="headline-1"&gt;Main part&lt;/h2&gt;
+			&lt;p&gt;Text&lt;/p&gt;
+		&lt;/article&gt;
+	&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+	
+		<section class="grid">
+			<div class="grid-row">
+				<div class="grid-cell x3 hint-text">
+					<h4 class="headline-3">Module: 1:1:1</h4>
+					<p>
+						The <code>x1</code> class indicates an grid-cell, with the width of 1 grid-cell. You can also use the <code>x1-fix</code> class, if you need an grid-cell that does not change the width of one grid grid-cell, but is fixed.
+					</p>
+					<p>
+						All grid-cells can be placed in their natural order and will take their given space. You can also wrap the grid-cells together as seen in the next module.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="grid">
+			<article class="grid-row">
+				<div class="grid-cell x1-fix"> 1 - I am fixed.</div>
+				<div class="grid-cell x1"> 2 - I will vary my width.</div>
+				<div class="grid-cell x1"> 3 - I will vary my width.</div>
+			</article>
+		</section>
+		<section class="grid">
+			<div class="grid-row">
+				<div class="grid-cell x3">
+					<pre>
+						<code class="code-text">
+	&lt;article class="grid-row"&gt;
+		&lt;div class="grid-cell x1-fix"&gt; 1 - I am fixed.&lt;/div&gt;
+		&lt;div class="grid-cell x1"&gt; 2 - I will vary my width.&lt;/div&gt;
+		&lt;div class="grid-cell x1"&gt; 3 - I will vary my width.&lt;/div&gt;
+	&lt;/article&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+	
+	
+		<section class="grid">
+			<div class="grid-row">
+				<div class="grid-cell x3 hint-text">
+					<h4 class="headline-3">Module: Grid - [2 : [1,1]] / [[1,1] : 2]</h4>
+					<p>
+						We can also wrap grid-cells together, so they will flow with the col, but not with the row what their usual behaviour is. <br />
+						The <code>grid-nested</code> class can help us here. The <code>grid-nested</code> is defined for a size of <code>--page-size-m</code>. 
+					</p>
+				</div>
+			</div>
+		</section>
+			<section class="grid">
+				<div class="grid-row">
+					<article class="grid-cell x2">
+						<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
+						<p>
+							Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw.
+						</p>
+						<p>
+							Pastry bear claw sugar plum toffee caramels cheesecake candy fruitcake. Cheesecake bear claw oat cake. Pastry jujubes marshmallow. Cake tart halvah jelly beans. Chocolate oat cake jelly-o biscuit liquorice biscuit cookie topping. Sweet roll caramels jelly-o caramels muffin.
+						</p>
+					</article>
+	
+					<aside class="grid-nested x1">
+						<div class="grid-cell x1">
+							<h2 class="headline-2">Cookies</h2>
+							<p>
+								Carrot cake fruitcake soufflé jelly beans jelly beans powder.
+							</p>
+						</div>
+	
+						<div class="grid-cell x1">
+	
+							<h2 class="headline-2">Jelly Beans</h2>
+							<p>
+								Halvah cookie croissant jelly beans gummi bears soufflé cake tart.
+							</p>
+						</div>
+					</aside>
+				</div>
+			</section>
+	
+		<section class="grid">
+				<div class="grid-row">
+					<aside class="grid-nested x1">
+						<div class="grid-cell x1">
+							<h2 class="headline-2">Cookies</h2>
+							<p>
+								Carrot cake fruitcake soufflé jelly beans jelly beans powder.
+							</p>
+						</div>
+	
+						<div class="grid-cell">
+	
+							<h2 class="headline-2">Jelly Beans</h2>
+							<p>
+								Halvah cookie croissant jelly beans gummi bears soufflé cake tart.
+							</p>
+						</div>
+					</aside>
+	
+					<article class="grid-cell x2">
+						<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
+						<p>
+							Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw.
+						</p>
+						<p>
+							Pastry bear claw sugar plum toffee caramels cheesecake candy fruitcake. Cheesecake bear claw oat cake. Pastry jujubes marshmallow. Cake tart halvah jelly beans. Chocolate oat cake jelly-o biscuit liquorice biscuit cookie topping. Sweet roll caramels jelly-o caramels muffin.
+						</p>
+					</article>
+				</div>
+			</section>
+		<section class="grid">
+			<div class="grid-row">
+				<div class="grid-cell x3">
+					<pre>
+						<code class="code-text">
+	/* [2 : [1,1]] */
+	&lt;div class="grid-row"&gt;
+		&lt;article class="grid-cell x2"&gt;
+			&lt;h2&gt;Main&lt;/h2&gt;
+			&lt;p&gt;Text&lt;/p&gt;
+		&lt;/article&gt;
+	
+		&lt;aside class="grid-nested x1"&gt;	<-- width of grid-nested
+			&lt;div class="grid-cell x1"&gt;                <-- width of grid-cell inside wrapper
+				&lt;h2&gt;Aside - wrapped grid-cell 1&lt;/h2&gt;
+				&lt;p&gt;Text&lt;/p&gt;
+			&lt;/div&gt;
+	
+			&lt;div class="grid-cell x1"&gt;
+				&lt;h2&gt;Aside - wrapped grid-cell 2&lt;/h2&gt;
+				&lt;p&gt;Text&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/aside&gt;
+	&lt;/div&gt;
+						<hr class="separator" />
+	
+	/* [[1,1] : 2] */
+	&lt;div class="grid-row"&gt;
+		&lt;aside class="grid-nested x1"&gt;	<-- width of grid-nested
+			&lt;div class="grid-cell x1"&gt;                <-- width of grid-cell inside wrapper
+				&lt;h2&gt;Aside - wrapped grid-cell 1&lt;/h2&gt;
+				&lt;p&gt;Text&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class="grid-cell x1"&gt;
+				&lt;h2&gt;Aside - wrapped grid-cell 2&lt;/h2&gt;
+				&lt;p&gt;Text&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/aside&gt;
+		&lt;article class="grid-cell x2"&gt;
+			&lt;h2&gt;Main&lt;/h2&gt;
+			&lt;p&gt;Text&lt;/p&gt;
+		&lt;/article&gt;
+	&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</section>
+
+	<!-- Module Icons -->
 	<section class="grid">
 		<div class="grid-row">
 			<div class="grid-cell x3 hint-text">
@@ -570,6 +908,7 @@
 		</div>
 	</section>
 
+	<!-- Module: Typographie -->
 	<section class="grid">
 		<div class="grid-row">
 			<div class="grid-cell x3 hint-text">
@@ -686,6 +1025,7 @@
 		</div>
 	</section>
 
+	<!-- Module: Colors -->
 	<section class="grid">
 		<div class="grid-row">
 			<div class="grid-cell x3 hint-text">
@@ -738,28 +1078,7 @@
 		</article>
 	</section>
 
-	<section class="grid">
-			<div class="grid-row">
-				<div class="grid-cell x3 hint-text">
-					<h4 class="headline-3">Module: Grid - Introduction</h4>
-					<p>
-						The grid is the basic module to provide boxes for all of your modules. It is a global module, which means it is not scoped and can (also should) be used everywhere on the site.
-					</p>
-					<p>
-						The <code>grid</code> class provides a margin around the box and a hidden overflow.
-					</p>
 
-					<p>
-						The <code>grid-row</code> class actually holdes the module and provides a flexbox-box as well as a grid-system for the modules. It also provides the white box and justifies the content with a space between.
-					</p>
-				</div>
-			</div>
-		</section>
-	<section class="grid">
-		<article class="grid-row">
-			👈 This is the box to rule all modules. 👇
-		</article>
-	</section>
 	<section class="grid">
 		<div class="grid-row">
 			<div class="grid-cell x3">
@@ -775,288 +1094,7 @@
 		</div>
 	</section>
 
-	<section class="grid">
-		<div class="grid-row">
-			<div class="grid-cell x3 hint-text">
-				<h4 class="headline-3">Module: Grid - full width</h4>
-				<p>
-					The <code>grid-cell</code> class indicates an grid-cell within the grid-box. The grid-system can be divided in 3 grid-cells (width of one grid-cell = x) that can also be combined.
-				</p>
-
-				<p>
-					The <code>x3</code> class indicates an grid-cell, which combines the width of all 3 grid-cells (width of one grid-cell = x). The <code>x3</code> is the short form of <code>x*3</code>.
-				</p>
-			</div>
-		</div>
-	</section>
-	<section class="grid">
-		<article class="grid-row">
-			<div class="grid-cell x3">
-				<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
-				<p>
-					Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw. Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o. Cheesecake cake chocolate chocolate gummi bears lemon drops.
-				</p>
-			</div>
-		</article>
-	</section>
-	<section class="grid">
-		<div class="grid-row">
-			<div class="grid-cell x3">
-				<pre>
-					<code class="code-text">
-&lt;article class="grid-row"&gt;
-	&lt;div class="grid-cell x3"&gt;
-		&lt;h2&gt;Title&lt;/h2&gt;
-		&lt;p&gt;Text&lt;/p&gt;
-	&lt;/div&gt;
-&lt;/article&gt;
-					</code>
-				</pre>
-			</div>
-		</div>
-	</section>
-
-	<section class="grid">
-		<div class="grid-row">
-			<div class="grid-cell x3 hint-text">
-				<h4 class="headline-3">Module: Grid - 2:1 / 1:2</h4>
-				<p>
-					The <code>x2</code> class indicates an grid-cell, which combines the width of 2 grid-cells (width of one grid-cell = x). The <code>x2</code> is the short form of <code>x*2</code>. <br />
-
-					The <code>x1</code> class indicates an grid-cell, with the width of 1 grid-cell.
-				</p>
-				<p>
-					Both grid-cells can be placed in their natural order and will take their given space.
-				</p>
-			</div>
-		</div>
-	</section>
-	<section class="grid">
-		<div class="grid-row">
-			<article class="grid-cell x2">
-				<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
-				<p>
-					Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw.
-				</p>
-			</article>
-
-			<aside class="grid-cell x1">
-				<h2 class="headline-2">Cookies</h2>
-				<p>
-					Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o.
-				</p>
-			</aside>
-		</div>
-	</section>
-	<section class="grid">
-		<div class="grid-row">
-			<article class="grid-cell x1">
-				<h2 class="headline-2">Cookies</h2>
-				<p>
-					Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o.
-				</p>
-			</article>
-			<aside class="grid-cell x2">
-				<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
-				<p>
-					Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw.
-				</p>
-			</aside>
-		</div>
-	</section>
-	<section class="grid">
-		<div class="grid-row">
-			<div class="grid-cell x3">
-				<pre>
-					<code class="code-text">
-/* [2:1] */
-&lt;div class="grid-row"&gt;
-	&lt;article class="grid-cell x2"&gt;
-		&lt;h2&gt;Main part&lt;/h2&gt;
-		&lt;p&gt;Text&lt;/p&gt;
-	&lt;/article&gt;
-	&lt;aside class="grid-cell x1"&gt;
-		&lt;h2&gt;Aside&lt;/h2&gt;
-		&lt;p&gt;Text&lt;/p&gt;
-	&lt;/aside&gt;
-&lt;/div&gt;
-						<hr class="separator" />
-
-/* [1:2] */
-&lt;div class="grid-row"&gt;
-	&lt;aside class="grid-cell x1"&gt;
-		&lt;h2 class="headline-2"&gt;Aside&lt;/h2&gt;
-		&lt;p&gt;Text&lt;/p&gt;
-	&lt;/aside&gt;
-	&lt;article class="grid-cell x2"&gt;
-		&lt;h2 class="headline-1"&gt;Main part&lt;/h2&gt;
-		&lt;p&gt;Text&lt;/p&gt;
-	&lt;/article&gt;
-&lt;/div&gt;
-					</code>
-				</pre>
-			</div>
-		</div>
-	</section>
-
-	<section class="grid">
-		<div class="grid-row">
-			<div class="grid-cell x3 hint-text">
-				<h4 class="headline-3">Module: 1:1:1</h4>
-				<p>
-					The <code>x1</code> class indicates an grid-cell, with the width of 1 grid-cell. You can also use the <code>x1-fix</code> class, if you need an grid-cell that does not change the width of one grid grid-cell, but is fixed.
-				</p>
-				<p>
-					All grid-cells can be placed in their natural order and will take their given space. You can also wrap the grid-cells together as seen in the next module.
-				</p>
-			</div>
-		</div>
-	</section>
-	<section class="grid">
-		<article class="grid-row">
-			<div class="grid-cell x1-fix"> 1 - I am fixed.</div>
-			<div class="grid-cell x1"> 2 - I will vary my width.</div>
-			<div class="grid-cell x1"> 3 - I will vary my width.</div>
-		</article>
-	</section>
-	<section class="grid">
-		<div class="grid-row">
-			<div class="grid-cell x3">
-				<pre>
-					<code class="code-text">
-&lt;article class="grid-row"&gt;
-	&lt;div class="grid-cell x1-fix"&gt; 1 - I am fixed.&lt;/div&gt;
-	&lt;div class="grid-cell x1"&gt; 2 - I will vary my width.&lt;/div&gt;
-	&lt;div class="grid-cell x1"&gt; 3 - I will vary my width.&lt;/div&gt;
-&lt;/article&gt;
-					</code>
-				</pre>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="grid">
-		<div class="grid-row">
-			<div class="grid-cell x3 hint-text">
-				<h4 class="headline-3">Module: Grid - [2 : [1,1]] / [[1,1] : 2]</h4>
-				<p>
-					We can also wrap grid-cells together, so they will flow with the col, but not with the row what their usual behaviour is. <br />
-					The <code>grid-nested</code> class can help us here. BUT - the nested elements only work if the Screen has a min-width of 665px. 
-				</p>
-			</div>
-		</div>
-	</section>
-		<section class="grid">
-			<div class="grid-row">
-				<article class="grid-cell x2">
-					<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
-					<p>
-						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw.
-					</p>
-					<p>
-						Pastry bear claw sugar plum toffee caramels cheesecake candy fruitcake. Cheesecake bear claw oat cake. Pastry jujubes marshmallow. Cake tart halvah jelly beans. Chocolate oat cake jelly-o biscuit liquorice biscuit cookie topping. Sweet roll caramels jelly-o caramels muffin.
-					</p>
-				</article>
-
-				<aside class="grid-nested x1">
-					<div class="grid-cell x1">
-						<h2 class="headline-2">Cookies</h2>
-						<p>
-							Carrot cake fruitcake soufflé jelly beans jelly beans powder.
-						</p>
-					</div>
-
-					<div class="grid-cell x1">
-
-						<h2 class="headline-2">Jelly Beans</h2>
-						<p>
-							Halvah cookie croissant jelly beans gummi bears soufflé cake tart.
-						</p>
-					</div>
-				</aside>
-			</div>
-		</section>
-
-	<section class="grid">
-			<div class="grid-row">
-				<aside class="grid-nested x1">
-					<div class="grid-cell x1">
-						<h2 class="headline-2">Cookies</h2>
-						<p>
-							Carrot cake fruitcake soufflé jelly beans jelly beans powder.
-						</p>
-					</div>
-
-					<div class="grid-cell">
-
-						<h2 class="headline-2">Jelly Beans</h2>
-						<p>
-							Halvah cookie croissant jelly beans gummi bears soufflé cake tart.
-						</p>
-					</div>
-				</aside>
-
-				<article class="grid-cell x2">
-					<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
-					<p>
-						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw.
-					</p>
-					<p>
-						Pastry bear claw sugar plum toffee caramels cheesecake candy fruitcake. Cheesecake bear claw oat cake. Pastry jujubes marshmallow. Cake tart halvah jelly beans. Chocolate oat cake jelly-o biscuit liquorice biscuit cookie topping. Sweet roll caramels jelly-o caramels muffin.
-					</p>
-				</article>
-			</div>
-		</section>
-	<section class="grid">
-		<div class="grid-row">
-			<div class="grid-cell x3">
-				<pre>
-					<code class="code-text">
-/* [2 : [1,1]] */
-&lt;div class="grid-row"&gt;
-	&lt;article class="grid-cell x2"&gt;
-		&lt;h2&gt;Main&lt;/h2&gt;
-		&lt;p&gt;Text&lt;/p&gt;
-	&lt;/article&gt;
-
-	&lt;aside class="grid-nested x1"&gt;	<-- width of grid-nested
-		&lt;div class="grid-cell x1"&gt;                <-- width of grid-cell inside wrapper
-			&lt;h2&gt;Aside - wrapped grid-cell 1&lt;/h2&gt;
-			&lt;p&gt;Text&lt;/p&gt;
-		&lt;/div&gt;
-
-		&lt;div class="grid-cell x1"&gt;
-			&lt;h2&gt;Aside - wrapped grid-cell 2&lt;/h2&gt;
-			&lt;p&gt;Text&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/aside&gt;
-&lt;/div&gt;
-					<hr class="separator" />
-
-/* [[1,1] : 2] */
-&lt;div class="grid-row"&gt;
-	&lt;aside class="grid-nested x1"&gt;	<-- width of grid-nested
-		&lt;div class="grid-cell x1"&gt;                <-- width of grid-cell inside wrapper
-			&lt;h2&gt;Aside - wrapped grid-cell 1&lt;/h2&gt;
-			&lt;p&gt;Text&lt;/p&gt;
-		&lt;/div&gt;
-		&lt;div class="grid-cell x1"&gt;
-			&lt;h2&gt;Aside - wrapped grid-cell 2&lt;/h2&gt;
-			&lt;p&gt;Text&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/aside&gt;
-	&lt;article class="grid-cell x2"&gt;
-		&lt;h2&gt;Main&lt;/h2&gt;
-		&lt;p&gt;Text&lt;/p&gt;
-	&lt;/article&gt;
-&lt;/div&gt;
-					</code>
-				</pre>
-			</div>
-		</div>
-	</section>
-
+	<!-- Module: Hero Tiles -->
 	<section class="grid">
 		<div class="grid-row">
 			<div class="grid-cell x3 hint-text">
@@ -1293,7 +1331,7 @@
 			</div>
 		</div>
 	</section>
-
+	<!-- Module: Button -->
 	<section class="grid">
 		<div class="grid-row">
 			<div class="grid-cell x3 hint-text">
@@ -1414,6 +1452,7 @@
 		</div>
 	</section>
 
+	<!-- Module: Issue List  -->
 	<section class="grid">
 		<div class="grid-row">
 			<div class="grid-cell x3">
@@ -1610,6 +1649,7 @@
 		</div>
 	</section>
 
+	<!-- Module: Issue + comment box + small meta -->
 	<section class="grid">
 		<div class="grid-row">
 			<div class="grid-cell x3 hint-text">
@@ -1732,7 +1772,7 @@
 		</div>
 	</section>
 
-
+	<!-- Module: Bio -->
 	<section class="grid">
 		<div class="grid-row">
 			<div class="grid-cell x3 hint-text">
@@ -1785,7 +1825,7 @@
 			</div>
 		</div>
 	</section>
-
+	<!-- Module: Footer -->
 	<section class="grid">
 		<div class="grid-row">
 			<div class="grid-cell x3 hint-text">
