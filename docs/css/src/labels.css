@@ -1,0 +1,51 @@
+.issue.label-needs-triage .x2{
+	border-color: var(--label-needs-triage);
+}
+
+.issue.label-needs-diagnosis .x2 {
+	border-color: var(--label-needs-diagnosis);
+}
+
+.issue.label-needs-contact .x2 {
+	border-color: var(--label-needs-contact);
+}
+
+.issue.label-outreach .x2 {
+	border-color: var(--label-outreach);
+}
+
+.issue.label-site-contacted .x2 {
+	border-color: var(--label-site-contacted);
+}
+
+.issue.label-closed .x2 {
+	border-color: var(--label-closed);
+}
+
+.issue .label.label-type {
+	border-color: var(--label-color-type);
+}
+
+.issue .label.label-browser {
+	border-color: var(--label-color-browser);
+}
+
+.issue .label.label-status {
+	border-color: var(--label-color-status);
+}
+
+.issue .label.label-priority {
+	border-color: var(--label-color-priority);
+}
+
+.issue .label.label-nsfw {
+	border-color: var(--label-color-nsfw);
+}
+
+.issue .label.label-device {
+	border-color: var(--label-color-device);
+}
+
+.issue .label.label-os {
+	border-color: var(--label-color-os);
+}

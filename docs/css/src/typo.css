@@ -14,12 +14,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
+.light {
+  font-weight: 300;
+}
+
 .bold {
   font-weight: 700;
 }
 
 .italic {
   font-style: italic;
+}
+
+.underline {
+	text-decoration: underline;
 }
 
 .headline-1 {
