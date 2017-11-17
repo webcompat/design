@@ -9,7 +9,7 @@
   justify-content: space-between;
   width: 100vw;
   box-sizing: border-box;
-  max-width: var(--page-size-l);
+  max-width: var(--unit-modul-l);
   padding: calc(var(--unit-gutter)/2) var(--unit-gutter);
   background-color: var(--color-first);
   color: var(--color-second);

@@ -28,6 +28,12 @@
   display: none;
 }
 
+.off-screen {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 .icon-description { 
   padding: 10px 20px;
   display:  inline-block;

@@ -193,7 +193,7 @@
 		You were successfully logged out
 	</div>	
 	<nav id="Nav" class="nav">
-		<ul class="nav-left x1">
+		<ul class="nav-left">
 			<li class="nav-item">
 				<a href="index.html" title="Navigate to main page.">
 					<svg class="icon nav-icon" viewBox="0 0 30 30" role="presentation">
@@ -240,12 +240,14 @@
 		</ul>
 	</nav>
 
-	<section class="grid-wrapper">
-		<div class="element x3 hint-text">
-			<h4 class="headline-3">Module: Icons</h4>
-			<p>
-				All the icons you can use at one place. Navigation icons are 18px x 18px, which are the regular ones and have the class <code>icon</code>. Big ones 32px x 32px and use the class <code>icon-big</code>.
-			</p>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
+				<h4 class="headline-3">Module: Icons</h4>
+				<p>
+					All the icons you can use at one place. Navigation icons are 18px x 18px, which are the regular ones and have the class <code>icon</code>. Big ones 32px x 32px and use the class <code>icon-big</code>.
+				</p>
+			</div>
 		</div>
 	</section>
 	<section class="grid-wrapper">
@@ -546,58 +548,66 @@
 			</p>
 		</div>
 	</section>
-	<section class="grid-wrapper">
-		<div class="element x3">
-			<pre>
-				<code class="code-text">
-&lt;section class="grid-wrapper"&gt;
-	&lt;article class="grid"&gt;
+
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
+				<pre>
+					<code class="code-text">
+&lt;section class="grid"&gt;
+	&lt;article class="grid-row"&gt;
 	&lt;/article&gt;
 &lt;/section&gt;
-				</code>
-			</pre>
+					</code>
+				</pre>
+			</div>
 		</div>
 	</section>
 
-	<section class="grid-wrapper">
-		<div class="element x3 hint-text">
-			<h4 class="headline-3">Module: Typographie</h4>
-			<p>
-				The default font is Open Sans, its fallback is sans serif. For headlines we use Source Sans Pro. Code uses monospace. 
-			</p>
-			<p>
-				The base font-size is 16px. All following font-sizes use em.
-			</p>
-			<p>
-				All classes can be combined and are fully independant from semantics (except of the link, which inherit generic styles from the main site.)
-			</p>
-			<p>
-				The fonts are loaded from <a href="https://fonts.google.com">fonts.google.com</a>
-			</p>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
+				<h4 class="headline-3">Module: Typographie</h4>
+				<p>
+					The default font is Open Sans, its fallback is sans serif. For headlines we use Source Sans Pro. Code uses monospace.
+				</p>
+				<p>
+					The base font-size is 16px. All following font-sizes use em.
+				</p>
+				<p>
+					All classes can be combined and are fully independant from semantics (except of the link, which inherit generic styles from the main site.)
+				</p>
+				<p>
+					The fonts are loaded from <a href="https://fonts.google.com">fonts.google.com</a>
+				</p>
+			</div>
 		</div>
 	</section>
-	<section class="grid-wrapper">
-		<article class="element x3">
-			<p class="highlight headline-2 italic">Headlines</p>
-			<p class="headline-1">Headline-1</p>
-			<p class="headline-2">Headline-2</p>
-			<p class="headline-3">Headline-3</p><br />
+	<section class="grid">
+		<div class="grid-row">
+			<article class="grid-cell x3">
+				<p class="highlight headline-2 italic">Headlines</p>
+				<p class="headline-1">Headline-1</p>
+				<p class="headline-2">Headline-2</p>
+				<p class="headline-3">Headline-3</p><br />
 
-			<p class="highlight headline-2 italic">generic styles</p>
-			<p class="bold">bold</p>
-			<p class="italic">italic</p>
-			<p class="highlight">highlight</p><br />
+				<p class="highlight headline-2 italic">generic styles</p>
+				<p class="bold">bold</p>
+				<p class="italic">italic</p>
+				<p class="highlight">highlight</p><br />
 
-			<p class="highlight headline-2 italic">special styles</p>
-			<p class="hint-text">hint-text</p>
-			<p class="code-text">code-text</p>
-			<a href="#">this is a link</a>
-		</article>
+				<p class="highlight headline-2 italic">special styles</p>
+				<p class="hint-text">hint-text</p>
+				<p class="code-text">code-text</p>
+				<a href="#">this is a link</a>
+			</article>
+		</div>
 	</section>
-	<section class="grid-wrapper">
-		<div class="element x3">
-			<pre>
-				<code class="code-text">
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
+				<pre>
+					<code class="code-text">
 &lt;p class="headline-1"&gt;Headline-1&lt;/p&gt;
 &lt;p class="headline-2"&gt;Headline-2&lt;/p&gt;
 &lt;p class="headline-3"&gt;Headline-3&lt;/p&gt;
@@ -609,27 +619,30 @@
 &lt;p class="hint-text"&gt;hint-text&lt;/p&gt;
 &lt;p class="code-text"&gt;code-text&lt;/p&gt;
 &lt;a href="#"&gt;this is a link&lt;/a&gt;
-				</code>
-			</pre>
+					</code>
+				</pre>
+			</div>
 		</div>
 	</section>
   
-	<section class="grid-wrapper">
-		<div class="element x3 hint-text">
-			<h4 class="headline-3">Module: Grid - Introduction</h4>
-			<p>
-				The grid is the basic module to provide boxes for all of your modules. It is a global module, which means it is not scoped and can (also should) be used everywhere on the site.
-			</p>
-			<p>
-				The <code>grid-wrapper</code> class provides the white box to hold the module as well as the padding and margin.
-			</p>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
+				<h4 class="headline-3">Module: Grid - Introduction</h4>
+				<p>
+					The grid is the basic module to provide boxes for all of your modules. It is a global module, which means it is not scoped and can (also should) be used everywhere on the site.
+				</p>
+				<p>
+					The <code>grid-wrapper</code> class provides the white box to hold the module as well as the padding and margin.
+				</p>
 
-			<p>
-				The <code>grid</code> class actually holdes the module and provides a flexbox-box as well as a grid-system for the modules.
-			</p>
+				<p>
+					The <code>grid</code> class actually holdes the module and provides a flexbox-box as well as a grid-system for the modules.
+				</p>
+			</div>
 		</div>
 	</section>
-	<section id="hero-section" class="grid-wrapper color-first-bg">
+	<section id="hero-section" class="grid color-first-bg">
 		<article id="hero-text">
 			<h1 class="hero-claim highlight">Bug reporting <br /> for the web.</h1>
 			<button type="button" class="button button-hero">
@@ -652,130 +665,141 @@
 			</svg>
 		</aside>
 	</section>
-	<section class="grid-wrapper">
-		<div class="element x3">
-			<pre>
-				<code class="code-text">
-&lt;section class="grid-wrapper"&gt;
-	&lt;article class="grid"&gt;
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
+				<pre>
+					<code class="code-text">
+&lt;section class="grid"&gt;
+	&lt;article class="grid-row"&gt;
 	&lt;/article&gt;
 &lt;/section&gt;
-				</code>
-			</pre>
+					</code>
+				</pre>
+			</div>
 		</div>
 	</section>
 
-	<section class="grid-wrapper">
-		<div class="element x3 hint-text">
-			<h4 class="headline-3">Module: Colors</h4>
-			<p>
-				All colors are defined in global variables and used all across the site in the CSS. We have 2 types of colors.
-			</p>
-			<p>
-				The first type of colors are meant to be used for modules and the general appearance of the site. They are prefixed with <code>color-</code>.
-			</p>
-			<p>
-				The second type of colors are used for labels. They are prefixed with <code>labels-</code>.
-			</p>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
+				<h4 class="headline-3">Module: Colors</h4>
+				<p>
+					All colors are defined in global variables and used all across the site in the CSS. We have 2 types of colors.
+				</p>
+				<p>
+					The first type of colors are meant to be used for modules and the general appearance of the site. They are prefixed with <code>color-</code>.
+				</p>
+				<p>
+					The second type of colors are used for labels. They are prefixed with <code>labels-</code>.
+				</p>
+			</div>
 		</div>
 	</section>
-	<section class="grid-wrapper">
-		<article class="grid">
-			<p class="highlight headline-2 italic element x3">Colors</p>
-			<div class="element x1-fix" style="background-color: #fafafa">&nbsp;</div>
-			<div class="element x2"><code>--color-bg-page</code> - used mainly for background of page</div>
+	<section class="grid">
+		<article class="grid-row">
+			<p class="highlight headline-2 italic grid-cell x3">Colors</p>
+			<div class="grid-cell x1-fix" style="background-color: #fafafa">&nbsp;</div>
+			<div class="grid-cell x2"><code>--color-bg-page</code> - used mainly for background of page</div>
 
-			<div class="element x1-fix" style="background-color: #fff">&nbsp;</div>
-			<div class="element x2"><code>--color-bg-box</code> - used for background of boxes</div>
+			<div class="grid-cell x1-fix" style="background-color: #fff">&nbsp;</div>
+			<div class="grid-cell x2"><code>--color-bg-box</code> - used for background of boxes</div>
 
-			<div class="element x1-fix" style="background-color: #ffc900">&nbsp;</div>
-			<div class="element x2"><code>--color-first</code> - First highlight color</div>
+			<div class="grid-cell x1-fix" style="background-color: #ffc900">&nbsp;</div>
+			<div class="grid-cell x2"><code>--color-first</code> - First highlight color</div>
 
-			<div class="element x1-fix" style="background-color: #404040">&nbsp;</div>
-			<div class="element x2"><code>--color-second</code></div>
+			<div class="grid-cell x1-fix" style="background-color: #404040">&nbsp;</div>
+			<div class="grid-cell x2"><code>--color-second</code></div>
 
-			<div class="element x1-fix" style="background-color: #F0F0F0">&nbsp;</div>
-			<div class="element x2"><code>--color-third</code></div>
+			<div class="grid-cell x1-fix" style="background-color: #F0F0F0">&nbsp;</div>
+			<div class="grid-cell x2"><code>--color-third</code></div>
 
-			<div class="element x1-fix" style="background-color: #C0FFEE">&nbsp;</div>
-			<div class="element x2"><code>--color-fourth</code> - Fourth highlight color</div>
+			<div class="grid-cell x1-fix" style="background-color: #C0FFEE">&nbsp;</div>
+			<div class="grid-cell x2"><code>--color-fourth</code> - Fourth highlight color</div>
 			
-			<div class="element x1-fix" style="background-color: #E5FEF6">&nbsp;</div>
-			<div class="element x2"><code>--color-fourth-light</code> - Light version of fourth highlight color</div>
+			<div class="grid-cell x1-fix" style="background-color: #E5FEF6">&nbsp;</div>
+			<div class="grid-cell x2"><code>--color-fourth-light</code> - Light version of fourth highlight color</div>
 			
-			<div class="element x1-fix" style="background-color: rgba(0,0,0,.12)">&nbsp;</div>
-			<div class="element x2"><code>--color-form</code></div>
+			<div class="grid-cell x1-fix" style="background-color: rgba(0,0,0,.12)">&nbsp;</div>
+			<div class="grid-cell x2"><code>--color-form</code></div>
 
-			<div class="element x1-fix" style="background-color: #C4C4C4">&nbsp;</div>
-			<div class="element x2"><code>--color-default</code></div>
+			<div class="grid-cell x1-fix" style="background-color: #C4C4C4">&nbsp;</div>
+			<div class="grid-cell x2"><code>--color-default</code></div>
 
-			<p class="highlight headline-2 italic element x3">Labels</p>
-			<div class="element x1-fix" style="background-color: #900">&nbsp;</div>
-			<div class="element x2"><code>--label-color-1</code> This section needs to be updated after cleaning up labels + colors</div>
+			<p class="highlight headline-2 italic grid-cell x3">Labels</p>
+			<div class="grid-cell x1-fix" style="background-color: #900">&nbsp;</div>
+			<div class="grid-cell x2"><code>--label-color-1</code> This section needs to be updated after cleaning up labels + colors</div>
 		</article>
 	</section>
 
-	<section class="grid-wrapper">
-		<div class="element x3 hint-text">
-			<h4 class="headline-3">Module: Grid - Introduction</h4>
-			<p>
-				The grid is the basic module to provide boxes for all of your modules. It is a global module, which means it is not scoped and can (also should) be used everywhere on the site.
-			</p>
-			<p>
-				The <code>grid-wrapper</code> class provides the white box to hold the module as well as the padding and margin.
-			</p>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
+				<h4 class="headline-3">Module: Grid - Introduction</h4>
+				<p>
+					The grid is the basic module to provide boxes for all of your modules. It is a global module, which means it is not scoped and can (also should) be used everywhere on the site.
+				</p>
+				<p>
+					The <code>grid-wrapper</code> class provides the white box to hold the module as well as the padding and margin.
+				</p>
 
-			<p>
-				The <code>grid</code> class actually holdes the module and provides a flexbox-box as well as a grid-system for the modules.
-			</p>
+				<p>
+					The <code>grid</code> class actually holdes the module and provides a flexbox-box as well as a grid-system for the modules.
+				</p>
+			</div>
 		</div>
 	</section>
-	<section class="grid-wrapper">
-		<article class="grid">
+	<section class="grid">
+		<article class="grid-row">
 			👈 This is the box to rule all modules. 👇 
 		</article>
 	</section>
-	<section class="grid-wrapper">
-		<div class="element x3">
-			<pre>
-				<code class="code-text">
-&lt;section class="grid-wrapper"&gt;
-	&lt;article class="grid"&gt;
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
+				<pre>
+					<code class="code-text">
+&lt;section class="grid"&gt;
+	&lt;article class="grid-row"&gt;
 	&lt;/article&gt;
 &lt;/section&gt;
-				</code>
-			</pre>
+					</code>
+				</pre>
+			</div>
 		</div>
 	</section>
 
-		<section class="grid-wrapper">
-			<div class="element x3 hint-text">
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
 				<h4 class="headline-3">Module: Grid - full width</h4>
 				<p>
-					The <code>element</code> class indicates an element within the grid-box. The grid-system can be divided in 3 elements (width of one element = x) that can also be combined.
+					The <code>element</code> class indicates an grid-cell within the grid-box. The grid-system can be divided in 3 grid-cells (width of one grid-cell = x) that can also be combined.
 				</p>
 
 				<p>
-					The <code>x3</code> class indicates an element, which combines the width of all 3 elements (width of one element = x). The <code>x3</code> is the short form of <code>x*3</code>.
+					The <code>x3</code> class indicates an grid-cell, which combines the width of all 3 grid-cells (width of one grid-cell = x). The <code>x3</code> is the short form of <code>x*3</code>.
 				</p>
 			</div>
-		</section>
-		<section class="grid-wrapper">
-			<article class="grid">
-				<div class="element x3">
-					<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
-					<p>
-						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw. Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o. Cheesecake cake chocolate chocolate gummi bears lemon drops.
-					</p>
-				</div>
-			</article>
-		</section>
-		<section class="grid-wrapper">
-			<div class="element x3">
+		</div>
+	</section>
+	<section class="grid">
+		<article class="grid-row">
+			<div class="grid-cell x3">
+				<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
+				<p>
+					Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw. Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o. Cheesecake cake chocolate chocolate gummi bears lemon drops.
+				</p>
+			</div>
+		</article>
+	</section>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
 				<pre>
 					<code class="code-text">
-&lt;article class="grid"&gt;
-	&lt;div class="element x3"&gt;
+&lt;article class="grid-row"&gt;
+	&lt;div class="grid-cell x3"&gt;
 		&lt;h2&gt;Title&lt;/h2&gt;
 		&lt;p&gt;Text&lt;/p&gt;
 	&lt;/div&gt;
@@ -783,69 +807,73 @@
 					</code>
 				</pre>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="grid-wrapper">
-			<div class="element x3 hint-text">
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
 				<h4 class="headline-3">Module: Grid - 2:1 / 1:2</h4>
 				<p>
-					The <code>element</code> class indicates an element within the grid-box. The grid-system can be divided in 3 elements (width of one element = x) that can also be combined.
+					The <code>element</code> class indicates an grid-cell within the grid-box. The grid-system can be divided in 3 grid-cells (width of one grid-cell = x) that can also be combined.
 				</p>
 
 				<p>
-					The <code>x2</code> class indicates an element, which combines the width of 2 elements (width of one element = x). The <code>x2</code> is the short form of <code>x*2</code>. <br />
+					The <code>x2</code> class indicates an grid-cell, which combines the width of 2 grid-cells (width of one grid-cell = x). The <code>x2</code> is the short form of <code>x*2</code>. <br />
 
-					The <code>x1</code> class indicates an element, with the width of 1 element.
+					The <code>x1</code> class indicates an grid-cell, with the width of 1 grid-cell.
 				</p>
 				<p>
-					Both elements can be placed in their natural order and will take their given space.
+					Both grid-cells can be placed in their natural order and will take their given space.
 				</p>
 			</div>
-		</section>
-		<section class="grid-wrapper">
-			<div class="grid">
-				<article class="element x2">
-					<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
-					<p>
-						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw. 
-					</p>
-				</article>
+		</div>
+	</section>
+	<section class="grid">
+		<div class="grid-row">
+			<article class="grid-cell x2">
+				<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
+				<p>
+					Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw.
+				</p>
+			</article>
 
-				<aside class="element x1">
-					<h2 class="headline-2">Cookies</h2>
-					<p>
-						Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o. 
-					</p>
-				</aside>
-			</div>
-		</section>
-		<section class="grid-wrapper">
-			<div class="grid">
-				<article class="element x1">
-					<h2 class="headline-2">Cookies</h2>
-					<p>
-						Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o. 
-					</p>
-				</article>
-				<aside class="element x2">
-					<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
-					<p>
-						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw. 
-					</p>
-				</aside>
-			</div>
-		</section>
-		<section class="grid-wrapper">
-			<div class="element x3">
+			<aside class="grid-cell x1">
+				<h2 class="headline-2">Cookies</h2>
+				<p>
+					Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o.
+				</p>
+			</aside>
+		</div>
+	</section>
+	<section class="grid">
+		<div class="grid-row">
+			<article class="grid-cell x1">
+				<h2 class="headline-2">Cookies</h2>
+				<p>
+					Carrot cake fruitcake soufflé jelly beans jelly beans powder. Halvah cookie croissant jelly beans gummi bears soufflé cake tart jelly-o.
+				</p>
+			</article>
+			<aside class="grid-cell x2">
+				<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
+				<p>
+					Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw.
+				</p>
+			</aside>
+		</div>
+	</section>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
 				<pre>
 					<code class="code-text">
 /* [2:1] */
-&lt;div class="grid"&gt;
-	&lt;article class="element x2"&gt;
+&lt;div class="grid-row"&gt;
+	&lt;article class="grid-cell x2"&gt;
 		&lt;h2&gt;Main part&lt;/h2&gt;
 		&lt;p&gt;Text&lt;/p&gt;
 	&lt;/article&gt;
-	&lt;aside class="element x1"&gt;
+	&lt;aside class="grid-cell x1"&gt;
 		&lt;h2&gt;Aside&lt;/h2&gt;
 		&lt;p&gt;Text&lt;/p&gt;
 	&lt;/aside&gt;
@@ -853,71 +881,77 @@
 						<hr class="separator" />
 
 /* [1:2] */
-&lt;div class="grid"&gt;
-	&lt;aside class="element x1"&gt;
+&lt;div class="grid-row"&gt;
+	&lt;aside class="grid-cell x1"&gt;
 		&lt;h2 class="headline-2"&gt;Aside&lt;/h2&gt;
 		&lt;p&gt;Text&lt;/p&gt;
 	&lt;/aside&gt;
-	&lt;article class="element x2"&gt;
+	&lt;article class="grid-cell x2"&gt;
 		&lt;h2 class="headline-1"&gt;Main part&lt;/h2&gt;
 		&lt;p&gt;Text&lt;/p&gt;
 	&lt;/article&gt;
 &lt;/div&gt;
-						</code>
-					</pre>
-				</div>
+					</code>
+				</pre>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="grid-wrapper">
-			<div class="element x3 hint-text">
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
 				<h4 class="headline-3">Module: 1:1:1</h4>
 				<p>
-					The <code>element</code> class indicates an element within the grid-box. The grid-system can be divided in 3 elements (width of one element = x) that can also be combined.
+					The <code>element</code> class indicates an grid-cell within the grid-box. The grid-system can be divided in 3 grid-cells (width of one grid-cell = x) that can also be combined.
 				</p>
 
 				<p>
-					The <code>x1</code> class indicates an element, with the width of 1 element. You can also use the <code>x1-fix</code> class, if you need an element that does not change the width of one grid element, but is fixed.
+					The <code>x1</code> class indicates an grid-cell, with the width of 1 grid-cell. You can also use the <code>x1-fix</code> class, if you need an grid-cell that does not change the width of one grid grid-cell, but is fixed.
 				</p>
 				<p>
-					All elements can be placed in their natural order and will take their given space. You can also wrap the elements together as seen in the next module.
+					All grid-cells can be placed in their natural order and will take their given space. You can also wrap the grid-cells together as seen in the next module.
 				</p>
 			</div>
-		</section>
-		<section class="grid-wrapper">
-			<article class="grid">
-				<div class="element x1-fix"> 1 - I am fixed.</div>
-				<div class="element x1"> 2 - I will vary my width.</div>
-				<div class="element x1"> 3 - I will vary my width.</div>
-			</article>
-		</section>
-		<section class="grid-wrapper">
-			<div class="element x3">
+		</div>
+	</section>
+	<section class="grid">
+		<article class="grid-row">
+			<div class="grid-cell x1-fix"> 1 - I am fixed.</div>
+			<div class="grid-cell x1"> 2 - I will vary my width.</div>
+			<div class="grid-cell x1"> 3 - I will vary my width.</div>
+		</article>
+	</section>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
 				<pre>
 					<code class="code-text">
-&lt;article class="grid"&gt;
-	&lt;div class="element x1-fix"&gt; 1 - I am fixed.&lt;/div&gt;
-	&lt;div class="element x1"&gt; 2 - I will vary my width.&lt;/div&gt;
-	&lt;div class="element x1"&gt; 3 - I will vary my width.&lt;/div&gt;
+&lt;article class="grid-row"&gt;
+	&lt;div class="grid-cell x1-fix"&gt; 1 - I am fixed.&lt;/div&gt;
+	&lt;div class="grid-cell x1"&gt; 2 - I will vary my width.&lt;/div&gt;
+	&lt;div class="grid-cell x1"&gt; 3 - I will vary my width.&lt;/div&gt;
 &lt;/article&gt;
 					</code>
 				</pre>
 			</div>
-		</section>
+		</div>
+	</section>
 
 
-		<section class="grid-wrapper">
-			<div class="element x3 hint-text">
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
 				<h4 class="headline-3">Module: Grid - [2 : [1,1]] / [[1,1] : 2]</h4>
 				<p>
-					We can also wrap elements together, so they will flow with the col, but not with the row what their usual behaviour is. <br />
+					We can also wrap grid-cells together, so they will flow with the col, but not with the row what their usual behaviour is. <br />
 					The <code>element-wrapper</code> class can help us here. 
 				</p>
 			</div>
-		</section>
-		<section class="grid-wrapper">
-			<div class="grid">
-				<article class="element x2">
+		</div>
+	</section>
+		<section class="grid">
+			<div class="grid-row">
+				<article class="grid-cell x2">
 					<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
 					<p>
 						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw. 
@@ -927,15 +961,15 @@
 					</p>
 				</article>
 
-				<aside class="element-wrapper element x1">
-					<div class="element x1">
+				<aside class="grid-nested x1">
+					<div class="grid-cell x1">
 						<h2 class="headline-2">Cookies</h2>
 						<p>
 							Carrot cake fruitcake soufflé jelly beans jelly beans powder. 
 						</p>
 					</div>
 
-					<div class="element x1">
+					<div class="grid-cell x1">
 
 						<h2 class="headline-2">Jelly Beans</h2>
 						<p>
@@ -946,17 +980,17 @@
 			</div>
 		</section>
 
-		<section class="grid-wrapper">
-			<div class="grid">
-				<aside class="element-wrapper element">
-					<div class="element x1">
+	<section class="grid">
+			<div class="grid-row">
+				<aside class="grid-nested x1">
+					<div class="grid-cell x1">
 						<h2 class="headline-2">Cookies</h2>
 						<p>
 							Carrot cake fruitcake soufflé jelly beans jelly beans powder. 
 						</p>
 					</div>
 
-					<div class="element">
+					<div class="grid-cell">
 
 						<h2 class="headline-2">Jelly Beans</h2>
 						<p>
@@ -965,7 +999,7 @@
 					</div>
 				</aside>
 
-				<article class="element x2">
+				<article class="grid-cell x2">
 					<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
 					<p>
 						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw. 
@@ -976,25 +1010,26 @@
 				</article>
 			</div>
 		</section>
-		<section class="grid-wrapper">
-			<div class="element x3">
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
 				<pre>
 					<code class="code-text">
 /* [2 : [1,1]] */
-&lt;div class="grid"&gt;
-	&lt;article class="element x2"&gt;
+&lt;div class="grid-row"&gt;
+	&lt;article class="grid-cell x2"&gt;
 		&lt;h2&gt;Main&lt;/h2&gt;
 		&lt;p&gt;Text&lt;/p&gt;
 	&lt;/article&gt;
 
-	&lt;aside class="element-wrapper element x1"&gt;	<-- width of element-wrapper
-		&lt;div class="element x1"&gt;                <-- width of element inside wrapper
-			&lt;h2&gt;Aside - wrapped element 1&lt;/h2&gt;
+	&lt;aside class="grid-nested x1"&gt;	<-- width of grid-nested
+		&lt;div class="grid-cell x1"&gt;                <-- width of grid-cell inside wrapper
+			&lt;h2&gt;Aside - wrapped grid-cell 1&lt;/h2&gt;
 			&lt;p&gt;Text&lt;/p&gt;
 		&lt;/div&gt;
 
-		&lt;div class="element x1"&gt;
-			&lt;h2&gt;Aside - wrapped element 2&lt;/h2&gt;
+		&lt;div class="grid-cell x1"&gt;
+			&lt;h2&gt;Aside - wrapped grid-cell 2&lt;/h2&gt;
 			&lt;p&gt;Text&lt;/p&gt;
 		&lt;/div&gt;
 	&lt;/aside&gt;
@@ -1002,18 +1037,18 @@
 					<hr class="separator" />
 
 /* [[1,1] : 2] */
-&lt;div class="grid"&gt;
-	&lt;aside class="element-wrapper element x1"&gt;	<-- width of element-wrapper
-		&lt;div class="element x1"&gt;                <-- width of element inside wrapper
-			&lt;h2&gt;Aside - wrapped element 1&lt;/h2&gt;
+&lt;div class="grid-row"&gt;
+	&lt;aside class="grid-nested x1"&gt;	<-- width of grid-nested
+		&lt;div class="grid-cell x1"&gt;                <-- width of grid-cell inside wrapper
+			&lt;h2&gt;Aside - wrapped grid-cell 1&lt;/h2&gt;
 			&lt;p&gt;Text&lt;/p&gt;
 		&lt;/div&gt;
-		&lt;div class="element x1"&gt;
-			&lt;h2&gt;Aside - wrapped element 2&lt;/h2&gt;
+		&lt;div class="grid-cell x1"&gt;
+			&lt;h2&gt;Aside - wrapped grid-cell 2&lt;/h2&gt;
 			&lt;p&gt;Text&lt;/p&gt;
 		&lt;/div&gt;
 	&lt;/aside&gt;
-	&lt;article class="element x2"&gt;
+	&lt;article class="grid-cell x2"&gt;
 		&lt;h2&gt;Main&lt;/h2&gt;
 		&lt;p&gt;Text&lt;/p&gt;
 	&lt;/article&gt;
@@ -1021,56 +1056,60 @@
 					</code>
 				</pre>
 			</div>
-		</section>
+		</div>
+	</section>
 		
-		<section class="grid-wrapper">
-				<div class="element x3 hint-text">
-					<h4 class="headline-3">Module: Hero Tiles</h4>
-					<p>
-						Row of 3 tiles. Creates a "call-to-action" stopper for the main page. This module is scoped and needs the use of the ID.
-					</p>
-					<p>
-						The <code>hero-tile</code> id indicated the hero tile module.
-					</p>
-					<p>
-						After that we need to add the <code>tiles</code> class which gives us a grid-system for full-width elements. <code>tiles-x3</code> continues the width pattern as see in our global grid system, but as a special use case as it does not provide any paddings / margins. 
-					</p>
-					<p>
-						A <code>tile-item</code> class indicates a tile item. The colors are alternating. Also in responsive mode. The items have a min-width, but will expand the height of the row in relation to the content.
-					</p>
-				</div>
-		</section>
-		<section id="hero-tile" class="grid-wrapper">
-			<ul class="tiles tiles-x3">
-				<li class="tile-item">
-					<h3 class="headline-2 highlight"><a href="index.html" title="Report a bug">Report bugs</a></h3>
-				</li>
-				<li class="tile-item">
-					<h3 class="headline-2 highlight"><a href="index.html" title="Fix a bug">Fix bugs</a></h3>
-				</li>
-				<li class="tile-item">
-					<h3 class="headline-2 highlight"><a href="index.html" title="Reach out to sites and vendors">Reach out</a></h3>
-				</li>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
+				<h4 class="headline-3">Module: Hero Tiles</h4>
+				<p>
+					Row of 3 tiles. Creates a "call-to-action" stopper for the main page. This module is scoped and needs the use of the ID.
+				</p>
+				<p>
+					The <code>hero-tile</code> id indicated the hero tile module.
+				</p>
+				<p>
+					After that we need to add the <code>tiles</code> class which gives us a grid-system for full-width grid-cells. <code>tiles-x3</code> continues the width pattern as see in our global grid system, but as a special use case as it does not provide any paddings / margins.
+				</p>
+				<p>
+					A <code>tile-item</code> class indicates a tile item. The colors are alternating. Also in responsive mode. The items have a min-width, but will expand the height of the row in relation to the content.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section id="hero-tile" class="grid">
+		<ul class="tiles tiles-x3">
+			<li class="tile-item">
+				<h3 class="headline-2 highlight"><a href="index.html" title="Report a bug">Report bugs</a></h3>
+			</li>
+			<li class="tile-item">
+				<h3 class="headline-2 highlight"><a href="index.html" title="Fix a bug">Fix bugs</a></h3>
+			</li>
+			<li class="tile-item">
+				<h3 class="headline-2 highlight"><a href="index.html" title="Reach out to sites and vendors">Reach out</a></h3>
+			</li>
 
-				<li class="tile-item">
-					<h3 class="headline-2 highlight"><a href="index.html" title="Help us to build tools">Build tools</a></h3>
-				</li>
-				<li class="tile-item">
-					<h3 class="headline-2 highlight"><a href="index.html" title="Spread the word about the importance of web compatibility">Spread the word</a></h3>
-				</li>
-				<li class="tile-item">
-					<p>
-						There are so many  <br /> other ways to contribute. <br /> 
-						Please <a href="index.html" title="Let us know about your idea.">let us know</a>,  <br /> if you have ideas!
-					</p>
-				</li>
-			</ul>
-		</section>
-		<section class="grid-wrapper">
-				<div class="element x3">
-					<pre>
-						<code class="code-text">
-&lt;section id="hero-tile" class="grid-wrapper"&gt;
+			<li class="tile-item">
+				<h3 class="headline-2 highlight"><a href="index.html" title="Help us to build tools">Build tools</a></h3>
+			</li>
+			<li class="tile-item">
+				<h3 class="headline-2 highlight"><a href="index.html" title="Spread the word about the importance of web compatibility">Spread the word</a></h3>
+			</li>
+			<li class="tile-item">
+				<p>
+					There are so many  <br /> other ways to contribute. <br />
+					Please <a href="index.html" title="Let us know about your idea.">let us know</a>,  <br /> if you have ideas!
+				</p>
+			</li>
+		</ul>
+	</section>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
+				<pre>
+					<code class="code-text">
+&lt;section id="hero-tile" class="grid"&gt;
 	&lt;ul class="tiles tiles-x3"&gt;
 		&lt;li class="tile-item"&gt;
 			&lt;p&gt;1&lt;/p&gt;
@@ -1086,24 +1125,26 @@
 		&lt;/li&gt;
 	&lt;/ul&gt;
 &lt;/section&gt;
-						</code>
-					</pre>
-				</div>
+					</code>
+				</pre>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="grid-wrapper">
-			<div class="element x3 hint-text">
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
 				<h4 class="headline-3">Module: Forms</h4>
 				<p>
-					This is our bug report form. The elements can be reused in a different context. Just the search input will be a special case and shown as a separate module.
+					This is our bug report form. The grid-cells can be reused in a different context. Just the search input will be a special case and shown as a separate module.
 				</p>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="grid-wrapper">
-			<form action="#" class="form grid">
-				<div class="element">
+	<section class="grid">
+			<form action="#" class="form grid-row">
+				<div class="grid-cell">
 					<div class="form-text form-element">
 						<label class="form-label form-required" for="url">
 							Site URL
@@ -1122,7 +1163,7 @@
 						<label class="form-label label-radio" for="issue2">Site is not usable</label>
 					</div>
 				</div>
-				<div class="element">
+				<div class="grid-cell">
 					<div class="form-text form-element">
 						<label class="form-label" for="browser">Is this information correct?</label>
 
@@ -1142,8 +1183,9 @@
 			</form>
 		</section>
 
-		<section class="grid-wrapper">
-			<div class="element x3">
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
 				<pre>
 					<code class="code-text">
 /* GROUP ITEMS // layout wise, NOT semantically */
@@ -1183,7 +1225,7 @@
 /&gt;
 
 						<hr class="separator" />
-/* RADIO INPUT ELEMENT */
+/* RADIO INPUT grid-cell */
 &lt;div class="form-radio form-element"&gt;
 	&lt;h4 class="headline-3"&gt;Headline&lt;/h4&gt;
 	&lt;input 
@@ -1218,19 +1260,23 @@
 					</code>
 				</pre>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="grid-wrapper">
-			<div class="element x3 hint-text">
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
 				<h4 class="headline-3">Module: Button</h4>
 				<p>
 					Button has 4 different shapes: button-primary, button-secondary, button-hero, button-icon
 				</p>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="grid-wrapper">
-			<div class="element x3">
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
 				<button
 					type="button"
 					class="button button"
@@ -1263,9 +1309,11 @@
 					button-icon (tba)
 				</button>
 			</div>
-		</section>
-		<section class="grid-wrapper">
-			<div class="element x3">
+		</div>
+	</section>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
 				<pre>
 					<code class="code-text">
 &lt;button type="button" class="button"&gt;
@@ -1298,10 +1346,12 @@
 					</code>
 				</pre>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section id="filter-issue-status" class="grid-wrapper">
-			<div class="element x3">
+	<section id="filter-issue-status" class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
 				<ul class="filter-label">
 				  <li class="needs-triage">Needs Triage</li>
 				  <li class="needs-diagnosis active">Needs Diagnosis</li>
@@ -1311,172 +1361,301 @@
 				  <li class="closed">Closed</li>
 				</ul>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="grid-wrapper">
-			<div class="element x3 hint-text">
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
 				<h4 class="headline-3">Module: Issues List</h4>
 				<p>
-					This module is a 2:1 module, with a border to display the status of the issue. The second element contains the labels to categorise the issue.
+					This module is a 2:1 module, with a border to display the status of the issue. The second grid-cell contains the labels to categorise the issue.
 				</p>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section id="issues-list" class="grid-wrapper">
-			<div class="grid issue label-needs-triage">
-				<article class="element x2 issue-description">
-					<p class="issue-number">Issue 71234: </p>
-					<p class="issue-url">https://unicornthisareaaaaalllyloooongurl.js</p>
-					<p class="issue-type">Audio / media does not play</p>
-					<p class="issue-date-open">Opened: 2017-11-12</p>
-					<p class="issue-comments">Comments: 12</p>
+	<section id="issues-list" class="grid">
+		<div class="grid-row issue label-needs-triage">
+			<article class="grid-cell x2 issue-description">
+				<p class="issue-number">Issue 71234: </p>
+				<p class="issue-url">https://unicornthisareaaaaalllyloooongurl.js</p>
+				<p class="issue-type">Audio / media does not play</p>
+				<p class="issue-date-open">Opened: 2017-11-12</p>
+				<p class="issue-comments">Comments: 12</p>
+			</article>
+
+			<aside class="grid-cell x1 issue-labels">
+				<p>
+					<span class="label label-type">type- </span>
+					<span class="label label-browser">browser- </span>
+					<span class="label label-nsfw">nsfw </span>
+					<span class="label label-status">status- </span>
+					<span class="label label-priority">priority- </span>
+					<span class="label label-device">device- </span>
+					<span class="label label-os">os- </span>
+				</p>
+			</aside>
+		</div>
+
+		<div class="grid-row issue label-needs-diagnosis">
+			<article class="grid-cell x2 issue-description">
+				<p class="issue-number">Issue 71234: </p>
+				<p class="issue-url">https://unicorn.js</p>
+				<p class="issue-type">Audio / media does not play</p>
+				<p class="issue-date-open">Opened: 2017-11-12</p>
+				<p class="issue-comments">Comments: 12</p>
+			</article>
+
+			<aside class="grid-cell x1 issue-labels">
+				<p>
+					<span class="label label-browser">browser-ie </span>
+					<span class="label label-priority">priority-normal </span>
+					<span class="label label-device">device-mobile </span>
+				</p>
+			</aside>
+		</div>
+
+		<div class="grid-row issue label-needs-contact">
+			<article class="grid-cell x2 issue-description">
+				<p class="issue-number">Issue 71234: </p>
+				<p class="issue-url">https://unicorn.js</p>
+				<p class="issue-type">Audio / media does not play</p>
+				<p class="issue-date-open">Opened: 2017-11-12</p>
+				<p class="issue-comments">Comments: 12</p>
+			</article>
+
+			<aside class="grid-cell x1 issue-labels">
+				<p>
+					<span class="label label-browser">browser-firefox </span>
+					<span class="label label-device">device-mobile </span>
+					<span class="label label-os">os-android </span>
+				</p>
+			</aside>
+		</div>
+
+		<div class="grid-row issue label-outreach">
+			<article class="grid-cell x2 issue-description">
+				<p class="issue-number">Issue 71234: </p>
+				<p class="issue-url">https://unicorn.js</p>
+				<p class="issue-type">Audio / media does not play</p>
+				<p class="issue-date-open">Opened: 2017-11-12</p>
+				<p class="issue-comments">Comments: 12</p>
+			</article>
+
+			<aside class="grid-cell x1 issue-labels">
+				<p>
+					<span class="label label-type">type-media </span>
+					<span class="label label-browser">browser-chrome </span>
+					<span class="label label-nsfw">nsfw </span>
+				</p>
+			</aside>
+		</div>
+
+		<div class="grid-row issue label-site-contacted">
+			<article class="grid-cell x2 issue-description">
+				<p class="issue-number">Issue 71234: </p>
+				<p class="issue-url">https://unicorn.js</p>
+				<p class="issue-type">Audio / media does not play</p>
+				<p class="issue-date-open">Opened: 2017-11-12</p>
+				<p class="issue-comments">Comments: 12</p>
+			</article>
+
+			<aside class="grid-cell x1 issue-labels">
+				<p>
+					<span class="label label-type">type-flash </span>
+					<span class="label label-browser">browser-safari </span>
+					<span class="label label-os">os-android </span>
+				</p>
+			</aside>
+		</div>
+
+		<div class="grid-row issue label-closed">
+			<article class="grid-cell x2 issue-description">
+				<p class="issue-number">Issue 71234: </p>
+				<p class="issue-url">https://unicorn.js</p>
+				<p class="issue-type">Audio / media does not play</p>
+				<p class="issue-date-open">Opened: 2017-11-12</p>
+				<p class="issue-date-closed">Closed: 2017-11-14</p>
+				<p class="issue-comments">Comments: 12</p>
+			</article>
+
+			<aside class="grid-cell x1 issue-labels">
+				<p>
+					<span class="label label-browser">browser-firefox </span>
+					<span class="label label-device">device-mobile </span>
+					<span class="label label-os">os-android </span>
+				</p>
+			</aside>
+		</div>
+	</section>
+
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
+				<h4 class="headline-3">Module: Issue + comment box + small meta</h4>
+				<p>
+					This module is a detail page for one issue. It contains also a box to comment on the issue, issue comments and a small meta for info below. ther comments should probably move to a separate section.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="grid grid-show-gap">
+		<div id="issue" class="grid-row">
+			<div class="grid-nested x2">
+				<article class="grid-cell x2 issue-detail">
+					<p>
+						<span class="bold">URL:</span>
+						<a href="https://github.com/notifications">https://github.com/notifications</a>
+					</p>
+					<p>
+						<span class="bold">Browser / Version:</span> Firefox 59.0 <br/>
+						<span class="bold">Operating System:</span> Mac OS X 10.12 <br/>
+						<span class="bold">Tested Another Browser:</span> Yes
+					</p>
+					<p>
+						<span class="bold">Problem type:</span> Design is broken <br/>
+						<span class="bold">Description:</span> Can't open DM's. They are not clickable.
+					</p>
+					<p>
+						<span class="bold">Steps to Reproduce:</span><br/>
+						das<br/>
+						then i did the next thing<br/>
+						and then this happened<br/>
+					</p>
 				</article>
 
-				<aside class="element x1 issue-labels">
-					<p>
-						<span class="label label-type">type- </span>
-						<span class="label label-browser">browser- </span>
-						<span class="label label-nsfw">nsfw </span>
-						<span class="label label-status">status- </span>
-						<span class="label label-priority">priority- </span>
-						<span class="label label-device">device- </span>
-						<span class="label label-os">os- </span>
-					</p>
-				</aside>
+				<section class="grid-cell x2 issue-comment">
+					<header class="comment-header ">
+						<figure class="comment-author" role="group">
+							<img class="comment-avatar" src="https://avatars2.githubusercontent.com/u/562354?v=4" alt="zoepage">
+							<figcaption>
+								<a class="comment-reporter bold" href="https://github.com" title="">github username</a>
+							</figcaption>
+						</figure>
+						<a class="comment-time" href="https://github.com/webcompat/webcompat-tests/issues/1300" title="">3 hours ago</a>
+					</header>
+					<div class="grid-cell x2">
+						<p>
+							Hey, I can't reproduce this on my account, can you send a video with the behaviour? Especially if there's any messages in your console?</br>
+</br>
+							I've seen something here that might be something to look into, ping <a href="https://github.com" rel="nofollow">@user</a>?</br>
+</br>
+							Here's in image:</br>
+							<img src="http://placebeyonce.com/200-100" alt="Screenshot description"/>
+						</p>
+						<pre class=" language-javascript"><code class="language-javascript">console.log('Hello World');</code></pre>
+					</div>
+				</section>
+				
+				<section class="grid-cell x2 issue-comment issue-new-comment">
+					<header class="comment-header ">
+						<figure class="comment-author" role="group">
+							<img class="comment-avatar" src="https://avatars2.githubusercontent.com/u/562354?v=4" alt="zoepage">
+							<figcaption>
+								<a class="comment-reporter bold" href="https://github.com" title="">github username</a>
+							</figcaption>
+						</figure>
+					</header>
+					<div class="grid-cell x2">
+						<div class="form-text form-element">
+							<label class="form-label off-screen" for="new-comment">Leave a comment</label>
+							<textarea class="form-field text-field light" placeholder="Leave a comment" title="New Comment" id="new-comment" rows="5"></textarea>
+						</div>
+						<div class="form-upload">
+							<input class="form-input input-upload" type="file" accept=".jpe,.jpg,.jpeg,.gif,.png,.bmp" id="file">
+							<label class="form-label label-upload" for="file">
+								<svg class="icon icon-big" role="presentation">
+							  	<use class="icon-upload" href="#upload-2">Upload</use>
+								</svg>
+								Add screenshot, because you are awesome!
+							</label>
+						</div>
+						<div class="comment-submit form-element">
+							<button
+								type="button"
+								class="button button-primary"
+							>
+								Comment
+							</button>
+						</div>
+					</div>
+				</section>
 			</div>
+		</div>
+	</section>
+	<section class="grid grid-show-gap">
+		<div class="grid-row">
+			<aside class="grid-cell x1-fix"><!-- label box -->
+				----> LABEL BOX <---- <br />
+				... <br />
+				... <br />
+				... <br />
+				... <br />
+				... <br />
+				... <br />
+				... <br />... <br />
+				... <br />
+				... <br />
+				... <br />
+				... <br />
+				... <br />
+				... <br />
+				... <br />
+				... <br />
+				... <br />
+				... <br />
+				... <br />
+				... <br />
+			</aside>
+		</div>
+	</section>
 
-			<div class="grid issue label-needs-diagnosis">
-				<article class="element x2 issue-description">
-					<p class="issue-number">Issue 71234: </p>
-					<p class="issue-url">https://unicorn.js</p>
-					<p class="issue-type">Audio / media does not play</p>
-					<p class="issue-date-open">Opened: 2017-11-12</p>
-					<p class="issue-comments">Comments: 12</p>
-				</article>
 
-				<aside class="element x1 issue-labels">
-					<p>
-						<span class="label label-browser">browser-ie </span>
-						<span class="label label-priority">priority-normal </span>
-						<span class="label label-device">device-mobile </span>
-					</p>
-				</aside>
-			</div>
-
-			<div class="grid issue label-needs-contact">
-				<article class="element x2 issue-description">
-					<p class="issue-number">Issue 71234: </p>
-					<p class="issue-url">https://unicorn.js</p>
-					<p class="issue-type">Audio / media does not play</p>
-					<p class="issue-date-open">Opened: 2017-11-12</p>
-					<p class="issue-comments">Comments: 12</p>
-				</article>
-
-				<aside class="element x1 issue-labels">
-					<p>
-						<span class="label label-browser">browser-firefox </span>
-						<span class="label label-device">device-mobile </span>
-						<span class="label label-os">os-android </span>
-					</p>
-				</aside>
-			</div>
-
-			<div class="grid issue label-outreach">
-				<article class="element x2 issue-description">
-					<p class="issue-number">Issue 71234: </p>
-					<p class="issue-url">https://unicorn.js</p>
-					<p class="issue-type">Audio / media does not play</p>
-					<p class="issue-date-open">Opened: 2017-11-12</p>
-					<p class="issue-comments">Comments: 12</p>
-				</article>
-
-				<aside class="element x1 issue-labels">
-					<p>
-						<span class="label label-type">type-media </span>
-						<span class="label label-browser">browser-chrome </span>
-						<span class="label label-nsfw">nsfw </span>
-					</p>
-				</aside>
-			</div>
-
-			<div class="grid issue label-site-contacted">
-				<article class="element x2 issue-description">
-					<p class="issue-number">Issue 71234: </p>
-					<p class="issue-url">https://unicorn.js</p>
-					<p class="issue-type">Audio / media does not play</p>
-					<p class="issue-date-open">Opened: 2017-11-12</p>
-					<p class="issue-comments">Comments: 12</p>
-				</article>
-
-				<aside class="element x1 issue-labels">
-					<p>
-						<span class="label label-type">type-flash </span>
-						<span class="label label-browser">browser-safari </span>
-						<span class="label label-os">os-android </span>
-					</p>
-				</aside>
-			</div>
-
-			<div class="grid issue label-closed">
-				<article class="element x2 issue-description">
-					<p class="issue-number">Issue 71234: </p>
-					<p class="issue-url">https://unicorn.js</p>
-					<p class="issue-type">Audio / media does not play</p>
-					<p class="issue-date-open">Opened: 2017-11-12</p>
-					<p class="issue-date-closed">Closed: 2017-11-14</p>
-					<p class="issue-comments">Comments: 12</p>
-				</article>
-
-				<aside class="element x1 issue-labels">
-					<p>
-						<span class="label label-browser">browser-firefox </span>
-						<span class="label label-device">device-mobile </span>
-						<span class="label label-os">os-android </span>
-					</p>
-				</aside>
-			</div>
-		</section>
-
-		<section class="grid-wrapper">
-			<div class="element x3 hint-text">
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
 				<h4 class="headline-3">Module: Bio</h4>
 				<p>
-					This module is a 1:1:1 module, with a fixed first element to display a picture. The second element is for description or bio of a person, including name, where this person is from etc. The last of the elements is for contact information. 
+					This module is a 1:1:1 module, with a fixed first grid-cell to display a picture. The second grid-cell is for description or bio of a person, including name, where this person is from etc. The last of the grid-cells is for contact information. 
 				</p>
 			</div>
-		</section>
-		<section class="grid-wrapper">
-			<article class="grid bio">
-				<img src="https://avatars0.githubusercontent.com/u/6587558" alt="Adam Stevenson" class="bio-img bg-color-1 element x1-fix" />
-				<div class="element-wrapper element">
-					<div class="element x1"> 
-						<h2 class="headline-2">Adam Stevenson </h2>
-						<h3 class="headline-3">Canada</h3>
-						<p>
-							Works on webcompat bugs and does outreach to sites / developers. Enjoys music, biking,
-							travel and sometimes photos.
-						</p>
-					</div>
-					<p class="element x1"> 
-						<a href="http://twitter.com/adamopenweb" title="adamopenweb on twitter">@adamopenweb </a> <br />
-						<a href="http://github.com/adamopenweb" title="adamopenweb on github">@adamopenweb </a>
+		</div>
+	</section>
+	<section class="grid">
+		<article class="grid-row bio">
+			<img src="https://avatars0.githubusercontent.com/u/6587558" alt="Adam Stevenson" class="bio-img grid-cell x1-fix" />
+			<div class="grid-nested x1">
+				<div class="grid-cell x1">
+					<h2 class="headline-2">Adam Stevenson </h2>
+					<h3 class="headline-3">Canada</h3>
+					<p>
+						Works on webcompat bugs and does outreach to sites / developers. Enjoys music, biking,
+						travel and sometimes photos.
 					</p>
 				</div>
-			</article>
-		</section>
-		<section class="grid-wrapper">
-			<div class="element x3">
+				<p class="grid-cell x1">
+					<a href="http://twitter.com/adamopenweb" title="adamopenweb on twitter">@adamopenweb </a> <br />
+					<a href="http://github.com/adamopenweb" title="adamopenweb on github">@adamopenweb </a>
+				</p>
+			</div>
+		</article>
+	</section>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
 				<pre>
 					<code class="code-text">
 &lt;article class="grid bio"&gt;
-	&lt;img src="" alt="" class="bio-img element x1-fix" /&gt;
-	&lt;div class="element-wrapper element"&gt;
-		&lt;div class="element x1"&gt; 
+	&lt;img src="" alt="" class="bio-img grid-cell x1-fix" /&gt;
+	&lt;div class="grid-nested"&gt;
+		&lt;div class="grid-cell x1"&gt; 
 			&lt;h2 class="headline-2"&gt;Name&lt;/h2&gt;
 			&lt;h3 class="headline-3"&gt;Country&lt;/h3&gt;
 			&lt;p&gt;Bio / description&lt;/p&gt;
 		&lt;/div&gt;
-		&lt;p class="element x1"&gt; 
+		&lt;p class="grid-cell x1"&gt; 
 			&lt;a href="" title=""&gt;@handlename &lt;/a&gt; 
 		&lt;/p&gt;
 	&lt;/div&gt;
@@ -1484,10 +1663,12 @@
 					</code>
 				</pre>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="grid-wrapper">
-			<div class="element x3 hint-text">
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
 				<h4 class="headline-3">Module: Footer</h4>
 				<p>
 					 This module is the footer navigation. It comes with a sub navigation, if necessary. 
@@ -1506,52 +1687,53 @@
 					</code> and the needed icon class like e.g. <code>icon-twitter</code>, which indicates the box size of the icon. The icon is included per SVG for accessibility reasons. Their link is indicated as <code>footer-item-link</code>.
 				</p>
 			</div>
-		</section>
-		<footer id="footer" class="grid-wrapper">
-			<section class="grid">
-				<ul class="element x2 footer-list">
-					<li class="footer-item"><a class="footer-item-link" href="#" title="">Home</a></li>
-					<li class="footer-item"><a class="footer-item-link" href="#" title="">About</a></li>
-					<li class="footer-item"><a class="footer-item-link" href="#" title="">Report a bug</a></li>
-					<li class="footer-item active"><a class="footer-item-link" href="#" title="">Contribute</a></li>
-					<li class="footer-item"><a class="footer-item-link" href="#" title="">All issues</a></li>
-					<li class="footer-item"><a class="footer-item-link" href="#" title="">Code of Conduct</a></li>
-					<li class="footer-item"><a class="footer-item-link" href="#" title="">Contact</a></li>
+		</div>
+	</section>
+	<footer id="footer" class="grid">
+		<section class="grid-row">
+			<ul class="grid-cell x2 footer-list">
+				<li class="footer-item"><a class="footer-item-link" href="#" title="">Home</a></li>
+				<li class="footer-item"><a class="footer-item-link" href="#" title="">About</a></li>
+				<li class="footer-item"><a class="footer-item-link" href="#" title="">Report a bug</a></li>
+				<li class="footer-item active"><a class="footer-item-link" href="#" title="">Contribute</a></li>
+				<li class="footer-item"><a class="footer-item-link" href="#" title="">All issues</a></li>
+				<li class="footer-item"><a class="footer-item-link" href="#" title="">Code of Conduct</a></li>
+				<li class="footer-item"><a class="footer-item-link" href="#" title="">Contact</a></li>
+			</ul>
+			<div class="grid-nested x1">
+				<ul class="grid-cell x1 footer-sub-list">
+					<li class="footer-sub-item active"><a class="footer-item-link" href="#" title="">The Community</a></li>
+					<li class="footer-sub-item"><a class="footer-item-link" href="#" title="">The Team</a></li>
+					<li class="footer-sub-item"><a class="footer-item-link" href="#" title="">The Work</a></li>
 				</ul>
-				<div class="element-wrapper element x1">
-					<ul class="element x1 footer-sub-list">
-						<li class="footer-sub-item active"><a class="footer-item-link" href="#" title="">The Community</a></li>
-						<li class="footer-sub-item"><a class="footer-item-link" href="#" title="">The Team</a></li>
-						<li class="footer-sub-item"><a class="footer-item-link" href="#" title="">The Work</a></li>
-					</ul>
-
-					<ul class="element x1 footer-sub-icons">
-						<li class="footer-icon icon-twitter">
-							<a class="footer-item-link" href="#" title="">
-								<svg class="icon" role="presentation" aria-role="hide" viewbox="0 0 30 30">
-								<title>Twitter</title>
-								  <use href="#twitter-2">Twitter</use>
-								</svg>
-							</a>
-						</li>
-						<li class="footer-icon icon-github">
-							<a class="footer-item-link" href="#" title="">
-								<svg class="icon" role="presentation" aria-role="hide" viewbox="0 0 30 30">
-								<title>github</title>
-								  <use href="#github">Github</use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</footer>
-		<section class="grid-wrapper">
-			<div class="element x3">
+				<ul class="grid-cell x1 footer-sub-icons">
+					<li class="footer-icon icon-twitter">
+						<a class="footer-item-link" href="#" title="">
+							<svg class="icon" role="presentation" aria-role="hide" viewbox="0 0 30 30">
+							<title>Twitter</title>
+							  <use href="#twitter-2">Twitter</use>
+							</svg>
+						</a>
+					</li>
+					<li class="footer-icon icon-github">
+						<a class="footer-item-link" href="#" title="">
+							<svg class="icon" role="presentation" aria-role="hide" viewbox="0 0 30 30">
+							<title>github</title>
+							  <use href="#github">Github</use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</footer>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
 				<pre>
 					<code class="code-text">
 /* MAIN NAVIGATION */
-&lt;ul class="element x2 footer-list"&gt;
+&lt;ul class="grid-cell x2 footer-list"&gt;
 	&lt;li class="footer-item"&gt;
 		&lt;a class="footer-item-link" href="" title=""&gt;Link&lt;/a&gt;
 	&lt;/li&gt;
@@ -1561,7 +1743,7 @@
 &lt;/ul&gt;
 
 /* SUB NAVIGATION */
-&lt;ul class="element x1 footer-sub-list"&gt;
+&lt;ul class="grid-cell x1 footer-sub-list"&gt;
 	&lt;li class="footer-sub-item"&gt;
 		&lt;a class="footer-item-link" href="" title=""&gt;Link&lt;/a&gt;
 	&lt;/li&gt;	
@@ -1571,7 +1753,7 @@
 &lt;/ul&gt;
 
 /* ICON NAVIGATION */
-&lt;ul class="element x1 footer-sub-icons"&gt;
+&lt;ul class="grid-cell x1 footer-sub-icons"&gt;
 	&lt;li class="footer-icon icon-twitter"&gt;
 		&lt;a class="footer-item-link" href="" title=""&gt;
 			&lt;svg class="icon" role="presentation" aria-role="hide"&gt;
@@ -1589,8 +1771,9 @@
 		&lt;/a&gt;
 	&lt;/li&gt;
 &lt;/ul&gt;
-					</code>
-				</pre>
+						</code>
+					</pre>
+				</div>
 			</div>
 		</section>
 	</body>
