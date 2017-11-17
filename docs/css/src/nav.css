@@ -4,15 +4,23 @@
   left: 50%;
   z-index: 100;
   transform: translateX(-50%);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 100vw;
+  display: flex;
+  justify-content: center;
   box-sizing: border-box;
-  max-width: var(--unit-modul-l);
   padding: calc(var(--unit-gutter)/2) var(--unit-gutter);
   background-color: var(--color-first);
   color: var(--color-second);
+}
+
+.nav-container {
+  max-width: var(--unit-modul-l);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 var(--unit-gutter);
+  box-sizing: border-box;
 }
 
 .nav .grid {

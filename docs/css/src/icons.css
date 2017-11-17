@@ -23,8 +23,7 @@ svg, use {
 }
 
 .illustration {
-  min-width: 6em;
-  min-height: 6em;
+  max-width: 6em;
 }
 
 /* icons */
