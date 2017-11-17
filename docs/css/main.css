@@ -15,6 +15,7 @@
 @import 'filter.css';
 @import 'issues-list.css';
 @import 'footer.css';
+@import 'notification-bar.css';
 
 /* imports for vendor files */
 @import 'lib/prism-gh-theme.css'
