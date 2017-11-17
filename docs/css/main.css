@@ -11,8 +11,14 @@
 @import 'hero.css';
 @import 'tiles.css';
 @import 'form.css';
+@import 'labels.css';
+@import 'filter.css';
+@import 'issues-list.css';
 @import 'footer.css';
 @import 'notification-bar.css';
+
+/* imports for vendor files */
+@import 'lib/prism-gh-theme.css'
 
 body {
   background-color: var(--color-bg-page);

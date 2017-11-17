@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>webcompat - Living Style Guide</title>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Source+Sans+Pro:300,400" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Source+Sans+Pro:300,400|PT+Mono" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/styleguide.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1297,6 +1297,143 @@
 &lt;/button&gt;
 					</code>
 				</pre>
+			</div>
+		</section>
+
+		<section id="filter-issue-status" class="grid-wrapper">
+			<div class="element x3">
+				<ul class="filter-label">
+				  <li class="needs-triage">Needs Triage</li>
+				  <li class="needs-diagnosis active">Needs Diagnosis</li>
+				  <li class="needs-contact">Needs Contact</li>
+				  <li class="outreach">Ready for Outreach</li>
+				  <li class="site-contacted">Site Contacted</li>
+				  <li class="closed">Closed</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="grid-wrapper">
+			<div class="element x3 hint-text">
+				<h4 class="headline-3">Module: Issues List</h4>
+				<p>
+					This module is a 2:1 module, with a border to display the status of the issue. The second element contains the labels to categorise the issue.
+				</p>
+			</div>
+		</section>
+
+		<section id="issues-list" class="grid-wrapper">
+			<div class="grid issue label-needs-triage">
+				<article class="element x2 issue-description">
+					<p class="issue-number">Issue 71234: </p>
+					<p class="issue-url">https://unicornthisareaaaaalllyloooongurl.js</p>
+					<p class="issue-type">Audio / media does not play</p>
+					<p class="issue-date-open">Opened: 2017-11-12</p>
+					<p class="issue-comments">Comments: 12</p>
+				</article>
+
+				<aside class="element x1 issue-labels">
+					<p>
+						<span class="label label-type">type- </span>
+						<span class="label label-browser">browser- </span>
+						<span class="label label-nsfw">nsfw </span>
+						<span class="label label-status">status- </span>
+						<span class="label label-priority">priority- </span>
+						<span class="label label-device">device- </span>
+						<span class="label label-os">os- </span>
+					</p>
+				</aside>
+			</div>
+
+			<div class="grid issue label-needs-diagnosis">
+				<article class="element x2 issue-description">
+					<p class="issue-number">Issue 71234: </p>
+					<p class="issue-url">https://unicorn.js</p>
+					<p class="issue-type">Audio / media does not play</p>
+					<p class="issue-date-open">Opened: 2017-11-12</p>
+					<p class="issue-comments">Comments: 12</p>
+				</article>
+
+				<aside class="element x1 issue-labels">
+					<p>
+						<span class="label label-browser">browser-ie </span>
+						<span class="label label-priority">priority-normal </span>
+						<span class="label label-device">device-mobile </span>
+					</p>
+				</aside>
+			</div>
+
+			<div class="grid issue label-needs-contact">
+				<article class="element x2 issue-description">
+					<p class="issue-number">Issue 71234: </p>
+					<p class="issue-url">https://unicorn.js</p>
+					<p class="issue-type">Audio / media does not play</p>
+					<p class="issue-date-open">Opened: 2017-11-12</p>
+					<p class="issue-comments">Comments: 12</p>
+				</article>
+
+				<aside class="element x1 issue-labels">
+					<p>
+						<span class="label label-browser">browser-firefox </span>
+						<span class="label label-device">device-mobile </span>
+						<span class="label label-os">os-android </span>
+					</p>
+				</aside>
+			</div>
+
+			<div class="grid issue label-outreach">
+				<article class="element x2 issue-description">
+					<p class="issue-number">Issue 71234: </p>
+					<p class="issue-url">https://unicorn.js</p>
+					<p class="issue-type">Audio / media does not play</p>
+					<p class="issue-date-open">Opened: 2017-11-12</p>
+					<p class="issue-comments">Comments: 12</p>
+				</article>
+
+				<aside class="element x1 issue-labels">
+					<p>
+						<span class="label label-type">type-media </span>
+						<span class="label label-browser">browser-chrome </span>
+						<span class="label label-nsfw">nsfw </span>
+					</p>
+				</aside>
+			</div>
+
+			<div class="grid issue label-site-contacted">
+				<article class="element x2 issue-description">
+					<p class="issue-number">Issue 71234: </p>
+					<p class="issue-url">https://unicorn.js</p>
+					<p class="issue-type">Audio / media does not play</p>
+					<p class="issue-date-open">Opened: 2017-11-12</p>
+					<p class="issue-comments">Comments: 12</p>
+				</article>
+
+				<aside class="element x1 issue-labels">
+					<p>
+						<span class="label label-type">type-flash </span>
+						<span class="label label-browser">browser-safari </span>
+						<span class="label label-os">os-android </span>
+					</p>
+				</aside>
+			</div>
+
+			<div class="grid issue label-closed">
+				<article class="element x2 issue-description">
+					<p class="issue-number">Issue 71234: </p>
+					<p class="issue-url">https://unicorn.js</p>
+					<p class="issue-type">Audio / media does not play</p>
+					<p class="issue-date-open">Opened: 2017-11-12</p>
+					<p class="issue-date-closed">Closed: 2017-11-14</p>
+					<p class="issue-comments">Comments: 12</p>
+				</article>
+
+				<aside class="element x1 issue-labels">
+					<p>
+						<span class="label label-browser">browser-firefox </span>
+						<span class="label label-device">device-mobile </span>
+						<span class="label label-os">os-android </span>
+					</p>
+				</aside>
 			</div>
 		</section>
 
