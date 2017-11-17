@@ -8,6 +8,26 @@
 .sub-nav-header {
   text-transform: uppercase;
   font-weight: 700;
+  position: relative;
+}
+
+.sub-nav-header::after {
+  content: '';
+  position: absolute;
+  background-image: url('../../svg/icons/circle-down.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+  top: 5px;
+  margin-left: calc(var(--unit-space) * 2);
+}
+
+/* var(--page-size-s) = 320px - vars not usable in queries */
+@media (min-width: 320px) {
+  .sub-nav-header::after {
+    content: none;
+  }
 }
 
 .nested-sub-nav {
