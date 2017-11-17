@@ -1,0 +1,99 @@
+.label-box {}
+.grid-cell.x1-fix.label-box {
+  padding: 0;
+  background-color: #fafafa
+}
+
+.label-box-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+}
+
+.label-box .label-needs-triage {
+  background-color: var(--label-needs-triage);
+}
+
+.label-box .label-needs-diagnosis {
+  background-color: var(--label-needs-diagnosis);
+}
+
+.label-box .label-needs-contact {
+  background-color: var(--label-needs-contact);
+}
+
+.label-box .label-outreach {
+  background-color: var(--label-outreach);
+}
+
+.label-box .label-site-contacted {
+  background-color: var(--label-site-contacted);
+}
+
+.label-box .label-closed {
+  background-color: var(--label-closed);
+}
+
+.label-box .label-type {
+  background-color: var(--label-color-type);
+}
+
+.label-box .label-browser {
+  background-color: var(--label-color-browser);
+}
+
+.label-box .label-nsfw {
+  background-color: var(--label-color-nsfw);
+}
+
+.label-box .label-status {
+  background-color: var(--label-color-status);
+}
+
+.label-box .label-priority {
+  background-color: var(--label-color-priority);
+}
+
+.label-box .label-device {
+  background-color: var(--label-color-device);
+}
+
+.label-box .label-os {
+  background-color: var(--label-color-os);
+}
+
+.label-box-section {
+  background-color: #fff;
+  padding: 14px
+}
+
+.label-box-section + .label-box-section {
+  margin: 2px 0 0 0;
+}
+
+.label-box-title.headline-2 {
+  margin: 0;
+}
+
+.label-box .label {
+  display: block;
+  line-height: 1;
+  font-size: 12px;
+  padding: 6px 10px;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.label-box .label + .label {
+  margin: 7px 0 0 0;
+}
+
+.label-box-editor {
+  position: relative;
+}
+
+.label-box-editor-button {
+  display: flex;
+  justify-content: space-between;
+}

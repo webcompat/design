@@ -24,6 +24,8 @@
 @import 'src/notification-bar.css';
 @import 'src/animations.css';
 @import 'src/sub-nav.css';
+@import 'src/label-box.css';
+@import 'src/label-editor.css';
 
 /* imports for other vendor files */
 @import "lib/prism-gh-theme.css";
@@ -46,6 +48,15 @@ body {
   }
 }
 
+<<<<<<< HEAD
+=======
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+>>>>>>> b2e7a0a... fixed conflict
 /* helper to hide meta elements */
 .is-hidden {
   display: none;
