@@ -8,42 +8,42 @@
 */
 
 .button {
-    display: inline-block;
-    padding: 12px 23px;
-    color: inherit;
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer;
+  display: inline-block;
+  padding: 12px 23px;
+  color: inherit;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .button:hover,
 .button-primary:hover,
 .button-secondary:hover {
-    opacity: 0.85;
+  opacity: 0.85;
 }
 
 .button-primary {
-    background-color: var(--color-first);
+  background-color: var(--color-first);
 }
 
 .button-secondary {
-    background-color: var(--color-second);
-    color: var(--color-bg-page);
+  background-color: var(--color-second);
+  color: var(--color-bg-page);
 }
 
 .button-icon-hero {
-    fill: var(--color-first);
+  fill: var(--color-first);
 }
 
 .button-hero {
-    border-radius: 10px;
-    padding: 12px 20px 10px 23px;
-    font-size: 2em;
-    background-color: var(--color-second);
-    color: var(--color-first);
-    font-weight: 200;
+  border-radius: 10px;
+  padding: 12px 20px 10px 23px;
+  font-size: 2em;
+  background-color: var(--color-second);
+  color: var(--color-first);
+  font-weight: 200;
 }
 
 .button-hero:hover {
-    opacity: 1;
+  opacity: 1;
 }
