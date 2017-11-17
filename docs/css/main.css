@@ -1,6 +1,6 @@
 /* imports for vendor files that should be imported first */
 @import 'lib/reset.css';
-@import 'lib/a11y-en.css';
+/*@import 'lib/a11y-en.css';*/
 
 /* custom src files */
 @import 'src/variables.css';
@@ -20,6 +20,7 @@
 @import 'src/issues-list.css';
 @import 'src/footer.css';
 @import 'src/notification-bar.css';
+@import 'src/sub-nav.css';
 
 /* imports for other vendor files */
 @import 'lib/prism-gh-theme.css';

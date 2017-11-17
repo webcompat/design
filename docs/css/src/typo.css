@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hint-text {
-  color: #888;
+  color: var(--color-hint);
   font-style: italic;
   font-family: Palatino, Garamond, serif;
   font-size: 1.025em;	

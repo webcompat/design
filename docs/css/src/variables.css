@@ -32,6 +32,7 @@
 	--color-error-transparent:	rgba(191,1,1,0.8); /* #bf0101 20% transparency */
 	--color-warning:			rgba(255,144,0,1); /* #ff9000 */
 	--color-success:			rgba(47,153,0,1); /* #2f9900 */
+	--color-hint:					rgba(136, 136, 136, 1); /* #888 */
 	--label-color-1:			rgba(0,0,17,1); /* #000011 */
 	--label-color-2:			rgba(0,0,34,1); /* #000022 */
 	--label-color-3:			rgba(0,0,51,1); /* #000033 */
