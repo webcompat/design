@@ -1,0 +1,80 @@
+#filter-issue-status {}
+
+.filter-label {
+	width: 100%;
+	text-align: center;
+}
+
+	.filter-label * {
+		display: block;
+		line-height: 3em;
+		margin-bottom: 5px;
+		border-left: 5px solid;
+	}
+
+	.filter-label .needs-triage {
+		border-color: var(--label-needs-triage);
+	}
+
+		.filter-label .needs-triage:hover,
+		.filter-label .needs-triage.active {
+			background-color: var(--label-needs-triage);
+		}
+
+	.filter-label .needs-diagnosis {
+		border-color: var(--label-needs-diagnosis);
+	}
+
+		.filter-label .needs-diagnosis:hover,
+		.filter-label .needs-diagnosis.active {
+			background-color: var(--label-needs-diagnosis);
+		}
+
+	.filter-label .needs-contact {
+		border-color: var(--label-needs-contact);
+	}
+
+		.filter-label .needs-contact:hover,
+		.filter-label .needs-contact.active {
+			background-color: var(--label-needs-contact);
+		}
+
+
+	.filter-label .outreach {
+		border-color: var(--label-outreach);
+	}
+
+		.filter-label .outreach:hover,
+		.filter-label .outreach.active {
+			background-color: var(--label-outreach);
+		}
+
+	.filter-label .site-contacted {
+		border-color: var(--label-site-contacted);
+	}
+
+		.filter-label .site-contacted:hover,
+		.filter-label .site-contacted.active {
+			background-color: var(--label-site-contacted);
+		}
+
+
+	.filter-label .closed {
+		border-color: var(--label-closed);
+	}
+
+		.filter-label .closed:hover,
+		.filter-label .closed.active {
+			background-color: var(--label-closed);
+		}
+
+@media screen and (min-width: 960px) {
+	.filter-label * {
+		display: inline-block;
+		padding: 2px 10px;
+		border-top: 5px solid;
+		border-left: 0 none;
+		transition: all ease 0.8s;
+		line-height: 2.2em;
+	}
+}
