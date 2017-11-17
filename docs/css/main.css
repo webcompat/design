@@ -1,24 +1,27 @@
-@import 'reset.css';
-@import 'a11y-en.css';
-@import 'variables.css';
-@import 'typo.css';
-@import 'grid.css';
-@import 'colors.css';
-@import 'icons.css';
-@import 'button.css';
-@import 'nav.css';
-@import 'bio.css';
-@import 'hero.css';
-@import 'tiles.css';
-@import 'form.css';
-@import 'issue.css';
-@import 'labels.css';
-@import 'filter.css';
-@import 'issues-list.css';
-@import 'footer.css';
-@import 'notification-bar.css';
+/* imports for vendor files that should be imported first */
+@import 'lib/reset.css';
+@import 'lib/a11y-en.css';
 
-/* imports for vendor files */
+/* custom src files */
+@import 'src/variables.css';
+@import 'src/typo.css';
+@import 'src/grid.css';
+@import 'src/colors.css';
+@import 'src/icons.css';
+@import 'src/button.css';
+@import 'src/nav.css';
+@import 'src/bio.css';
+@import 'src/hero.css';
+@import 'src/tiles.css';
+@import 'src/form.css';
+@import 'src/issue.css';
+@import 'src/labels.css';
+@import 'src/filter.css';
+@import 'src/issues-list.css';
+@import 'src/footer.css';
+@import 'src/notification-bar.css';
+
+/* imports for other vendor files */
 @import 'lib/prism-gh-theme.css';
 
 body {
