@@ -48,8 +48,11 @@
   text-decoration: none;
 }
 
-.nav-item .nav-icon {
-  height: 30px;
+.nav-icon {
+  width: 30px;
+  height: auto;
+
+  vertical-align: middle;
 }
 
 .nav-item .link-text {
@@ -58,6 +61,7 @@
   width: 0;
   height: 0;
   overflow: hidden;
+  vertical-align: middle;
 }
 
 
@@ -69,7 +73,7 @@
   }
 
   .nav-icon {
-    width: 15px;
+    width: 16px;
   }
 }
 
