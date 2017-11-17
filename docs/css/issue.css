@@ -33,3 +33,26 @@
 			.comment-header .comment-reporter {
 				line-height: 1.6em;
 			}
+
+	.issue-new-comment .grid-cell {
+		padding: 0;
+		margin: 0;
+	}
+	
+	.issue-new-comment .form-text {
+		padding: 0;
+	}
+	
+	.issue-new-comment .text-field {
+		padding: calc(var(--unit-space) * 2);
+		box-sizing: border-box;
+	}
+	
+	.issue-new-comment .form-upload {
+		margin: calc(var(--unit-space) * 2);
+	}
+	
+	.issue-new-comment .comment-submit {
+		display: flex;
+		justify-content: center;
+	}
