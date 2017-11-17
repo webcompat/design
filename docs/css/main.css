@@ -1,6 +1,6 @@
 /* imports for vendor files that should be imported first */
 @import 'lib/reset.css';
-/*@import 'lib/a11y-en.css';*/
+@import 'lib/a11y-en.css';
 
 /* custom src files */
 @import 'src/variables.css';
