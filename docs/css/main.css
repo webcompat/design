@@ -40,3 +40,8 @@ ul, li {
     padding: var(--navi-height) 19px 50px;
   }
 }
+
+/* helper to hide meta elements */
+.is-hidden {
+  display: none;
+}
