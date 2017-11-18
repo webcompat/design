@@ -1,0 +1,27 @@
+.filter-bar {
+  position: relative;
+}
+
+.filter-bar-search {
+  position: absolute;
+  right: .5em;
+  top: .5em;
+  bottom: .5em;
+
+  height: 2em;
+}
+
+.filter-bar-search-input {
+  width: 0;
+  overflow: hidden;
+
+  transition: width .5s ease-in-out;
+}
+
+.filter-bar-search-input:focus {
+  width: calc(100% - 32px);
+}
+
+.foo {
+
+}
