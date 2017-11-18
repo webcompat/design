@@ -27,7 +27,6 @@
 
 body {
   background-color: var(--color-bg-page);
-  box-sizing: border-box;
   padding-top: var(--navi-height);
 }
 
@@ -43,6 +42,18 @@ ul, li {
   body {
     padding: var(--navi-height) 19px 50px;
   }
+}
+
+@media screen and (min-width: 998px){
+  body {
+    padding: 0;
+  }
+}
+
+*, 
+*::after, 
+*::before {
+  box-sizing: border-box;
 }
 
 /* helper to hide meta elements */

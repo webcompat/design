@@ -9,8 +9,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    box-sizing: border-box;
-
     background-color: white;
   }
 
@@ -23,7 +21,6 @@
     }
 
   .grid-cell {
-    box-sizing: border-box;
     padding: var(--unit-space);
     margin: 0 var(--unit-gutter) 0 0;
   }
@@ -75,6 +72,23 @@
 
     max-width: var(--unit-modul-l);
   }
+
+
+  .grid-full {
+    margin: 0;
+    max-width: 100vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: var(--color-bg-box);
+  }
+
+  .grid-full .grid-row {
+    max-width: calc(var(--unit-modul-l) + var(--unit-gutter-l));
+    
+  } 
 
     .grid-row {
       margin: 0 calc(-1 * var(--unit-gutter-l)) 0 0;

@@ -9,7 +9,6 @@
 
 .form-element {
   position: relative;
-  box-sizing: border-box;
   max-width: 100%;
   margin: 0;
   padding: 20px 0;
@@ -116,7 +115,6 @@
   display: inline-block;
   position: relative;
   top: 3px;
-  box-sizing: border-box;
   width: var(--input-size);
   height: var(--input-size);
   margin-right: 15px;

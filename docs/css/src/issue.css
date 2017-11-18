@@ -44,7 +44,6 @@
 	}
 	
 	.issue-new-comment .text-field {
-		box-sizing: border-box;
 		padding: calc(var(--unit-space) * 2);
 		margin-bottom: calc(var(--unit-space) * 2);
 	}
