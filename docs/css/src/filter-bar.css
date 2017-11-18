@@ -2,26 +2,40 @@
   position: relative;
 }
 
+.filter-bar-search * {
+  box-sizing: border-box;
+}
+
 .filter-bar-search {
   position: absolute;
   right: .5em;
   top: .5em;
-  bottom: .5em;
 
-  height: 2em;
+  height: 32px;
+  width: -moz-min-content;
+  width: min-content;
+
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .filter-bar-search-input {
-  width: 0;
-  overflow: hidden;
+  padding-left: 1.5em;
 
+  width: 0;
   transition: width .5s ease-in-out;
 }
 
-.filter-bar-search-input:focus {
-  width: calc(100% - 32px);
+.filter-bar-search-input:focus, .filter-bar-search-input:not(:empty) {
+  padding-left: 10em;
+  width: var(--unit-modul-l);
 }
 
-.foo {
+.filter-bar-search-label {
+  position: absolute;
+  left: .25em;
+  top: .25em;
 
+  display: flex;
+  white-space: nowrap;
 }

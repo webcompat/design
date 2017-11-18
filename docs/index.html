@@ -653,10 +653,10 @@
 			<h1 class="hero-claim highlight">Bug reporting <br /> for the web.</h1>
 			<button type="button" class="button button-hero">
 				Report bug
-			<svg class="icon-middle" role="presentation" aria-role="hide">
-				<title>circle-right</title>
-				<use class="button-icon-hero" href="#circle-right">Report bug</use>
-			</svg>
+				<svg class="icon-middle" role="presentation" aria-role="hide">
+					<title>circle-right</title>
+					<use class="button-icon-hero" href="#svg-circle-right">Report bug</use>
+				</svg>
 			</button>
 		</article>
 		<aside id="hero-illustration">
@@ -1373,7 +1373,7 @@
 	<section class="grid">
 		<div class="grid-row">
 			<div class="grid-cell x3 hint-text">
-				<h4 class="headline-3">Module: Search bar</h4>
+				<h4 class="headline-3">Module: Filter bar</h4>
 				<p>
 					This module is the search and filter bar for existing issues.
 				</p>
@@ -1381,7 +1381,7 @@
 		</div>
 	</section>
 
-	<section class="filter-bar" class="grid">
+	<section class="filter-bar grid">
 		<div class="grid-row">
 			<div class="grid-cell">
 				<div>
@@ -1404,15 +1404,13 @@
 						<li>Foo</li>
 					</ul>
 				</div>
-				<div class="filter-bar-search" role="search">
-					<label for="filter-bar-search-input">
-						<input id="filter-bar-search-input" class="filter-bar-search-input" type="search">
-						<div class="foo">
-							<svg class="icon-middle" viewBox="0 0 30 30" role="presentation">
-								<use href="#svg-search">Search</use>
-							</svg>
-							Search issues
-						</div>
+				<div id="filter-bar-search" class="filter-bar-search" role="search" tabindex="0">
+					<input id="filter-bar-search-input" class="filter-bar-search-input" type="search" placeholder="ABC doesn't work">
+					<label for="filter-bar-search-input" class="filter-bar-search-label">
+						<svg class="icon-middle" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-search">Search</use>
+						</svg>
+						Search issues
 					</label>
 				</div>
 			</div>
@@ -1425,7 +1423,19 @@
 			<div class="grid-cell x3 hint-text">
 				<h4 class="headline-3">Module: Issues List</h4>
 				<p>
-					This module is a 2:1 module, with a border to display the status of the issue. The second grid-cell contains the labels to categorise the issue.
+					This module is a 2:1 module, with a border to display the status of the issue. The second grid-cell contains the labels.
+				</p>
+				<p>
+					The labels have different classes (also colors) to categorise the different issues:
+					<ul>
+							<li>label-type </li>
+							<li>label-browser </li>
+							<li>label-nsfw</li>
+							<li>label-status</li>
+							<li>label-priority</li>
+							<li>label-device</li>
+							<li>label-os</li>
+					</ul>
 				</p>
 			</div>
 		</div>
@@ -1543,6 +1553,35 @@
 					<span class="label label-os">os-android </span>
 				</p>
 			</aside>
+		</div>
+	</section>
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
+				<pre>
+					<code>
+&lt;section id="issues-list" class="grid"&gt;
+	&lt;div class="grid-row issue label-closed"&gt;
+		&lt;article class="grid-cell x2 issue-description"&gt;
+			&lt;p class="issue-number"&gt; Issue 71234: &lt;/p&gt;
+			&lt;p class="issue-url"&gt; https://unicornjs.com &lt;/p&gt;
+			&lt;p class="issue-type"&gt; Audio / media does not play &lt;/p&gt;
+			&lt;p class="issue-date-open"&gt; Opened: 2017-11-12 &lt;/p&gt;
+			&lt;p class="issue-date-closed"&gt; Closed: 2017-11-14 &lt;/p&gt;
+			&lt;p class="issue-date-comments"&gt; Comments: 12 &lt;/p&gt;
+		&lt;/article&gt;
+		&lt;aside class="grid-cell x1 issue-labels" &gt;
+			&lt;p&gt;
+				&lt;span class="label label-browser"&gt; browser-firefox &lt;/span&gt;
+				&lt;span class="label label-device"&gt; device-mobile &lt;/span&gt;
+				&lt;span class="label label-os"&gt; od-android &lt;/span&gt;
+			&lt;/p&gt;
+		&lt;/aside&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+						</code>
+				</pre>
+			</div>
 		</div>
 	</section>
 
