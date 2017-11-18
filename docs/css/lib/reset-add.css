@@ -18,19 +18,11 @@ pre {
   overflow-y: scroll;
 }
 
-/* Adds positioning and filling for svgs */
 svg {
-  position: absolute;
-  top: -1000px;
-}
-
-svg,
-use {
   fill: var(--color-second);
 }
 
 /* Sets Boxmodel overall the project */
-
 *, 
 *::after,
 *::before {
