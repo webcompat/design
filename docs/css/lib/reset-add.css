@@ -29,3 +29,11 @@ use {
   fill: var(--color-second);
 }
 
+/* Sets Boxmodel overall the project */
+
+*, 
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+

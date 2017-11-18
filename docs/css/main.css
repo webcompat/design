@@ -37,16 +37,10 @@
   }
 }
 
-@media screen and (min-width: 998px){
-  body {
+@media screen and (min-width: 998px) {
+  .body-webcompat {
     padding: 0;
   }
-}
-
-*, 
-*::after, 
-*::before {
-  box-sizing: border-box;
 }
 
 /* helper to hide meta elements */
