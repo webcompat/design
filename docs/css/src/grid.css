@@ -76,6 +76,23 @@
     max-width: var(--unit-modul-l);
   }
 
+
+  .grid-full {
+    margin: 0;
+    max-width: 100vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: white;
+  }
+
+  .grid-full .grid-row {
+    max-width: calc(var(--unit-modul-l) + var(--unit-gutter-l));
+    
+  } 
+
     .grid-row {
       margin: 0 calc(-1 * var(--unit-gutter-l)) 0 0;
     }

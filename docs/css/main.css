@@ -44,6 +44,16 @@ ul, li {
   }
 }
 
+@media screen and (min-width: 998px){
+  body {
+    padding: 0;
+  }
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
 /* helper to hide meta elements */
 .is-hidden {
   display: none;
