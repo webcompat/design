@@ -56,10 +56,8 @@
     },
     "ignoreFiles": [
       "./webcompat/static/css/development/vendor/prism.css",
-      "./css/lib/a11y-en.css",
-      "./css/lib/prism-gh-theme.css",
-      "./css/lib/reset.css",
-      "./css/lib/reset-add.css"
+      "./css/lib/*",
+
     ],
     "ignoreShorthands": [
         "font"
