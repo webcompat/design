@@ -19,7 +19,7 @@
 .button:hover,
 .button-primary:hover,
 .button-secondary:hover {
-  opacity: 0.85;
+  opacity: .85;
 }
 
 .button-primary {
@@ -35,17 +35,17 @@
   fill: var(--color-first);
 }
 
-.button-hero .icon-middle{
+.button-hero .icon-middle {
   transform: rotate(-90deg);
   vertical-align: middle;
 }
 
-.button-hero:hover .icon-middle{
+.button-hero:hover .icon-middle {
   transform: rotate(0deg);
 }
 
 .button-hero {
-  border-radius: 10px;  
+  border-radius: 10px;
   font-size: 2em;
   background-color: var(--color-second);
   color: var(--color-first);

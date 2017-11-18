@@ -1,13 +1,13 @@
-#hero-section {
+.hero-section {
   margin-top: -30px;
   width: 100vw;
   position: absolute;
   left: 50%;
   margin-left: -50%;
-  padding: calc(var(--unit-gutter)/2) var(--unit-gutter);
+  padding: calc (var(--unit-gutter) /2) var(--unit-gutter);
 }
 
-#hero-section .grid {
+.hero-section .grid {
   background-color: transparent;
 }
 
@@ -18,16 +18,16 @@
   margin-bottom: 1em;
 }
 
-#hero-text {
+.hero-text {
   display: inline-block;
   width: 50%;
 }
 
-#hero-text .button-hero {
+.hero-text .button-hero {
   margin-bottom: 1em;
 }
 
-#hero-illustration {
+.hero-illustration {
   display: none;
 }
 
@@ -37,33 +37,32 @@
     margin-bottom: 2em;
   }
 
-
-  #hero-text .button-hero {
+  .hero-text .button-hero {
     margin-bottom: 0;
   }
 
-  #hero-section {
+  .hero-section {
     padding: 6em var(--unit-gap) 5.25em;
     width: 100%;
     position: unset;
     margin: 0 auto;
   }
 
-  #hero-illustration {
+  .hero-illustration {
     display: inline-block;
     position: absolute;
     width: 40%;
     max-width: calc(var(--unit-modul-l) / 2);
   }
 
-  #hero-illustration-bulb {
+  .hero-illustration-bulb {
     position: absolute;
     height: 19em;
     top: -6em;
     right: 4em;
   }
 
-  #hero-illustration-bug {
+  .hero-illustration-bug {
     position: absolute;
     height: 4em;
     top: 12em;
@@ -78,12 +77,11 @@
     animation-timing-function: linear;
     transform-origin: 50% 100%;
   }
-
 }
 
 .button-icon-hero {
   fill: var(--color-first);
-  border:1px solid #f0f;
+  border: 1px solid #f0f;
 }
 
 .button-icon-hero:hover {
