@@ -4,7 +4,7 @@
   position: absolute;
   left: 50%;
   margin-left: -50%;
-  padding: calc(var(--unit-gutter)/2) var(--unit-gutter);
+  padding: calc (var(--unit-gutter) /2) var(--unit-gutter);
 }
 
 #hero-section .grid {
@@ -37,7 +37,6 @@
     margin-bottom: 2em;
   }
 
-
   #hero-text .button-hero {
     margin-bottom: 0;
   }
@@ -68,12 +67,11 @@
     top: -120px;
     right: 0;
   }
-
 }
 
 .button-icon-hero {
   fill: var(--color-first);
-  border:1px solid #f0f;
+  border: 1px solid #f0f;
 }
 
 .button-icon-hero:hover {

@@ -7,12 +7,11 @@
   background-color: rgb(255, 200, 0);
 }
 
-
 .separator {
-  background-color: #ddd;	
+  background-color: #ddd;
   border-color: #ddd;
   color: #ddd;
-  border: 0px;
+  border: 0;
   border-bottom: 1px solid;
 }
 
@@ -34,17 +33,16 @@
   left: -9999px;
 }
 
-.icon-description { 
+.icon-description {
   padding: 10px 20px;
-  display:  inline-block;
+  display: inline-block;
   min-width: 12em;
   text-align: center;
   border: 1px solid #eee;
-
 }
 
-.icon-description-item { 
-  display:  inline-block;
+.icon-description-item {
+  display: inline-block;
 }
 
 pre {

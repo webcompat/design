@@ -1,29 +1,28 @@
 /* imports for vendor files that should be imported first */
-@import 'lib/reset.css';
-@import 'lib/a11y-en.css';
+@import "lib/reset.css";
+@import "lib/a11y-en.css";
 
 /* custom src files */
-@import 'src/variables.css';
-@import 'src/typo.css';
-@import 'src/grid.css';
-@import 'src/colors.css';
-@import 'src/icons.css';
-@import 'src/button.css';
-@import 'src/nav.css';
-@import 'src/bio.css';
-@import 'src/hero.css';
-@import 'src/tiles.css';
-@import 'src/form.css';
-@import 'src/issue.css';
-@import 'src/labels.css';
-@import 'src/filter.css';
-@import 'src/issues-list.css';
-@import 'src/footer.css';
-@import 'src/notification-bar.css';
-@import 'src/sub-nav.css';
+@import "src/variables.css";
+@import "src/typo.css";
+@import "src/grid.css";
+@import "src/colors.css";
+@import "src/icons.css";
+@import "src/button.css";
+@import "src/nav.css";
+@import "src/bio.css";
+@import "src/hero.css";
+@import "src/tiles.css";
+@import "src/form.css";
+@import "src/issue.css";
+@import "src/labels.css";
+@import "src/filter.css";
+@import "src/issues-list.css";
+@import "src/footer.css";
+@import "src/notification-bar.css";
 
 /* imports for other vendor files */
-@import 'lib/prism-gh-theme.css';
+@import "lib/prism-gh-theme.css";
 
 body {
   background-color: var(--color-bg-page);
@@ -31,14 +30,15 @@ body {
 }
 
 /* reset lists */
-ul, li {
+ul,
+li {
   text-decoration: none;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-@media screen and (min-width: 665px){
+@media screen and (min-width: 665px) {
   body {
     padding: var(--navi-height) 19px 50px;
   }

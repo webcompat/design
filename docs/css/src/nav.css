@@ -7,7 +7,8 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-  padding: calc(var(--unit-gutter)/2) var(--unit-gutter);
+  box-sizing: border-box;
+  padding: calc (var(--unit-gutter) /2) var(--unit-gutter);
   background-color: var(--color-first);
   color: var(--color-second);
 }
@@ -29,7 +30,7 @@
   text-decoration: none;
   list-style: none;
   display: inline;
-  margin: 0 4px;	
+  margin: 0 4px;
 }
 
 .nav-item:first-child {
@@ -49,7 +50,6 @@
 .nav-icon {
   width: 30px;
   height: auto;
-
   vertical-align: middle;
 }
 
@@ -62,8 +62,7 @@
   vertical-align: middle;
 }
 
-
-@media screen and (min-width: 665px){
+@media screen and (min-width: 665px) {
   .nav-item .link-text {
     visibility: visible;
     width: auto;
@@ -75,7 +74,7 @@
   }
 }
 
-@media screen and (min-width: 998px){
+@media screen and (min-width: 998px) {
   #Nav {
     width: 100%;
   }
