@@ -1,4 +1,4 @@
-#hero-section {
+.hero-section {
   margin-top: -30px;
   width: 100vw;
   position: absolute;
@@ -7,7 +7,7 @@
   padding: calc (var(--unit-gutter) /2) var(--unit-gutter);
 }
 
-#hero-section .grid {
+.hero-section .grid {
   background-color: transparent;
 }
 
@@ -18,16 +18,16 @@
   margin-bottom: 1em;
 }
 
-#hero-text {
+.hero-text {
   display: inline-block;
   width: 50%;
 }
 
-#hero-text .button-hero {
+.hero-text .button-hero {
   margin-bottom: 1em;
 }
 
-#hero-illustration {
+.hero-illustration {
   display: none;
 }
 
@@ -37,31 +37,31 @@
     margin-bottom: 2em;
   }
 
-  #hero-text .button-hero {
+  .hero-text .button-hero {
     margin-bottom: 0;
   }
 
-  #hero-section {
+  .hero-section {
     padding: 6em var(--unit-gap) 5.25em;
     width: 100%;
     position: unset;
     margin: 0 auto;
   }
 
-  #hero-illustration {
+  .hero-illustration {
     position: absolute;
     display: inline-block;
     width: 40%;
   }
 
-  #hero-illustration-bulb {
+  .hero-illustration-bulb {
     position: relative;
     height: 19em;
     top: -95px;
     right: -150px;
   }
 
-  #hero-illustration-bug {
+  .hero-illustration-bug {
     position: relative;
     height: 4em;
     top: -120px;

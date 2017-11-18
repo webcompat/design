@@ -648,26 +648,8 @@
 			</div>
 		</div>
 	</section>
-
-	<section class="grid grid-full">
-			<div class="grid-row">
-				<div class="grid-cell x3 hint-text">
-					<h4 class="headline-3">Module: Grid full - Introduction</h4>
-					<p>
-						The grid is the basic module to provide boxes for all of your modules. It is a global module, which means it is not scoped and can (also should) be used everywhere on the site.
-					</p>
-					<p>
-						The <code>grid-wrapper</code> class provides the white box to hold the module as well as the padding and margin.
-					</p>
-	
-					<p>
-						The <code>grid</code> class actually holdes the module and provides a flexbox-box as well as a grid-system for the modules.
-					</p>
-				</div>
-			</div>
-		</section>
-	<section id="hero-section" class="grid color-first-bg">
-		<article id="hero-text">
+	<section class="hero-section grid color-first-bg">
+		<article class="hero-text">
 			<h1 class="hero-claim highlight">Bug reporting <br /> for the web.</h1>
 			<button type="button" class="button button-hero">
 				Report bug
@@ -677,13 +659,13 @@
 			</svg>
 			</button>
 		</article>
-		<aside id="hero-illustration">
-			<svg id="hero-illustration-bulb" role="presentation" aria-role="hide">
+		<aside class="hero-illustration">
+			<svg class="hero-illustration-bulb" role="presentation" aria-role="hide">
 				<title>bulb_nobug</title>
 				<use href="#svg-bulb_nobug">bulb</use>
 			</svg>
 
-			<svg id="hero-illustration-bug" role="presentation" aria-role="hide">
+			<svg class="hero-illustration-bug" role="presentation" aria-role="hide">
 				<title>bulb</title>
 				<use href="#svg-bulb">bug</use>
 			</svg>
@@ -1102,7 +1084,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="hero-tile" class="grid">
+	<section class="hero-tile grid">
 		<ul class="tiles tiles-x3">
 			<li class="tile-item">
 				<h3 class="headline-2 highlight"><a href="index.html" title="Report a bug">Report bugs</a></h3>
@@ -1133,7 +1115,7 @@
 			<div class="grid-cell x3">
 				<pre>
 					<code class="code-text">
-&lt;section id="hero-tile" class="grid"&gt;
+&lt;section -tile" class="grid"&gt;
 	&lt;ul class="tiles tiles-x3"&gt;
 		&lt;li class="tile-item"&gt;
 			&lt;p&gt;1&lt;/p&gt;
@@ -1612,7 +1594,7 @@
 			<div class="grid-cell x3">
 				<pre>
 					<code>
-&lt;section id="issues-list" class="grid"&gt;
+&lt;section " class="grid"&gt;
 	&lt;div class="grid-row issue label-closed"&gt;
 		&lt;article class="grid-cell x2 issue-description"&gt;
 			&lt;p class="issue-number"&gt; Issue 71234: &lt;/p&gt;

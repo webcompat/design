@@ -1,8 +1,8 @@
-#issues-list {
+.issues-list {
   padding: 0;
 }
 
-#issues-list .issue {
+.issues-list .issue {
   border-bottom: 5px solid var(--color-bg-page);
 }
 
