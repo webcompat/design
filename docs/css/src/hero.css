@@ -76,6 +76,7 @@
     animation-delay: 0.75s;
     animation-fill-mode: both;
     animation-timing-function: linear;
+    transform-origin: 50% 100%;
   }
 
 }
