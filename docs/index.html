@@ -1406,6 +1406,25 @@
 		</div>
 	</section>
 
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
+				<h4 class="headline-3">Module: Issue Labels</h4>
+				<p> This module helps to add a label to the issue, which indicates the status of an issue.</p>
+				<p>There are 6 different states:</p>
+				<ul>
+					<li>Needs Triage</li>
+					<li>Needs Diagnosis</li>
+					<li>Needs Contact</li>
+					<li>Ready for Outreach/li>
+					<li>Site Contacted</li>
+					<li>Closed</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+
 	<section id="filter-issue-status" class="grid">
 		<div class="grid-row">
 			<div class="grid-cell x3">
@@ -1417,6 +1436,35 @@
 				  <li class="site-contacted">Site Contacted</li>
 				  <li class="closed">Closed</li>
 				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3">
+				<pre><code>
+&lt;ul class="filter-label"&gt;
+	&lt;li class="needs-triage"&gt;
+		Needs Triage
+	&lt;/li&gt;
+	&lt;li class="needs-diagnosis active"&gt;
+		Needs Diagnosis
+	&lt;/li&gt;
+	&lt;li class="needs-contact"&gt;
+		Needs Contact
+	&lt;/li&gt;
+	&lt;li class="outreach"&gt;
+		Ready for Outreach
+	&lt;/li&gt;
+	&lt;li class="site-contacted"&gt;
+		Site Contacted
+	&lt;/li&gt;	
+	&lt;li class="closed"&gt;
+		Closed
+	&lt;/li&gt;	
+&lt;/ul&gt;
+				</code></pre>
 			</div>
 		</div>
 	</section>
@@ -1443,7 +1491,8 @@
 			</div>
 		</div>
 	</section>
-	
+
+
 	<section id="issues-list" class="grid">
 		<div class="grid-row issue label-needs-triage">
 			<article class="grid-cell x2 issue-description">
