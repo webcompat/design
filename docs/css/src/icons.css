@@ -1,12 +1,3 @@
-svg {
-  position: absolute;
-  top: -1000px;
-}
-
-svg,
-use {
-  fill: var(--color-second);
-}
 
 .icon {
   width: 16px;

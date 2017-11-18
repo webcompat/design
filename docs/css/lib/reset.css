@@ -420,6 +420,15 @@ summary {
   display: list-item;
 }
 
+/* reset lists */
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Scripting
    ========================================================================== */
 

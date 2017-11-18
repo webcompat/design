@@ -1,0 +1,31 @@
+/* Adds Fonts for Headlines */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", "Open Sans", sans-serif;
+}
+
+/* Adds color for links  */
+a {
+  color: var(--color-second);
+}
+
+/* Allows vertical scrolling */
+pre {
+  overflow-y: scroll;
+}
+
+/* Adds positioning and filling for svgs */
+svg {
+  position: absolute;
+  top: -1000px;
+}
+
+svg,
+use {
+  fill: var(--color-second);
+}
+

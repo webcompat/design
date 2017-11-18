@@ -1,17 +1,8 @@
-body {
+.body-webcompat {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.8em;
   color: var(--color-second);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Source Sans Pro", "Open Sans", sans-serif;
 }
 
 .highlight {
@@ -71,6 +62,3 @@ h6 {
   font-family: monospace;
 }
 
-a {
-  color: var(--color-second);
-}
