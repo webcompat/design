@@ -17,12 +17,9 @@
 .form-field {
   background: none;
   color: inherit;
-  margin: 0 0 5px 0;
+  margin-bottom: 5px;
 }
 
-.form-field ::-webkit-input-placeholder,
-.form-field :-ms-input-placeholder,
-.form-field ::-ms-input-placeholder,
 .form-field ::placeholder {
   color: #888;
   opacity: 1;
@@ -39,10 +36,8 @@
   content: "*";
 }
 
+/* * Form input[type="text"], textarea (text-field) */
 
-/* -----------------------------------------
- * Form input[type="text"], textarea (text-field)
--------------------------------------------*/
 .text-field {
   display: block;
   width: 100%;
@@ -59,16 +54,14 @@
   border-bottom: 1px solid var(--color-first);
 }
 
+/* * Form input[type="text"] validation */
 
-/* -----------------------------------------
- * Form input[type="text"] validation
--------------------------------------------*/
 .form-input-validation {
   width: 100%;
   display: inline-block;
   position: relative;
   top: -2em;
-  text-align:right;
+  text-align: right;
   z-index: 0;
 }
 
@@ -79,11 +72,8 @@
   content: "";
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url('../../svg/icons/svg-checkmark.svg');
-  fill: green;
-  border-color: red;
+  background-image: url("../../svg/icons/svg-checkmark.svg");
 }
-
 
 .error::after {
   display: inline-block;
@@ -92,26 +82,23 @@
   content: "";
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url('../../svg/icons/svg-cross2.svg');
+  background-image: url("../../svg/icons/svg-cross2.svg");
 }
 
+/* form-input-validation check error */
 
-/*form-input-validation check error*/
-
-/* -----------------------------------------
- * Form radio
--------------------------------------------*/
+/* Form radio */
 .input-radio {
   position: absolute;
   opacity: 0;
 }
 
 .label-radio {
-  margin: 0 0 5px 0;
+  margin-bottom: 5px;
 }
 
-.input-radio + .label-radio:before {
-  content: '';
+.input-radio + .label-radio::before {
+  content: "";
   display: inline-block;
   position: relative;
   top: 3px;
@@ -127,28 +114,24 @@
   transition: all 250ms ease;
 }
 
-.input-radio:checked + .label-radio:before {
+.input-radio:checked + .label-radio::before {
   background-color: var(--color-first);
   border-color: var(--color-first);
-  box-shadow: inset 0 0 0 3px white;
+  box-shadow: inset 0 0 0 3px var(--color-bg-box);
 }
 
-.input-radio:focus + .label-radio:before {
+.input-radio:focus + .label-radio::before {
   border-color: var(--color-first);
-  box-shadow: inset 0 0 0 3px white,
-    0 0 0 3px var(--color-first-light);
+  box-shadow: inset 0 0 0 3px var(--color-bg-box), 0 0 0 3px var(--color-first-light);
 }
 
-.input-radio:disabled + .label-radio:before {
+.input-radio:disabled + .label-radio::before {
   box-shadow: inset 0 0 0 4px var(--color-first);
   border-color: var(--color-first);
   background: transparent;
 }
 
-
-/* -----------------------------------------
- * Form upload
--------------------------------------------*/
+/* * Form upload */
 .form-upload {
   border: 1px solid var(--color-form);
   border-radius: 4px;
@@ -177,14 +160,14 @@
 .form-upload .icon {
   display: block;
   width: 60%;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 15px;
 }
 
 .icon-upload {
   fill: var(--color-form);
 }
 
-.form-upload:hover  .icon-upload {
+.form-upload:hover .icon-upload {
   fill: var(--color-first);
   transition: all 350ms ease;
 }

@@ -55,7 +55,9 @@
         "no-eol-whitespace": true
     },
     "ignoreFiles": [
-      "./webcompat/static/css/development/vendor/prism.css"
+      "./webcompat/static/css/development/vendor/prism.css",
+      "./css/lib/*",
+
     ],
     "ignoreShorthands": [
         "font"
