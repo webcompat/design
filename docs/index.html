@@ -1384,39 +1384,114 @@
 	<section class="filter-bar grid">
 		<div class="grid-row">
 			<div class="grid-cell">
-				<div>
-					<button type="button">
-						Show 50
-					</button>
-					<ul hidden>
-						<li>Show 20</li>
-						<li>Show 50</li>
-						<li>Show 100</li>
-					</ul>
-				</div>
-				<div>
-					<button type="button">
-						Newest
-					</button>
-					<ul hidden>
-						<li>Newest</li>
-						<li>Oldest</li>
-						<li>Foo</li>
-					</ul>
-				</div>
-				<div id="filter-bar-search" class="filter-bar-search" role="search" tabindex="0">
-					<input id="filter-bar-search-input" class="filter-bar-search-input" type="search" placeholder="ABC doesn't work">
-					<label for="filter-bar-search-input" class="filter-bar-search-label">
-						<svg class="icon-middle" viewBox="0 0 30 30" role="presentation">
-							<use href="#svg-search">Search</use>
+				<div class="filter-bar-dropdown">
+					<input type="checkbox" role="button" id="filter-bar-by-count" class="filter-bar-dropdown-input" aria-haspopup="true">
+					<label for="filter-bar-by-count" data-opens-dropdown>
+						<span>Show 25</span>
+						<svg class="icon" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-circle-down"/>
 						</svg>
-						Search issues
+						<span class="filter-bar-dropdown-input expanded-text">expanded</span>
+						<span class="filter-bar-dropdown-input collapsed-text">collapsed</span>
 					</label>
+					<div class="filter-bar-dropdown-listbox" role="listbox">
+						<ul>
+							<li role="option"><a href="#">Show 25</a></li>
+							<li role="option"><a href="#">Show 50</a></li>
+							<li role="option"><a href="#">Show 100</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="filter-bar-dropdown">
+					<input type="checkbox" role="button" id="filter-bar-by-type" class="filter-bar-dropdown-input" aria-haspopup="true">
+					<label for="filter-bar-by-type" data-opens-dropdown>
+						<span>Newest</span>
+						<svg class="icon" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-circle-down"/>
+						</svg>
+						<span class="filter-bar-dropdown-input expanded-text">expanded</span>
+						<span class="filter-bar-dropdown-input collapsed-text">collapsed</span>
+					</label>
+					<div class="filter-bar-dropdown-listbox" role="listbox">
+						<ul>
+							<li role="option"><a href="#">Newest</a></li>
+							<li role="option"><a href="#">Oldest</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="filter-bar-search">
+					<button type="button" class="button button-icon" title="Open search">
+						<svg class="icon-middle" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-search"/>
+						</svg>
+					</button>
+					<input class="filter-bar-search-input" type="search" placeholder="Search issues" aria-label="Search issues" tabindex="-1">
+					<button type="button" class="button button-icon" title="Close search" tabindex="-1">
+						<svg class="icon-middle" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-cross2"/>
+						</svg>
+					</button>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<section class="filter-bar grid">
+		<div class="grid-row">
+			<div class="grid-cell">
+				<div class="filter-bar-dropdown">
+					<input type="checkbox" role="button" id="filter-bar-by-count" class="filter-bar-dropdown-input" aria-haspopup="true">
+					<label for="filter-bar-by-count" data-opens-dropdown>
+						<span>Show 25</span>
+						<svg class="icon" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-circle-down"/>
+						</svg>
+						<span class="filter-bar-dropdown-input expanded-text">expanded</span>
+						<span class="filter-bar-dropdown-input collapsed-text">collapsed</span>
+					</label>
+					<div class="filter-bar-dropdown-listbox" role="listbox">
+						<ul>
+							<li role="option"><a href="#">Show 25</a></li>
+							<li role="option"><a href="#">Show 50</a></li>
+							<li role="option"><a href="#">Show 100</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="filter-bar-dropdown">
+					<input type="checkbox" role="button" id="filter-bar-by-type" class="filter-bar-dropdown-input" aria-haspopup="true">
+					<label for="filter-bar-by-type" data-opens-dropdown>
+						<span>Newest</span>
+						<svg class="icon" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-circle-down"/>
+						</svg>
+						<span class="filter-bar-dropdown-input expanded-text">expanded</span>
+						<span class="filter-bar-dropdown-input collapsed-text">collapsed</span>
+					</label>
+					<div class="filter-bar-dropdown-listbox" role="listbox">
+						<ul>
+							<li role="option"><a href="#">Newest</a></li>
+							<li role="option"><a href="#">Oldest</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="filter-bar-search open">
+					<button type="button" class="button button-icon" title="Open search">
+						<svg class="icon-middle" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-search"/>
+						</svg>
+					</button>
+					<input class="filter-bar-search-input" type="search" placeholder="Search issues" aria-label="Search issues" tabindex="0">
+					<button type="button" class="button button-icon" title="Close search">
+						<svg class="icon-middle" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-cross2"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<section class="grid">
 		<div class="grid-row">
