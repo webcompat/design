@@ -80,7 +80,7 @@
   content: "";
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url('../svg/icons/checkmark.svg');
+  background-image: url('../../svg/icons/svg-checkmark.svg');
   fill: green;
   border-color: red;
 }
@@ -93,7 +93,7 @@
   content: "";
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url('../svg/icons/cross2.svg');
+  background-image: url('../../svg/icons/svg-cross2.svg');
 }
 
 
@@ -137,7 +137,7 @@
 
 .input-radio:focus + .label-radio:before {
   border-color: var(--color-first);
-  box-shadow: inset 0 0 0 3px white, 
+  box-shadow: inset 0 0 0 3px white,
     0 0 0 3px var(--color-first-light);
 }
 

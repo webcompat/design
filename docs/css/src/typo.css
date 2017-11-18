@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.4em;
   margin-top: 0.3em;
   text-align: center;
-  background-image: url(../svg/icons/leaf_left.svg), url(../svg/icons/leaf_right.svg);
+  background-image: url(../svg/icons/svg-leaf_left.svg), url(../svg/icons/svg-leaf_right.svg);
   background-repeat: no-repeat;
   background-position: center left, center right;
   padding: 0 40px;
@@ -43,20 +43,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .headline-2 {
   font-size: 1.5em;
-  line-height: 1.3em;	
+  line-height: 1.3em;
   margin-bottom: 1.25em;
 }
 
 .headline-3 {
   font-size: 1.2em;
-  line-height: 0.8em;	
+  line-height: 0.8em;
 }
 
 .hint-text {
   color: var(--color-hint);
   font-style: italic;
   font-family: Palatino, Garamond, serif;
-  font-size: 1.025em;	
+  font-size: 1.025em;
 }
 
 .code-text {
