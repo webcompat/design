@@ -9,8 +9,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    box-sizing: border-box;
-
     background-color: white;
   }
 
@@ -23,7 +21,6 @@
     }
 
   .grid-cell {
-    box-sizing: border-box;
     padding: var(--unit-space);
     margin: 0 var(--unit-gutter) 0 0;
   }

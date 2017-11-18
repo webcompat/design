@@ -7,7 +7,6 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-  box-sizing: border-box;
   padding: calc(var(--unit-gutter)/2) var(--unit-gutter);
   background-color: var(--color-first);
   color: var(--color-second);
@@ -20,7 +19,6 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 0 var(--unit-gutter);
-  box-sizing: border-box;
 }
 
 .nav .grid {
