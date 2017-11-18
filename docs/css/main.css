@@ -20,6 +20,7 @@
 @import 'src/issues-list.css';
 @import 'src/footer.css';
 @import 'src/notification-bar.css';
+@import 'src/animations.css';
 
 /* imports for other vendor files */
 @import 'lib/prism-gh-theme.css';
