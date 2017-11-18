@@ -1,4 +1,4 @@
-#Nav {
+.navigation {
   position: fixed;
   top: 0;
   left: 50%;
@@ -75,7 +75,7 @@
 }
 
 @media screen and (min-width: 998px) {
-  #Nav {
+  .navigation {
     width: 100%;
   }
 }
