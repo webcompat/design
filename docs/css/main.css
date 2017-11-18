@@ -26,7 +26,6 @@
 
 body {
   background-color: var(--color-bg-page);
-  box-sizing: border-box;
   padding-top: var(--navi-height);
 }
 
