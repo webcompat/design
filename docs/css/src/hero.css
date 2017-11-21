@@ -49,23 +49,33 @@
   }
 
   .hero-illustration {
-    position: absolute;
     display: inline-block;
+    position: absolute;
     width: 40%;
+    max-width: calc(var(--unit-modul-l) / 2);
   }
 
   .hero-illustration-bulb {
-    position: relative;
+    position: absolute;
     height: 19em;
-    top: -95px;
-    right: -150px;
+    top: -6em;
+    right: 4em;
   }
 
   .hero-illustration-bug {
-    position: relative;
+    position: absolute;
     height: 4em;
-    top: -120px;
-    right: 0;
+    top: 12em;
+    right: 16em;
+  }
+
+  .bug-animated {
+    animation-name: bug;
+    animation-duration: 2s;
+    animation-delay: 0.75s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    transform-origin: 50% 100%;
   }
 }
 
