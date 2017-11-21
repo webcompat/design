@@ -95,7 +95,7 @@
   right: 0;
   top: 50%;
   transform: translate(calc(100% - 78px), -50%);
-  transition: translate .2s ease-in-out;
+  transition: transform .2s ease-in-out;
   display: flex;
   align-items: center;
   width: 100%;
