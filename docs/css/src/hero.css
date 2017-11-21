@@ -1,14 +1,13 @@
-#hero-section {
-  box-sizing: border-box;
+.hero-section {
   margin-top: -30px;
   width: 100vw;
   position: absolute;
   left: 50%;
   margin-left: -50%;
-  padding: calc(var(--unit-gutter)/2) var(--unit-gutter);
+  padding: calc (var(--unit-gutter) /2) var(--unit-gutter);
 }
 
-#hero-section .grid {
+.hero-section .grid {
   background-color: transparent;
 }
 
@@ -19,16 +18,16 @@
   margin-bottom: 1em;
 }
 
-#hero-text {
+.hero-text {
   display: inline-block;
   width: 50%;
 }
 
-#hero-text .button-hero {
+.hero-text .button-hero {
   margin-bottom: 1em;
 }
 
-#hero-illustration {
+.hero-illustration {
   display: none;
 }
 
@@ -38,43 +37,51 @@
     margin-bottom: 2em;
   }
 
-
-  #hero-text .button-hero {
+  .hero-text .button-hero {
     margin-bottom: 0;
   }
 
-  #hero-section {
+  .hero-section {
     padding: 6em var(--unit-gap) 5.25em;
     width: 100%;
     position: unset;
     margin: 0 auto;
   }
 
-  #hero-illustration {
-    position: absolute;
+  .hero-illustration {
     display: inline-block;
+    position: absolute;
     width: 40%;
+    max-width: calc(var(--unit-modul-l) / 2);
   }
 
-  #hero-illustration-bulb {
-    position: relative;
+  .hero-illustration-bulb {
+    position: absolute;
     height: 19em;
-    top: -95px;
-    right: -150px;
+    top: -6em;
+    right: 4em;
   }
 
-  #hero-illustration-bug {
-    position: relative;
+  .hero-illustration-bug {
+    position: absolute;
     height: 4em;
-    top: -120px;
-    right: 0;
+    top: 12em;
+    right: 16em;
   }
 
+  .bug-animated {
+    animation-name: bug;
+    animation-duration: 2s;
+    animation-delay: 0.75s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    transform-origin: 50% 100%;
+  }
 }
 
 .button-icon-hero {
   fill: var(--color-first);
-  border:1px solid #f0f;
+  border: 1px solid #f0f;
 }
 
 .button-icon-hero:hover {

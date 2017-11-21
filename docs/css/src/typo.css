@@ -1,12 +1,8 @@
-body {
-  font-family: 'Open Sans', sans-serif;
+.body-webcompat {
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.8em;
   color: var(--color-second);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
 }
 
 .highlight {
@@ -27,15 +23,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .underline {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .headline-1 {
   font-size: 2em;
   line-height: 1.4em;
-  margin-top: 0.3em;
+  margin-top: .3em;
   text-align: center;
-  background-image: url(../svg/icons/svg-leaf_left.svg), url(../svg/icons/svg-leaf_right.svg);
+  background-image: url("../../svg/icons/svg-leaf_left.svg"), url("../../svg/icons/svg-leaf_right.svg");
   background-repeat: no-repeat;
   background-position: center left, center right;
   padding: 0 40px;
@@ -49,11 +45,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .headline-3 {
   font-size: 1.2em;
-  line-height: 0.8em;
+  line-height: .8em;
 }
 
 .hint-text {
-  color: #888;
+  color: var(--color-hint);
   font-style: italic;
   font-family: Palatino, Garamond, serif;
   font-size: 1.025em;
@@ -61,11 +57,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .code-text {
   color: #666;
-  font-size: 0.9em;
+  font-size: .9em;
   line-height: 1.8em;
   font-family: monospace;
 }
 
-a {
-  color: var(--color-second);
-}

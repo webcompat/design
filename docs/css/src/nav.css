@@ -1,4 +1,4 @@
-#Nav {
+.navigation {
   position: fixed;
   top: 0;
   left: 50%;
@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  padding: calc(var(--unit-gutter)/2) var(--unit-gutter);
+  padding: calc (var(--unit-gutter) /2) var(--unit-gutter);
   background-color: var(--color-first);
   color: var(--color-second);
 }
@@ -20,7 +20,6 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 0 var(--unit-gutter);
-  box-sizing: border-box;
 }
 
 .nav .grid {
@@ -31,7 +30,7 @@
   text-decoration: none;
   list-style: none;
   display: inline;
-  margin: 0 4px;	
+  margin: 0 4px;
 }
 
 .nav-item:first-child {
@@ -42,7 +41,7 @@
   margin: 0;
 }
 
-.nav-item a {
+.nav-item .nav-link {
   display: inline-block;
   padding: 5px;
   text-decoration: none;
@@ -51,7 +50,6 @@
 .nav-icon {
   width: 30px;
   height: auto;
-
   vertical-align: middle;
 }
 
@@ -64,8 +62,7 @@
   vertical-align: middle;
 }
 
-
-@media screen and (min-width: 665px){
+@media screen and (min-width: 665px) {
   .nav-item .link-text {
     visibility: visible;
     width: auto;
@@ -77,8 +74,8 @@
   }
 }
 
-@media screen and (min-width: 998px){
-  #Nav {
+@media screen and (min-width: 998px) {
+  .navigation {
     width: 100%;
   }
 }

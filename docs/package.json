@@ -30,8 +30,8 @@
   "devDependencies": {
     "husky": "^0.14.3",
     "lint-staged": "^5.0.0",
-    "stylelint": "^7.13.0",
-    "stylelint-config-standard": "^16.0.0",
+    "stylelint": "^8.2.0",
+    "stylelint-config-standard": "^17.0.0",
     "svg-sprite-generator": "0.0.7",
     "svgo": "^0.7.2"
   }

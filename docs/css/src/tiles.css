@@ -9,8 +9,7 @@
 
 .tiles {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   width: 100%;
 }
 
@@ -25,7 +24,7 @@
 }
 
 /* checkerboard pattern */
-.tile-item:nth-child(odd){
+.tile-item:nth-child(odd) {
   background-color: var(--color-fourth);
 }
 
@@ -37,7 +36,7 @@
     flex: 1 0 50%;
   }
 
-  .tile-item:nth-child(odd){
+  .tile-item:nth-child(odd) {
     background-color: transparent;
   }
 
@@ -45,7 +44,8 @@
      plus every forth element starting by four
      to have a checkerboard pattern for 50% tile-item
      */
-  .tile-item:nth-child(4n+1), .tile-item:nth-child(4n+4){
+  .tile-item:nth-child(4n+1),
+  .tile-item:nth-child(4n+4) {
     background-color: var(--color-fourth);
   }
 }
@@ -55,18 +55,18 @@
     flex-basis: 33.33%;
   }
 
-  .tile-item:nth-child(4n+1), .tile-item:nth-child(4n+4){
+  .tile-item:nth-child(4n+1),
+  .tile-item:nth-child(4n+4) {
     background-color: transparent;
   }
 
   /* checkerboard pattern */
-  .tile-item:nth-child(odd){
+  .tile-item:nth-child(odd) {
     background-color: var(--color-fourth);
   }
 
   /* checkerboard pattern */
-  .tile-item:nth-child(even){
+  .tile-item:nth-child(even) {
     color: var(--color-second);
   }
-
 }

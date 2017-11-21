@@ -46,8 +46,19 @@ section {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
+
+/* Adds Fonts for Headlines */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", "Open Sans", sans-serif;
+}
+
 
 /* Grouping content
    ========================================================================== */
@@ -90,7 +101,10 @@ hr {
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
+  overflow-y: scroll;
 }
+
+
 
 /* Text-level semantics
    ========================================================================== */
@@ -103,6 +117,7 @@ pre {
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+  color: var(--color-second);
 }
 
 /**
@@ -457,4 +472,16 @@ template {
 
 [hidden] {
   display: none;
+}
+
+/* Sets Boxmodel overall the project */
+*, 
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* set fallback color for svgs */
+svg {
+  fill: #404040;
 }
