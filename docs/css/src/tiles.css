@@ -7,6 +7,10 @@
 * colors.css
 */
 
+.hero-tile {
+  background-color: var(--color-bg-box);
+}
+
 .tiles {
   display: flex;
   flex-flow: row wrap;
