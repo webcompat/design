@@ -36,8 +36,11 @@
 }
 
 .button-hero .icon-middle {
-  transform: rotate(-90deg);
   vertical-align: middle;
+}
+
+.button-hero.is-open .icon-middle {
+  transform: rotate(90deg);
 }
 
 .button-hero:hover .icon-middle {
