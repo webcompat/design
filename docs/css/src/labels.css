@@ -1,12 +1,12 @@
-.issue.label-needs-triage .x2 {
+.issue.label-needstriage .x2 {
   border-color: var(--label-needs-triage);
 }
 
-.issue.label-needs-diagnosis .x2 {
+.issue.label-needsdiagnosis .x2 {
   border-color: var(--label-needs-diagnosis);
 }
 
-.issue.label-needs-contact .x2 {
+.issue.label-needscontact .x2 {
   border-color: var(--label-needs-contact);
 }
 
@@ -14,7 +14,7 @@
   border-color: var(--label-outreach);
 }
 
-.issue.label-site-contacted .x2 {
+.issue.label-sitecontacted .x2 {
   border-color: var(--label-site-contacted);
 }
 
