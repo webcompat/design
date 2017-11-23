@@ -173,6 +173,6 @@
 }
 
 
-.is-closed {
+#js-ReportForm.is-closed {
     display: none;
 }
