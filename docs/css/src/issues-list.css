@@ -11,7 +11,7 @@
 }
 
 .issue-url {
-  word-break: break-word;
+  word-break: break-all;
 }
 
 .issue .issue-description,
