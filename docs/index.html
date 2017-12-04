@@ -10,7 +10,7 @@
 		<meta keywords="web compatibility, webcompat, mozilla, firefox, open source">
 		<meta description="Living style guide for webcompat.com, an open source project that takes care of web compatibility.">
 	</head>
-	<body class="body-webcompat">
+	<body>
 	<svg class="hide">
 		<symbol id="svg-ie" viewBox="0 0 32 32"><title>IE</title><path d="M22.49 19.411h6.894c.052-.479.075-.966.075-1.465 0-2.342-.628-4.54-1.727-6.434 1.135-3.017 1.095-5.578-.424-7.109-1.445-1.439-5.324-1.206-9.709.737a13.328 13.328 0 0 0-.983-.037c-6.019 0-11.068 4.142-12.462 9.722 1.888-2.417 3.873-4.17 6.527-5.445a235.87 235.87 0 0 0-1.886 1.862C1.798 18.237-.407 27.373 1.967 29.747c1.804 1.804 5.075 1.499 8.832-.34a12.774 12.774 0 0 0 5.819 1.391c5.641 0 10.421-3.63 12.152-8.688h-6.948c-.955 1.763-2.826 2.965-4.972 2.965s-4.015-1.2-4.972-2.965a5.688 5.688 0 0 1-.669-2.677v-.021H22.49zm-11.271-3.387c.159-2.836 2.518-5.099 5.396-5.099s5.238 2.262 5.396 5.099H11.218zM27.243 5.83c.98.989.955 2.809.118 5.082a12.897 12.897 0 0 0-5.982-4.896c2.632-1.129 4.772-1.279 5.864-.187zM3.777 29.296c-1.249-1.25-.873-3.873.737-7.034a12.905 12.905 0 0 0 5.471 6.694c-2.787 1.265-5.069 1.48-6.208.34z"/>
 		</symbol>
@@ -988,27 +988,29 @@
 		</div>
 	</section>
 	<section class="hero-section grid color-first-bg">
-		<article class="hero-text">
-			<h1 class="hero-claim highlight">Bug reporting <br /> for the web.</h1>
-			<button type="button" class="button button-hero">
-				Report bug
+		<div class="grid-row">
+			<article class="hero-text">
+				<h1 class="hero-claim highlight">Bug reporting <br /> for the web.</h1>
+				<button type="button" class="button button-hero">
+					Report bug
 				<svg class="icon-middle" role="presentation" aria-role="hide">
 					<title>circle-right</title>
-					<use class="button-icon-hero" href="#svg-circle-right">Report bug</use>
+						<use class="button-icon-hero" href="#svg-circle-right">Report bug</use>
 				</svg>
-			</button>
-		</article>
-		<aside class="hero-illustration">
-			<svg class="hero-illustration-bulb" role="presentation" viewBox="0 0 160 447" aria-role="hide">
-				<title>bulb_nobug</title>
-				<use href="#svg-bulb_nobug">bulb</use>
-			</svg>
+				</button>
+			</article>
+			<aside class="hero-illustration">
+				<svg class="hero-illustration-bulb" role="presentation" viewBox="0 0 160 447" aria-role="hide">
+					<title>bulb_nobug</title>
+					<use href="#svg-bulb_nobug">bulb</use>
+				</svg>
 
-			<svg class="hero-illustration-bug bug-animated" role="presentation" viewBox="0 0 47 65" aria-role="hide">
-				<title>bulb</title>
-				<use href="#svg-bulb">bug</use>
-			</svg>
-		</aside>
+				<svg class="hero-illustration-bug bug-animated" role="presentation" viewBox="0 0 47 65" aria-role="hide">
+					<title>bulb</title>
+					<use href="#svg-bulb">bug</use>
+				</svg>
+			</aside>
+		</div>
 	</section>
 	<section class="grid">
 		<div class="grid-row">
@@ -1646,7 +1648,7 @@
 
 			<aside class="grid-cell x1 issue-labels">
 				<p>
-					<span class="label label-type">type- </span>
+					<span class="label label-type-">type- </span>
 					<span class="label label-browser">browser- </span>
 					<span class="label label-nsfw">nsfw </span>
 					<span class="label label-status">status- </span>

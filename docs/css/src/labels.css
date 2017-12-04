@@ -1,12 +1,12 @@
-.issue.label-needs-triage .x2 {
+.issue.label-needstriage .x2 {
   border-color: var(--label-needs-triage);
 }
 
-.issue.label-needs-diagnosis .x2 {
+.issue.label-needsdiagnosis .x2 {
   border-color: var(--label-needs-diagnosis);
 }
 
-.issue.label-needs-contact .x2 {
+.issue.label-needscontact .x2 {
   border-color: var(--label-needs-contact);
 }
 
@@ -14,7 +14,7 @@
   border-color: var(--label-outreach);
 }
 
-.issue.label-site-contacted .x2 {
+.issue.label-sitecontacted .x2 {
   border-color: var(--label-site-contacted);
 }
 
@@ -22,30 +22,30 @@
   border-color: var(--label-closed);
 }
 
-.issue .label.label-type {
+.issue .label[class*='label-type'] {
   border-color: var(--label-color-type);
 }
 
-.issue .label.label-browser {
+.issue .label[class*='label-browser'] {
   border-color: var(--label-color-browser);
 }
 
-.issue .label.label-status {
+.issue .label[class*='label-status'] {
   border-color: var(--label-color-status);
 }
 
-.issue .label.label-priority {
+.issue .label[class*='label-priority'] {
   border-color: var(--label-color-priority);
 }
 
-.issue .label.label-nsfw {
+.issue .label[class*='label-nsfw'] {
   border-color: var(--label-color-nsfw);
 }
 
-.issue .label.label-device {
+.issue .label[class*='label-device'] {
   border-color: var(--label-color-device);
 }
 
-.issue .label.label-os {
+.issue .label[class*='label-os'] {
   border-color: var(--label-color-os);
 }

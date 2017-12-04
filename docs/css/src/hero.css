@@ -1,13 +1,8 @@
 .hero-section {
-  margin-top: -30px;
-  width: 100vw;
-  position: absolute;
-  left: 50%;
-  margin-left: -50%;
-  padding: calc (var(--unit-gutter) /2) var(--unit-gutter);
+  padding: calc(var(--unit-gutter) /2) var(--unit-gutter);
 }
 
-.hero-section .grid {
+.hero-section .grid-row {
   background-color: transparent;
 }
 
@@ -20,7 +15,6 @@
 
 .hero-text {
   display: inline-block;
-  width: 50%;
 }
 
 .hero-text .button-hero {
@@ -33,6 +27,10 @@
 
 @media screen and (min-width: 998px) {
 
+  .hero-text {
+    width: 50%;
+  }
+
   .hero-claim {
     margin-bottom: 2em;
   }
@@ -44,13 +42,15 @@
   .hero-section {
     padding: 6em var(--unit-gap) 5.25em;
     width: 100%;
-    position: unset;
+    position: relative;
     margin: 0 auto;
   }
 
   .hero-illustration {
     display: inline-block;
     position: absolute;
+    top: 0;
+    right: 0;
     width: 40%;
     max-width: calc(var(--unit-modul-l) / 2);
   }
@@ -58,14 +58,14 @@
   .hero-illustration-bulb {
     position: absolute;
     height: 19em;
-    top: -6em;
-    right: 4em;
+    top: 0;
+    right: 6em;
   }
 
   .hero-illustration-bug {
     position: absolute;
     height: 4em;
-    top: 12em;
+    top: 18em;
     right: 16em;
   }
 

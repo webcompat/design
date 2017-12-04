@@ -1,7 +1,7 @@
 /* imports for vendor files that should be imported first */
 @import "lib/reset.css";
 @import "lib/reset-add.css";
-@import "lib/a11y-en.css";
+/* @import "lib/a11y-en.css"; */
 
 /* custom src files */
 @import 'src/variables.css';
@@ -29,20 +29,20 @@
 /* imports for other vendor files */
 @import "lib/prism-gh-theme.css";
 
-/* this class is for the body */
-.body-webcompat {
+
+body {
   background-color: var(--color-bg-page);
   padding-top: var(--navi-height);
 }
 
 @media screen and (min-width: 665px) {
-  .body-webcompat {
+  body {
     padding: var(--navi-height) 19px 50px;
   }
 }
 
 @media screen and (min-width: 998px) {
-  .body-webcompat {
+  body {
     padding: 0;
   }
 }

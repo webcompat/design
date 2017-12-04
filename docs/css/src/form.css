@@ -171,3 +171,8 @@
   fill: var(--color-first);
   transition: all 350ms ease;
 }
+
+
+#js-ReportForm.is-closed {
+    display: none;
+}
