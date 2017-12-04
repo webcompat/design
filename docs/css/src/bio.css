@@ -21,3 +21,14 @@
 .bio .bio-links {
   align-self: center;
 }
+
+@media screen and (min-width: 998px) {
+  .bio .bio-img {
+    filter: grayscale(100%);
+  }
+  
+  .bio .bio-img:hover {
+    filter: grayscale(0%);
+  }
+}
+
