@@ -12,3 +12,7 @@
 .bio .headline-2 {
   margin-top: 0;
 }
+
+.bio .bio-links {
+  align-self: center;
+}
