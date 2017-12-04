@@ -1,6 +1,7 @@
 .bio .bio-img {
   min-width: 144px;
   min-height: 144px;
-  border-radius: 5px;
+  border-radius: 15px;
   max-height: var(--unit-modul-s);
+  padding: 10px;
 }
