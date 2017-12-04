@@ -10,6 +10,11 @@
 }
 
 .bio .headline-2 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.bio .headline-3 {
   margin-top: 0;
 }
 
