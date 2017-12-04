@@ -5,3 +5,7 @@
   max-height: var(--unit-modul-s);
   padding: 10px;
 }
+
+.bio .headline-2 {
+  margin-top: 0;
+}
