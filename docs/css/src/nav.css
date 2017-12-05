@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  padding: calc (var(--unit-gutter) /2) var(--unit-gutter);
+  padding: var(--unit-gutter);
   background-color: var(--color-first);
   color: var(--color-second);
 }
