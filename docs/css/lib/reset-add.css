@@ -29,6 +29,7 @@ svg {
   box-sizing: border-box;
 }
 
-ol {
+ol,
+ol li{
   list-style: decimal;
 }
