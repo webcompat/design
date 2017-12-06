@@ -29,3 +29,6 @@ svg {
   box-sizing: border-box;
 }
 
+ol {
+  list-style: decimal;
+}
