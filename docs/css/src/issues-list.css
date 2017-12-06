@@ -10,6 +10,10 @@
   border-left: 10px solid;
 }
 
+.issue-url {
+  word-break: break-all;
+}
+
 .issue .issue-description,
 .issue .issue-labels {
   padding-top: calc(var(--unit-gap) / 3);
