@@ -337,14 +337,14 @@
 				</div>
 			</div>
 		</section>
-	
+
 		<section class="grid">
 			<div class="grid-row">
 				<div class="grid-cell x3 hint-text">
 					<h4 class="headline-3">Module: Grid - 2:1 / 1:2</h4>
 					<p>
 						The <code>x2</code> class indicates an grid-cell, which combines the width of 2 grid-cells (width of one grid-cell = x). The <code>x2</code> is the short form of <code>x*2</code>. <br />
-	
+
 						The <code>x1</code> class indicates an grid-cell, with the width of 1 grid-cell.
 					</p>
 					<p>
@@ -361,7 +361,7 @@
 						Cupcake ipsum dolor sit amet liquorice lollipop apple pie. Tiramisu pudding pastry chocolate bar icing. Donut sweet candy canes liquorice pie icing. Cookie ice cream sweet roll jujubes carrot cake dessert bear claw.
 					</p>
 				</article>
-	
+
 				<aside class="grid-cell x1">
 					<h2 class="headline-2">Cookies</h2>
 					<p>
@@ -403,7 +403,7 @@
 		&lt;/aside&gt;
 	&lt;/div&gt;
 							<hr class="separator" />
-	
+
 	/* [1:2] */
 	&lt;div class="grid-row"&gt;
 		&lt;aside class="grid-cell x1"&gt;
@@ -420,7 +420,7 @@
 				</div>
 			</div>
 		</section>
-	
+
 		<section class="grid">
 			<div class="grid-row">
 				<div class="grid-cell x3 hint-text">
@@ -456,15 +456,15 @@
 				</div>
 			</div>
 		</section>
-	
-	
+
+
 		<section class="grid">
 			<div class="grid-row">
 				<div class="grid-cell x3 hint-text">
 					<h4 class="headline-3">Module: Grid - [2 : [1,1]] / [[1,1] : 2]</h4>
 					<p>
 						We can also wrap grid-cells together, so they will flow with the col, but not with the row what their usual behaviour is. <br />
-						The <code>grid-nested</code> class can help us here. The <code>grid-nested</code> is defined for a size of <code>--page-size-m</code>. 
+						The <code>grid-nested</code> class can help us here. The <code>grid-nested</code> is defined for a size of <code>--page-size-m</code>.
 					</p>
 				</div>
 			</div>
@@ -480,7 +480,7 @@
 							Pastry bear claw sugar plum toffee caramels cheesecake candy fruitcake. Cheesecake bear claw oat cake. Pastry jujubes marshmallow. Cake tart halvah jelly beans. Chocolate oat cake jelly-o biscuit liquorice biscuit cookie topping. Sweet roll caramels jelly-o caramels muffin.
 						</p>
 					</article>
-	
+
 					<aside class="grid-nested x1">
 						<div class="grid-cell x1">
 							<h2 class="headline-2">Cookies</h2>
@@ -488,9 +488,9 @@
 								Carrot cake fruitcake soufflé jelly beans jelly beans powder.
 							</p>
 						</div>
-	
+
 						<div class="grid-cell x1">
-	
+
 							<h2 class="headline-2">Jelly Beans</h2>
 							<p>
 								Halvah cookie croissant jelly beans gummi bears soufflé cake tart.
@@ -499,7 +499,7 @@
 					</aside>
 				</div>
 			</section>
-	
+
 		<section class="grid">
 				<div class="grid-row">
 					<aside class="grid-nested x1">
@@ -509,16 +509,16 @@
 								Carrot cake fruitcake soufflé jelly beans jelly beans powder.
 							</p>
 						</div>
-	
+
 						<div class="grid-cell">
-	
+
 							<h2 class="headline-2">Jelly Beans</h2>
 							<p>
 								Halvah cookie croissant jelly beans gummi bears soufflé cake tart.
 							</p>
 						</div>
 					</aside>
-	
+
 					<article class="grid-cell x2">
 						<h2 class="headline-1">Toffee chocolate cake lollipop</h2>
 						<p>
@@ -541,13 +541,13 @@
 			&lt;h2&gt;Main&lt;/h2&gt;
 			&lt;p&gt;Text&lt;/p&gt;
 		&lt;/article&gt;
-	
+
 		&lt;aside class="grid-nested x1"&gt;	<-- width of grid-nested
 			&lt;div class="grid-cell x1"&gt;                <-- width of grid-cell inside wrapper
 				&lt;h2&gt;Aside - wrapped grid-cell 1&lt;/h2&gt;
 				&lt;p&gt;Text&lt;/p&gt;
 			&lt;/div&gt;
-	
+
 			&lt;div class="grid-cell x1"&gt;
 				&lt;h2&gt;Aside - wrapped grid-cell 2&lt;/h2&gt;
 				&lt;p&gt;Text&lt;/p&gt;
@@ -555,7 +555,7 @@
 		&lt;/aside&gt;
 	&lt;/div&gt;
 						<hr class="separator" />
-	
+
 	/* [[1,1] : 2] */
 	&lt;div class="grid-row"&gt;
 		&lt;aside class="grid-nested x1"&gt;	<-- width of grid-nested
@@ -1480,6 +1480,135 @@
 	&lt;/li&gt;
 &lt;/ul&gt;
 				</code></pre>
+			</div>
+		</div>
+	</section>
+
+	<section class="grid">
+		<div class="grid-row">
+			<div class="grid-cell x3 hint-text">
+				<h4 class="headline-3">Module: Filter bar</h4>
+				<p>
+					This module is the search and filter bar for existing issues.
+					Two states are presented in the following grid-rows - closed and open.
+					JavaScript solution will be needed to toggle the `open` class.
+				</p>
+				<p>
+					Important note: The grid solution has `overflow: hidden` at the moment which prevents
+					absolute positioned child elements to be visible e.g. the filter dropdowns.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="filter-bar grid">
+		<div class="grid-row">
+			<div class="grid-cell">
+				<div class="filter-bar-dropdown">
+					<input type="checkbox" role="button" id="filter-bar-by-count" class="filter-bar-dropdown-input" aria-haspopup="true">
+					<label for="filter-bar-by-count" data-opens-dropdown>
+						<span>Show 25</span>
+						<svg class="icon" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-circle-down"/>
+						</svg>
+						<span class="filter-bar-dropdown-input expanded-text">expanded</span>
+						<span class="filter-bar-dropdown-input collapsed-text">collapsed</span>
+					</label>
+					<div class="filter-bar-dropdown-listbox" role="listbox">
+						<ul>
+							<li role="option"><a href="#">Show 25</a></li>
+							<li role="option"><a href="#">Show 50</a></li>
+							<li role="option"><a href="#">Show 100</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="filter-bar-dropdown">
+					<input type="checkbox" role="button" id="filter-bar-by-type" class="filter-bar-dropdown-input" aria-haspopup="true">
+					<label for="filter-bar-by-type" data-opens-dropdown>
+						<span>Newest</span>
+						<svg class="icon" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-circle-down"/>
+						</svg>
+						<span class="filter-bar-dropdown-input expanded-text">expanded</span>
+						<span class="filter-bar-dropdown-input collapsed-text">collapsed</span>
+					</label>
+					<div class="filter-bar-dropdown-listbox" role="listbox">
+						<ul>
+							<li role="option"><a href="#">Newest</a></li>
+							<li role="option"><a href="#">Oldest</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="filter-bar-search">
+					<button type="button" class="button button-icon" title="Open search">
+						<svg class="icon-middle" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-search"/>
+						</svg>
+					</button>
+					<input class="filter-bar-search-input" type="search" placeholder="Search issues" aria-label="Search issues" tabindex="-1">
+					<button type="button" class="button button-icon" title="Close search" tabindex="-1">
+						<svg class="icon-middle" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-cross2"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="filter-bar grid">
+		<div class="grid-row">
+			<div class="grid-cell">
+				<div class="filter-bar-dropdown">
+					<input type="checkbox" role="button" id="filter-bar-by-count" class="filter-bar-dropdown-input" aria-haspopup="true">
+					<label for="filter-bar-by-count" data-opens-dropdown>
+						<span>Show 25</span>
+						<svg class="icon" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-circle-down"/>
+						</svg>
+						<span class="filter-bar-dropdown-input expanded-text">expanded</span>
+						<span class="filter-bar-dropdown-input collapsed-text">collapsed</span>
+					</label>
+					<div class="filter-bar-dropdown-listbox" role="listbox">
+						<ul>
+							<li role="option"><a href="#">Show 25</a></li>
+							<li role="option"><a href="#">Show 50</a></li>
+							<li role="option"><a href="#">Show 100</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="filter-bar-dropdown">
+					<input type="checkbox" role="button" id="filter-bar-by-type" class="filter-bar-dropdown-input" aria-haspopup="true">
+					<label for="filter-bar-by-type" data-opens-dropdown>
+						<span>Newest</span>
+						<svg class="icon" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-circle-down"/>
+						</svg>
+						<span class="filter-bar-dropdown-input expanded-text">expanded</span>
+						<span class="filter-bar-dropdown-input collapsed-text">collapsed</span>
+					</label>
+					<div class="filter-bar-dropdown-listbox" role="listbox">
+						<ul>
+							<li role="option"><a href="#">Newest</a></li>
+							<li role="option"><a href="#">Oldest</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="filter-bar-search open">
+					<button type="button" class="button button-icon" title="Open search">
+						<svg class="icon-middle" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-search"/>
+						</svg>
+					</button>
+					<input class="filter-bar-search-input" type="search" placeholder="Search issues" aria-label="Search issues" tabindex="0">
+					<button type="button" class="button button-icon" title="Close search">
+						<svg class="icon-middle" viewBox="0 0 30 30" role="presentation">
+							<use href="#svg-cross2"/>
+						</svg>
+					</button>
+				</div>
 			</div>
 		</div>
 	</section>
