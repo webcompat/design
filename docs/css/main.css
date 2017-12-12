@@ -47,6 +47,11 @@
   }
 }
 
+.main {
+  width: 100%;
+  overflow: hidden;
+}
+
 /* helper to hide meta elements */
 .is-hidden {
   display: none;
