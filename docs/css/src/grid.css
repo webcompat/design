@@ -1,5 +1,6 @@
 .grid {
   margin: 9px;
+  overflow: hidden;
 }
 
 .grid-row {
@@ -22,11 +23,7 @@
 .grid-cell {
   box-sizing: border-box;
   padding: var(--unit-space);
-  margin: 0;
-}
-
-.grid-row > .grid-cell:last-child {
-  margin-right: 0;
+  margin: 0 var(--unit-gutter) 0 0;
 }
 
 .grid-cell,
@@ -54,6 +51,10 @@
     margin: 15px 0;
   }
 
+  .grid-row {
+    margin: 0 calc(-1 * var(--unit-gutter-m)) 0 0;
+  }
+
   .grid-nested {
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +73,11 @@
     max-width: var(--unit-modul-l);
   }
 
-  .grid-nested:first-child,
+  .grid-row {
+    margin: 0 calc(-1 * var(--unit-gutter-l)) 0 0;
+  }
+
+  .grid-nested,
   .grid-cell {
     margin-right: var(--unit-gutter-l);
   }
