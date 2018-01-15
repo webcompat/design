@@ -19,6 +19,7 @@
 @import 'src/issue.css';
 @import 'src/labels.css';
 @import 'src/filter.css';
+@import 'src/filter-bar.css';
 @import 'src/issues-list.css';
 @import 'src/footer.css';
 @import 'src/notification-bar.css';
@@ -44,6 +45,11 @@
   #body-webcompat {
     padding: 0;
   }
+}
+
+.main {
+  width: 100%;
+  overflow: hidden;
 }
 
 /* helper to hide meta elements */
