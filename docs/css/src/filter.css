@@ -15,7 +15,7 @@
 }
 
 .filter-label .needstriage:hover,
-.filter-label .needstriage.active {
+.filter-label .needstriage.is-active {
   background-color: var(--label-needs-triage);
 }
 
@@ -24,7 +24,7 @@
 }
 
 .filter-label .needsDiagnosis:hover,
-.filter-label .needsDiagnosis.active {
+.filter-label .needsDiagnosis.is-active {
   background-color: var(--label-needs-diagnosis);
 }
 
@@ -33,7 +33,7 @@
 }
 
 .filter-label .needsContact:hover,
-.filter-label .needsContact.active {
+.filter-label .needsContact.is-active {
   background-color: var(--label-needs-contact);
 }
 
@@ -42,7 +42,7 @@
 }
 
 .filter-label .ready:hover,
-.filter-label .ready.active {
+.filter-label .ready.is-active {
   background-color: var(--label-outreach);
 }
 
@@ -51,7 +51,7 @@
 }
 
 .filter-label .sitewait:hover,
-.filter-label .sitewait.active {
+.filter-label .sitewait.is-active {
   background-color: var(--label-site-contacted);
 }
 
@@ -60,7 +60,7 @@
 }
 
 .filter-label .close:hover,
-.filter-label .close.active {
+.filter-label .close.is-active {
   background-color: var(--label-closed);
 }
 
