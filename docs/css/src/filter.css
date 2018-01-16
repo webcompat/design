@@ -10,57 +10,57 @@
   border-left: 5px solid;
 }
 
-.filter-label .needs-triage {
+.filter-label .needstriage {
   border-color: var(--label-needs-triage);
 }
 
-.filter-label .needs-triage:hover,
-.filter-label .needs-triage.active {
+.filter-label .needstriage:hover,
+.filter-label .needstriage.active {
   background-color: var(--label-needs-triage);
 }
 
-.filter-label .needs-diagnosis {
+.filter-label .needsDiagnosis {
   border-color: var(--label-needs-diagnosis);
 }
 
-.filter-label .needs-diagnosis:hover,
-.filter-label .needs-diagnosis.active {
+.filter-label .needsDiagnosis:hover,
+.filter-label .needsDiagnosis.active {
   background-color: var(--label-needs-diagnosis);
 }
 
-.filter-label .needs-contact {
+.filter-label .needsContact {
   border-color: var(--label-needs-contact);
 }
 
-.filter-label .needs-contact:hover,
-.filter-label .needs-contact.active {
+.filter-label .needsContact:hover,
+.filter-label .needsContact.active {
   background-color: var(--label-needs-contact);
 }
 
-.filter-label .outreach {
+.filter-label .ready {
   border-color: var(--label-outreach);
 }
 
-.filter-label .outreach:hover,
-.filter-label .outreach.active {
+.filter-label .ready:hover,
+.filter-label .ready.active {
   background-color: var(--label-outreach);
 }
 
-.filter-label .site-contacted {
+.filter-label .sitewait {
   border-color: var(--label-site-contacted);
 }
 
-.filter-label .site-contacted:hover,
-.filter-label .site-contacted.active {
+.filter-label .sitewait:hover,
+.filter-label .sitewait.active {
   background-color: var(--label-site-contacted);
 }
 
-.filter-label .closed {
+.filter-label .close {
   border-color: var(--label-closed);
 }
 
-.filter-label .closed:hover,
-.filter-label .closed.active {
+.filter-label .close:hover,
+.filter-label .close.active {
   background-color: var(--label-closed);
 }
 
