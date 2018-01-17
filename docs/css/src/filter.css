@@ -19,21 +19,21 @@
   background-color: var(--label-needs-triage);
 }
 
-.filter-label .needsDiagnosis {
+.filter-label .needsdiagnosis {
   border-color: var(--label-needs-diagnosis);
 }
 
-.filter-label .needsDiagnosis:hover,
-.filter-label .needsDiagnosis.is-active {
+.filter-label .needsdiagnosis:hover,
+.filter-label .needsdiagnosis.is-active {
   background-color: var(--label-needs-diagnosis);
 }
 
-.filter-label .needsContact {
+.filter-label .needscontact {
   border-color: var(--label-needs-contact);
 }
 
-.filter-label .needsContact:hover,
-.filter-label .needsContact.is-active {
+.filter-label .needscontact:hover,
+.filter-label .needscontact.is-active {
   background-color: var(--label-needs-contact);
 }
 
