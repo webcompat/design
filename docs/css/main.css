@@ -25,6 +25,10 @@
 @import 'src/notification-bar.css';
 @import 'src/animations.css';
 @import 'src/sub-nav.css';
+
+@import 'src/label-box.css';
+@import 'src/label-editor.css';
+
 @import 'src/pagination.css';
 
 /* imports for other vendor files */
@@ -46,6 +50,12 @@
   #body-webcompat {
     padding: 0;
   }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 .main {
