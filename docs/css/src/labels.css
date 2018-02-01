@@ -10,11 +10,11 @@
   border-color: var(--label-needs-contact);
 }
 
-.issue.label-outreach .x2 {
+.issue.label-ready .x2 {
   border-color: var(--label-outreach);
 }
 
-.issue.label-sitecontacted .x2 {
+.issue.label-sitewait .x2 {
   border-color: var(--label-site-contacted);
 }
 

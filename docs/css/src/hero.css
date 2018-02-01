@@ -1,5 +1,6 @@
 .hero-section {
   padding: calc(var(--unit-gutter) /2) var(--unit-gutter);
+  margin-top: -26px;
 }
 
 .hero-section .grid-row {
@@ -43,7 +44,7 @@
     padding: 6em var(--unit-gap) 5.25em;
     width: 100%;
     position: relative;
-    margin: 0 auto;
+    margin: -32px auto 0;
   }
 
   .hero-illustration {
